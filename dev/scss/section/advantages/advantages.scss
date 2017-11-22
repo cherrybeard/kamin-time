@@ -1,0 +1,39 @@
+.advantages {
+	padding-bottom: 100px;
+	h2 {
+		@extend %introduction-text;
+	}
+	.advantages-list {
+		margin: 0 auto;
+		width: 60%;
+		padding-bottom: 100px;
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+
+		.item {
+			box-sizing: border-box;
+			position: relative;
+			max-width: 17.5rem;
+			padding: 80px 0 0 50px;
+		}
+		h3 {
+			margin-bottom: 20px;
+		}
+		.count {
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			font-size: 9.375rem;
+			color: #bbb;
+			opacity: 0.3;
+		}
+
+	}
+	button {
+			@extend %secondary-button;
+			display: block;
+			margin: 0 auto;
+		}
+}

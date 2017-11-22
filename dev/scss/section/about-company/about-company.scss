@@ -1,0 +1,31 @@
+.about-company {
+	box-sizing: border-box;
+	padding: 200px 0 150px 0;
+	.about {
+		position: relative;
+		left: 50%;
+		width: 34.56rem;
+  		height: 29.56rem;
+  		box-sizing: border-box;
+  		padding: 2% 40px;
+  		border: solid 1px #dddddd;
+  		background-color: #fff;
+  		&::before {
+			content: '';
+			position: absolute;
+			z-index: -1;
+			left: -90%;
+			bottom: -30px;
+			background-image: url('https://i.ytimg.com/vi/QW7jpXrI_aY/maxresdefault.jpg');
+			width: 45.06rem;
+	  		height: 36.93rem;
+		}
+	}
+	h2 {
+		@extend %introduction-text;
+	}
+	p {
+		margin-top: 10px;
+	}
+	
+}

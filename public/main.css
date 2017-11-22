@@ -1,0 +1,61 @@
+div, p, body, button, h1, h2, h3, h4, img, hr, li, ul, span, section, a, nav, form, option, select, label, input, button, header, footer { margin: 0; padding: 0; }
+
+p, h1, h2, h3, span { cursor: default; }
+
+input { font-family: inherit; }
+
+a { text-decoration: none; }
+
+@font-face { font-family: OpenSans; src: url(fonts/OpenSans-Regular.ttf); }
+
+html { font-family: OpenSans, sans-serif; font-size: 16px; line-height: 1.4; color: #222; font-weight: 500; }
+
+h1 { font-size: 4.75rem; color: white; }
+
+.header button, .fireplaces button { padding: 8px 35px; background-color: #d29840; border: none; cursor: pointer; font-size: 1.18em; line-height: 1.89; letter-spacing: 4.1px; text-align: center; color: #fff; text-transform: uppercase; }
+
+.advantages button { padding: 8px 35px; background-color: transparent; border: solid 2px #c99951; cursor: pointer; font-size: 1.18em; line-height: 1.89; letter-spacing: 4.1px; text-align: center; color: black; text-transform: uppercase; }
+
+.about-company h2, .advantages h2, .fireplaces h2 { color: #d29840; font-size: 3.75rem; text-align: center; padding-bottom: 40px; position: relative; }
+
+.about-company h2:before, .advantages h2:before, .fireplaces h2:before { content: ""; position: absolute; width: 100px; height: 2px; left: 50%; -webkit-transform: translate(-50%, 0); -ms-transform: translate(-50%, 0); transform: translate(-50%, 0); bottom: 20px; background-color: #d29840; }
+
+.header { background-color: rgba(0, 0, 0, 0.5); height: 100vh; min-height: 700px; position: relative; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
+
+.header a { position: absolute; font-size: 1.25rem; color: #fff; }
+
+.header a[data-logo] { left: 3%; top: 3%; }
+
+.header a[data-tel] { right: 3%; top: 3%; }
+
+.header .wrapper { width: 70%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; }
+
+.header h2 { color: #fff; font-size: 1.875rem; max-width: 49.375rem; margin-top: 40px; margin-bottom: 40px; }
+
+.about-company { -webkit-box-sizing: border-box; box-sizing: border-box; padding: 200px 0 150px 0; }
+
+.about-company .about { position: relative; left: 50%; width: 34.56rem; height: 29.56rem; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 2% 40px; border: solid 1px #dddddd; background-color: #fff; }
+
+.about-company .about::before { content: ''; position: absolute; z-index: -1; left: -90%; bottom: -30px; background-image: url("https://i.ytimg.com/vi/QW7jpXrI_aY/maxresdefault.jpg"); width: 45.06rem; height: 36.93rem; }
+
+.about-company p { margin-top: 10px; }
+
+.advantages { padding-bottom: 100px; }
+
+.advantages .advantages-list { margin: 0 auto; width: 60%; padding-bottom: 100px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: baseline; -webkit-align-items: baseline; -ms-flex-align: baseline; align-items: baseline; }
+
+.advantages .advantages-list .item { -webkit-box-sizing: border-box; box-sizing: border-box; position: relative; max-width: 17.5rem; padding: 80px 0 0 50px; }
+
+.advantages .advantages-list h3 { margin-bottom: 20px; }
+
+.advantages .advantages-list .count { display: block; position: absolute; top: 0; left: 0; font-size: 9.375rem; color: #bbb; opacity: 0.3; }
+
+.advantages button { display: block; margin: 0 auto; }
+
+.fireplaces { padding: 150px 0; background-color: #c99951; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
+
+.fireplaces h2 { color: white; }
+
+.fireplaces h2:before { background-color: white; }
+
+.fireplaces p { text-align: center; margin: 30px 0 70px 0; max-width: 39.625rem; color: white; }

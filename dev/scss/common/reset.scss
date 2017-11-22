@@ -1,0 +1,16 @@
+div, p, body, button, h1, h2, h3, h4, img, hr, li, ul, span, section, a, nav, form, option, select, label, input, button, header, footer {
+	margin: 0;
+	padding: 0;
+}
+p, h1, h2, h3, span {
+	cursor: default;
+}
+input {
+	font-family: inherit;
+}
+h1, h2, h3, h4, h5, h6 {
+	// font-weight: inherit;
+}
+a {
+	text-decoration: none;
+}
