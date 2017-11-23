@@ -13,7 +13,8 @@
 	.about {
 		width: 50%;
 		height: 100%;
-		background: grey;
+		background:transparent url('img/about.jpg') center/cover no-repeat;
+
 		display: flex;
 		align-items: center;
 		justify-content: center;

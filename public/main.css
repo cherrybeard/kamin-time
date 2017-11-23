@@ -34,7 +34,7 @@ h1 { font-size: 4.75rem; color: white; }
 
 .firewood button, .electric-fireplace button, .bio-fireplace button { font-size: 1rem; }
 
-.header { height: 100vh; min-height: 700px; position: relative; background: transparent url("https://www.aussiespecialist.com/content/asp/en_sg/sales-resources/image-and-video-galleries/jcr:content/mainParsys/hero/image.adapt.1663.medium.jpg") left top/cover no-repeat; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
+.header { height: 100vh; min-height: 700px; position: relative; background: transparent url("img/header.jpg") center/cover no-repeat; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
 
 .header a { position: absolute; font-size: 1.25rem; color: #fff; }
 
@@ -50,7 +50,7 @@ h1 { font-size: 4.75rem; color: white; }
 
 .about-company .about { position: relative; left: 50%; width: 34.56rem; height: 29.56rem; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 2% 40px; border: solid 1px #dddddd; background-color: #fff; }
 
-.about-company .about::before { content: ''; position: absolute; z-index: -1; left: -90%; bottom: -30px; background-image: url("https://i.ytimg.com/vi/QW7jpXrI_aY/maxresdefault.jpg"); width: 45.06rem; height: 36.93rem; }
+.about-company .about::before { content: ''; position: absolute; z-index: -1; left: -90%; bottom: -30px; background: transparent url("img/company.jpg") center/cover no-repeat; width: 45.06rem; height: 36.93rem; }
 
 .about-company p { margin-top: 10px; }
 
@@ -66,6 +66,8 @@ h1 { font-size: 4.75rem; color: white; }
 
 .advantages button { display: block; margin: 0 auto; }
 
+.firewood { background: transparent url("img/wood_fireplace.jpg") center/cover no-repeat; }
+
 .models { -webkit-box-sizing: border-box; box-sizing: border-box; padding: 100px 10%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
 
 .models figure { max-width: 21.875rem; }
@@ -78,19 +80,21 @@ h1 { font-size: 4.75rem; color: white; }
 
 .models span { font-size: 1.25rem; text-align: left; color: #c99951; }
 
-.bio-fireplace { margin-top: 50px; }
+.electric-fireplace { background: transparent url("img/electro_fireplace.jpg") center/cover no-repeat; }
+
+.bio-fireplace { background: transparent url("img/bio_fireplace.jpg") center/cover no-repeat; margin-top: 50px; }
 
 .location { -webkit-box-sizing: border-box; box-sizing: border-box; padding: 200px 0 150px 0; }
 
 .location .about { position: relative; left: 20%; width: 34.56rem; height: 29.56rem; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 2% 60px; border: solid 1px #dddddd; background-color: #fff; }
 
-.location .about::before { content: ''; position: absolute; z-index: -1; left: 70%; bottom: -30px; background-image: url("https://i.ytimg.com/vi/QW7jpXrI_aY/maxresdefault.jpg"); width: 45.06rem; height: 36.93rem; }
+.location .about::before { content: ''; position: absolute; z-index: -1; left: 70%; bottom: -30px; background: transparent url("img/map.jpg") center/cover no-repeat; width: 45.06rem; height: 36.93rem; }
 
 .location p { margin-top: 10px; }
 
 .location address { max-width: 20.5625rem; margin-top: 50px; text-transform: uppercase; font-weight: 600; font-style: normal; font-size: .75rem; line-height: 1.67; letter-spacing: 1.5px; }
 
-.callback { position: relative; margin-top: 200px; background: transparent url("https://maground.com/Maground/image-store//hp-sliders/slideshow_404/1413556476189_ma-MWE_220_1_89483_L.jpg") left bottom/cover no-repeat; }
+.callback { position: relative; margin-top: 200px; background: transparent url("img/coop.jpg") center/cover no-repeat; }
 
 .callback .callback-form { position: relative; top: -200px; margin: 0 auto; max-width: 39.3125rem; padding: 3%; border: solid 1px #dddddd; background-color: #fff; }
 
@@ -120,7 +124,7 @@ h1 { font-size: 4.75rem; color: white; }
 
 .reviews .wrapper { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; margin: 0 auto; width: 69.875rem; height: 34.4375rem; border: solid 1px #dddddd; }
 
-.reviews .about { width: 50%; height: 100%; background: grey; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
+.reviews .about { width: 50%; height: 100%; background: transparent url("img/about.jpg") center/cover no-repeat; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
 
 .reviews .about h2 { max-width: 16.6875rem; }
 
