@@ -1,0 +1,26 @@
+.reviews {
+	@import "carousel";
+	box-sizing: border-box;
+	padding: 100px 0;
+	
+	.wrapper {
+		display: flex;
+		margin: 0 auto;
+		width: 34.9375rem * 2;
+		height: 34.4375rem;
+		border: solid 1px #dddddd;
+	}
+	.about {
+		width: 50%;
+		height: 100%;
+		background: grey;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		h2 {
+			max-width: 16.6875rem;
+			@extend %introduction-text;
+			@extend %introduction-text-white;
+		}
+	}
+}

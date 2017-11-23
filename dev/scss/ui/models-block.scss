@@ -1,8 +1,7 @@
-.fireplaces {
-	// height: 50vh;
-	// min-height: 500px;
+%models-block {
 	padding: 150px 0;
 	background-color: #c99951;
+	background:#c99951 url('http://pats.dog/wp-content/uploads/2014/09/slideshow__0000_Layer-5.png') center/100% no-repeat;
 
 
 	display: flex;
@@ -23,5 +22,6 @@
 	}
 	button {
 		@extend %primary-button;
+		font-size: 1rem;
 	}
 }

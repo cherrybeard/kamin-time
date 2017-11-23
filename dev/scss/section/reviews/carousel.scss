@@ -1,0 +1,24 @@
+.swiper-container {
+	width: 50%;
+	.swiper-slide {
+		box-sizing: border-box;
+		padding: 0 10%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+	}
+	.swiper-button {
+		background-image: none;
+		height: 50px;
+		width: 50px;
+		border: solid 2px #c99951;
+		border-right: transparent;
+		border-bottom: transparent;
+		transform: rotate(-45deg);
+	}
+	.swiper-button-next {
+		transform: rotate(135deg);
+	}
+}

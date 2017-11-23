@@ -1,0 +1,32 @@
+.callback {
+	// box-sizing: border-box;
+	position: relative;
+	// padding-top: 200px;
+	margin-top: 200px;
+	background:transparent url('https://maground.com/Maground/image-store//hp-sliders/slideshow_404/1413556476189_ma-MWE_220_1_89483_L.jpg') left bottom/cover no-repeat;
+	// display: flex;
+	// justify-content: center;
+	// align-items: flex-start;
+	.callback-form {
+		position: relative;
+		top: -200px;
+		margin: 0 auto;
+		max-width: 39.3125rem;
+		padding: 3%;
+		border: solid 1px #dddddd;
+		background-color: #fff;
+
+	}
+	p {
+		margin: 10px 0 50px 0;
+	}
+
+	h2 {
+		@extend %introduction-text;
+	}
+	button {
+		display: block;
+		margin: 0 auto;
+		@extend %secondary-button;
+	}
+}

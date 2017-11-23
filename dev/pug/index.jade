@@ -2,6 +2,8 @@ doctype html
 html(lang='ru')
 	head
 		meta(charset='UTF-8')
+		
+		link(rel="stylesheet" href="swiper/css/swiper.min.css")
 		link(rel='stylesheet', href='main.css')
 		meta(name='viewport', content='width=device-width')
 		title KaminTime
@@ -9,8 +11,16 @@ html(lang='ru')
 		include header.jade
 		include about-company.jade
 		include advantages.jade
+		include firewood.jade
+		include models.jade
 		include fireplaces.jade
+		include location.jade
+		include callback.jade
+		include reviews.jade
 	body
 		script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
+		script(src="swiper/js/swiper.min.js")
 		script(src="main.min.js")
+		//- script(src="jquery.min.js")
+		
 

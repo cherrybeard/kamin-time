@@ -5,9 +5,16 @@
 
 @import "ui/button";
 @import "ui/introduction-text";
+@import "ui/models-block";
 
 
 @import "section/header/header";
 @import "section/about-company/about-company";
 @import "section/advantages/advantages";
-@import "section/fireplaces/fireplaces";
+@import "section/fireplaces/firewood";
+@import "section/models/models";
+@import "section/fireplaces/electric-fireplace";
+@import "section/fireplaces/bio-fireplace";
+@import "section/location/location";
+@import "section/callback/callback";
+@import 'section/reviews/reviews';
