@@ -1,0 +1,21 @@
+.footer { 
+	box-sizing: border-box;
+	padding: 50px;
+	background-color: #38210f;
+	display: flex;
+	justify-content: space-between;
+	a {
+		display: block;
+	}
+	a[href^="tel"] {
+		margin-top: 10px;
+	}
+	address {
+		font-style: normal;
+	}
+	p {
+		margin-top: 10px;
+		max-width: 14.5rem;
+		color: white;
+	}
+}
