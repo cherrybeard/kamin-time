@@ -1,4 +1,4 @@
-div, p, body, button, h1, h2, h3, h4, img, hr, li, ul, span, section, a, nav, form, option, select, label, input, button, header, footer { margin: 0; padding: 0; }
+div, p, body, button, h1, h2, h3, h4, img, hr, li, ul, span, section, a, nav, form, option, select, label, input, button, header, footer, figure { margin: 0; padding: 0; }
 
 p, h1, h2, h3, span { cursor: default; }
 
@@ -6,11 +6,15 @@ input { font-family: inherit; }
 
 a { text-decoration: none; color: white; }
 
-@font-face { font-family: OpenSans; src: url(fonts/OpenSans-Regular.ttf); }
+@font-face { font-family: Open Sans; src: url(fonts/OpenSans-Regular.ttf); }
 
-html { font-family: OpenSans, sans-serif; font-size: 16px; line-height: 1.4; color: #222; font-weight: 500; }
+@font-face { font-family: 'Anglecia'; src: url("fonts/Anglecia/400.eot"); src: url("fonts/Anglecia/400.eot?#iefix") format("embedded-opentype"), url("fonts/Anglecia/400.woff") format("woff"), url("fonts/Anglecia/400.ttf") format("truetype"); font-style: normal; font-weight: normal; }
+
+html { font-family: Open Sans, sans-serif; font-size: 16px; line-height: 1.4; color: #222; font-weight: 500; }
 
 h1 { font-size: 4.75rem; color: white; }
+
+h1, h2 { font-family: Anglecia, serif; }
 
 .firewood button, .electric-fireplace button, .bio-fireplace button, .header button { padding: 10px 45px; background-color: #d29840; border: none; cursor: pointer; font-size: 1.18em; line-height: 1.89; letter-spacing: 4.1px; text-align: center; color: #fff; text-transform: uppercase; }
 
@@ -40,11 +44,11 @@ h1 { font-size: 4.75rem; color: white; }
 
 .header a[data-logo] { left: 3%; top: 3%; }
 
-.header a[data-tel] { right: 3%; top: 3%; }
+.header a[href^="tel"] { right: 3%; top: 3%; }
 
 .header .wrapper { width: 70%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; }
 
-.header h2 { color: #fff; font-size: 1.875rem; max-width: 49.375rem; margin-top: 40px; margin-bottom: 40px; }
+.header h3 { color: #fff; font-size: 1.875rem; max-width: 49.375rem; margin-top: 40px; margin-bottom: 40px; }
 
 .about-company { -webkit-box-sizing: border-box; box-sizing: border-box; padding: 200px 0 150px 0; }
 
@@ -56,11 +60,11 @@ h1 { font-size: 4.75rem; color: white; }
 
 .advantages { padding-bottom: 100px; }
 
-.advantages .advantages-list { margin: 0 auto; width: 60%; padding-bottom: 100px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: baseline; -webkit-align-items: baseline; -ms-flex-align: baseline; align-items: baseline; }
+.advantages .advantages-list { margin: 0 auto; width: 1000px; padding-bottom: 100px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: baseline; -webkit-align-items: baseline; -ms-flex-align: baseline; align-items: baseline; }
 
 .advantages .advantages-list .item { -webkit-box-sizing: border-box; box-sizing: border-box; position: relative; max-width: 17.5rem; padding: 80px 0 0 50px; }
 
-.advantages .advantages-list h3 { margin-bottom: 20px; }
+.advantages .advantages-list h3 { text-transform: uppercase; margin-bottom: 20px; letter-spacing: 2px; }
 
 .advantages .advantages-list .count { display: block; position: absolute; top: 0; left: 0; font-size: 9.375rem; color: #bbb; opacity: 0.3; }
 
@@ -68,9 +72,11 @@ h1 { font-size: 4.75rem; color: white; }
 
 .firewood { background: transparent url("img/wood_fireplace.jpg") center/cover no-repeat; }
 
-.models { -webkit-box-sizing: border-box; box-sizing: border-box; padding: 100px 10%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
+.models { -webkit-box-sizing: border-box; box-sizing: border-box; padding: 100px 0; width: 1152px; margin: 0 auto; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
 
-.models figure { max-width: 21.875rem; }
+.models figure { max-width: 21.875rem; margin: 0 10px 40px 10px; }
+
+.models figure:last-of-type { margin: 0; }
 
 .models img { width: 21.375rem; height: 21.875rem; margin-bottom: 20px; }
 
@@ -93,6 +99,8 @@ h1 { font-size: 4.75rem; color: white; }
 .location p { margin-top: 10px; }
 
 .location address { max-width: 20.5625rem; margin-top: 50px; text-transform: uppercase; font-weight: 600; font-style: normal; font-size: .75rem; line-height: 1.67; letter-spacing: 1.5px; }
+
+@media screen and (max-width: 1439px) { .location .about { left: 10%; } }
 
 .callback { position: relative; margin-top: 200px; background: transparent url("img/coop.jpg") center/cover no-repeat; }
 

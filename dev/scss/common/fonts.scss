@@ -1,6 +1,17 @@
-$font-primary: OpenSans, sans-serif;
-// $font-secondary: Yeseva One, cursive;
+$font-primary: Open Sans, sans-serif;
+$font-secondary: Anglecia, serif;
 @font-face {
-	font-family: OpenSans;
+	font-family: Open Sans;
 	src: url(fonts/OpenSans-Regular.ttf);
 }
+
+@font-face {
+	font-family: 'Anglecia';
+	src: url('fonts/Anglecia/400.eot');
+	src: url('fonts/Anglecia/400.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/Anglecia/400.woff') format('woff'),
+		 url('fonts/Anglecia/400.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
+

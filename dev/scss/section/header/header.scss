@@ -17,7 +17,7 @@
 		left: 3%;
 		top: 3%;
 	}
-	a[data-tel] {
+	a[href^="tel"] {
 		right: 3%;
 		top: 3%;
 	}
@@ -27,7 +27,7 @@
 		flex-direction: column;
 		align-items: flex-start;
 	}
-	h2 {
+	h3 {
 		color: #fff;
 		font-size: 1.875rem;
 		max-width: 49.375rem;
