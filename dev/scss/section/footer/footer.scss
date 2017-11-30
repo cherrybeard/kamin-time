@@ -1,21 +1,43 @@
 .footer { 
 	box-sizing: border-box;
-	padding: 50px;
-	background-color: #38210f;
+	padding: 50px 5%;
+	background-color: #222;
+
 	display: flex;
 	justify-content: space-between;
-	a {
-		display: block;
+	align-items: center;
+
+	color: #ccc;
+	font-size: 11px;
+	.logo {
+		width: 9.5rem; // 152px;
+		height: 2.5rem; // 40px;
+		background:transparent url('img/logo-white.svg') center/100% no-repeat;
 	}
-	a[href^="tel"] {
-		margin-top: 10px;
+	ul {
+		max-width: 11.3125rem; // 181px
+		// box-sizing: border-box;
+		// padding-left: 50px;
 	}
 	address {
+		display: inline;
+		color: #ccc;
+		font-size: 11px;
+		max-width: 26.0625rem; // 417px
 		font-style: normal;
+		// margin-left: 50px;
 	}
-	p {
-		margin-top: 10px;
-		max-width: 14.5rem;
-		color: white;
+	a {
+		border-bottom: 1px solid #ccc;
+		display: inline-block;
+		padding-bottom: 3px;
+		color: #ccc;
+	}
+	a[href^=tel] {
+		min-width: 18.1875rem; // 291px
+		font-size: 2.5rem; // 40px
+		color: #fff;
+		font-family: $font-secondary;
+		border-bottom: none;
 	}
 }

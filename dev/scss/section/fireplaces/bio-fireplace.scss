@@ -1,5 +1,26 @@
 .bio-fireplace {
-	background:transparent url('img/bio_fireplace.jpg') center/cover no-repeat;
+	background: transparent url('img//fireplaces/bio.jpg') center/cover no-repeat;
 	@extend %models-block;
-	margin-top: 50px;
+	position: relative;
+	.novelty {
+		box-sizing: border-box;
+		padding: 15px 20px;
+		width: 15.8125rem; // 253px
+		font-size: 16px;
+		position: absolute;
+		right: 0;
+		top: 50%;
+		transform: translate(0, -50%);
+		background-color: black;
+		span {
+			color: white;
+			text-transform: uppercase;
+			letter-spacing: 3.4px;
+			text-align: left;
+		}
+		p {
+			margin: 0;
+			color: #ccc;
+		}
+	}
 }

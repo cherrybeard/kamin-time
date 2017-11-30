@@ -26,7 +26,7 @@
 	}
 
 
-	@include mq("desktop-wide", min) {
+	@include mq("1680", min) {
 		padding-left: 15%;
 		padding-right: 15%;
 	}

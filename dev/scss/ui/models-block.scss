@@ -1,25 +1,28 @@
 %models-block {
-	padding: 150px 0;
-	background-color: #c99951;
-	background:#c99951 url('http://pats.dog/wp-content/uploads/2014/09/slideshow__0000_Layer-5.png') center/cover no-repeat;
+	width: 90%;
+	margin: 0 auto;
+	height: 28.125rem; // 450px;
+	box-sizing: border-box;
+	padding: 0 $basic-padding;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	justify-content: space-between;
+	align-items: flex-start;
+	justify-content: center;
+	margin-bottom: 20px;
 
 	h2 {
-		@extend %introduction-text;
 		color: white;
-		&:before { background-color: white;}
 	}
 	p {
-		text-align: center;
-		margin: 30px 0 70px 0;
+		margin: 35px 0;
 		max-width: 39.625rem;
 		color: white;
 	}
 	button {
-		@extend %primary-button;
+		@extend %secondary-button;
 		font-size: 1rem;
+	}
+	@include mq("1680", min) {
+		padding: 0 15%;
 	}
 }

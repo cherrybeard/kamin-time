@@ -15,31 +15,25 @@ html { font-family: Open Sans, sans-serif; font-size: 16px; line-height: 1.4; co
 
 h1 { font-size: 0; }
 
-h2 { font-size: 3.5rem; }
+h2 { font-size: 3.5rem; line-height: 1.07; }
+
+p { font-size: 1.125rem; }
 
 h1, h2 { font-family: "Alice", serif; }
 
-.firewood button, .electric-fireplace button, .bio-fireplace button, .header .present button { padding: 10px 45px; background-color: #222; border: none; cursor: pointer; font-size: 1.18em; line-height: 1.89; letter-spacing: 4.1px; text-align: center; color: #fff; text-transform: uppercase; }
+.header .present button, .callback button { padding: 10px 45px; background-color: #222; border: none; cursor: pointer; font-size: 1.18em; line-height: 1.89; letter-spacing: 4.1px; text-align: center; color: #fff; text-transform: uppercase; }
 
-.advantages button, .callback button { padding: 10px 45px; background-color: transparent; border: solid 2px #c99951; cursor: pointer; font-size: 1.18em; line-height: 1.89; letter-spacing: 4.1px; text-align: center; color: black; text-transform: uppercase; }
+.firewood button, .stove-fireplace button, .bio-fireplace button, .electric-fireplace button, .marble button { padding: 12px 30px; background-color: transparent; border: solid 2px #fff; cursor: pointer; font-size: 1em; line-height: 1.89; letter-spacing: 4.1px; text-align: center; color: #fff; text-transform: uppercase; }
 
-.firewood h2, .electric-fireplace h2, .bio-fireplace h2, .advantages h2, .location h2, .callback h2, .reviews .about h2 { color: #d29840; text-align: center; padding-bottom: 40px; position: relative; }
+.firewood, .stove-fireplace, .bio-fireplace, .electric-fireplace, .marble { width: 90%; margin: 0 auto; height: 28.125rem; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 0 5%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; margin-bottom: 20px; }
 
-.firewood h2:before, .electric-fireplace h2:before, .bio-fireplace h2:before, .advantages h2:before, .location h2:before, .callback h2:before, .reviews .about h2:before { content: ""; position: absolute; width: 100px; height: 2px; left: 50%; -webkit-transform: translate(-50%, 0); -ms-transform: translate(-50%, 0); transform: translate(-50%, 0); bottom: 20px; background-color: #d29840; }
+.firewood h2, .stove-fireplace h2, .bio-fireplace h2, .electric-fireplace h2, .marble h2 { color: white; }
 
-.reviews .about h2 { color: #fff; }
+.firewood p, .stove-fireplace p, .bio-fireplace p, .electric-fireplace p, .marble p { margin: 35px 0; max-width: 39.625rem; color: white; }
 
-.reviews .about h2:before { background-color: #fff; }
+.firewood button, .stove-fireplace button, .bio-fireplace button, .electric-fireplace button, .marble button { font-size: 1rem; }
 
-.firewood, .electric-fireplace, .bio-fireplace { padding: 150px 0; background-color: #c99951; background: #c99951 url("http://pats.dog/wp-content/uploads/2014/09/slideshow__0000_Layer-5.png") center/cover no-repeat; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
-
-.firewood h2, .electric-fireplace h2, .bio-fireplace h2 { color: white; }
-
-.firewood h2:before, .electric-fireplace h2:before, .bio-fireplace h2:before { background-color: white; }
-
-.firewood p, .electric-fireplace p, .bio-fireplace p { text-align: center; margin: 30px 0 70px 0; max-width: 39.625rem; color: white; }
-
-.firewood button, .electric-fireplace button, .bio-fireplace button { font-size: 1rem; }
+@media screen and (min-width: 1680px) { .firewood, .stove-fireplace, .bio-fireplace, .electric-fireplace, .marble { padding: 0 15%; } }
 
 .wrapper { width: 40rem; height: 40.625rem; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; width: 100%; }
 
@@ -49,7 +43,7 @@ h1, h2 { font-family: "Alice", serif; }
 
 .navigation { -webkit-box-sizing: border-box; box-sizing: border-box; padding: 50px 5%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; font-family: "Alice", serif; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; font-size: 1.25rem; }
 
-.navigation .logo { width: 5.1875rem; height: 1.375rem; border: 1px solid black; }
+.navigation .logo { width: 5.1875rem; height: 1.375rem; background: transparent url("img/logo.svg") center/100% no-repeat; }
 
 .navigation ul { width: 37.25rem; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
 
@@ -65,102 +59,104 @@ h1, h2 { font-family: "Alice", serif; }
 
 .header .about-image { width: 50%; background: transparent url("img/about.jpg") center/cover no-repeat; }
 
-@media screen and (min-width: 1441px) { .header { padding-left: 15%; padding-right: 15%; } }
+@media screen and (min-width: 1680px) { .header { padding-left: 15%; padding-right: 15%; } }
 
-.about-company { width: 90%; margin: 0 auto; height: 30rem; background: transparent url("img/success.jpg") center/cover no-repeat; color: #fff; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+.about-company { width: 90%; margin: 0 auto; height: 30rem; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 0 5%; background: transparent url("img/success.jpg") center/cover no-repeat; color: #fff; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 
 .about-company .about { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
 
-.about-company .about h2 { border: 1px solid red; width: 70%; }
+.about-company .about h2 { width: 70%; margin-bottom: 20px; }
 
 .about-company .about p { max-width: 30rem; }
 
-@media screen and (min-width: 1441px) { .about-company { padding-left: 15%; padding-right: 15%; } }
+@media screen and (min-width: 1680px) { .about-company { padding: 0 10%; } }
 
-.advantages { padding-bottom: 100px; }
+.advantages { padding: 100px 5%; }
+
+.advantages h2 { text-align: center; }
 
 .advantages .advantages-list { margin: 0 auto; width: 1000px; padding-bottom: 100px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: baseline; -webkit-align-items: baseline; -ms-flex-align: baseline; align-items: baseline; }
 
 .advantages .advantages-list .item { -webkit-box-sizing: border-box; box-sizing: border-box; position: relative; max-width: 17.5rem; padding: 80px 0 0 50px; }
 
-.advantages .advantages-list h3 { text-transform: uppercase; margin-bottom: 20px; letter-spacing: 2px; }
+.advantages .advantages-list .item p { font-size: 16px; }
 
-.advantages .advantages-list .count { display: block; position: absolute; top: 0; left: 0; font-size: 9.375rem; color: #bbb; opacity: 0.3; }
+.advantages .advantages-list h3 { font-weight: bold; text-transform: uppercase; margin-bottom: 10px; letter-spacing: 2px; }
 
-.advantages button { display: block; margin: 0 auto; }
+.advantages .advantages-list .count { font-family: "Alice", serif; display: block; position: absolute; top: -20px; left: -10px; font-size: 9.375rem; color: #bbb; opacity: 0.3; }
 
-.firewood { background: transparent url("img/wood_fireplace.jpg") center/cover no-repeat; }
+@media screen and (min-width: 1680px) { .advantages .advantages-list { width: 1200px; } }
 
-.models { -webkit-box-sizing: border-box; box-sizing: border-box; padding: 100px 0; width: 1152px; margin: 0 auto; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
+.firewood { background: transparent url("img/fireplaces/wood.jpg") center/cover no-repeat; }
 
-.models figure { max-width: 21.875rem; margin: 0 10px 40px 10px; }
+.stove-fireplace { background: transparent url("img/fireplaces/domes.jpg") center/cover no-repeat; }
 
-.models figure:last-of-type { margin: 0; }
+.bio-fireplace { background: transparent url("img//fireplaces/bio.jpg") center/cover no-repeat; position: relative; }
 
-.models img { width: 21.375rem; height: 21.875rem; margin-bottom: 20px; }
+.bio-fireplace .novelty { -webkit-box-sizing: border-box; box-sizing: border-box; padding: 15px 20px; width: 15.8125rem; font-size: 16px; position: absolute; right: 0; top: 50%; -webkit-transform: translate(0, -50%); -ms-transform: translate(0, -50%); transform: translate(0, -50%); background-color: black; }
 
-.models h3 { letter-spacing: 2px; font-size: 1rem; text-transform: uppercase; }
+.bio-fireplace .novelty span { color: white; text-transform: uppercase; letter-spacing: 3.4px; text-align: left; }
 
-.models p { margin: 15px 0; }
+.bio-fireplace .novelty p { margin: 0; color: #ccc; }
 
-.models span { font-size: 1.25rem; text-align: left; color: #c99951; }
+.electric-fireplace { background: transparent url("img/fireplaces/electro.jpg") center/cover no-repeat; }
 
-.electric-fireplace { background: transparent url("img/electro_fireplace.jpg") center/cover no-repeat; }
+.marble { background: transparent url("img/fireplaces/wood.jpg") center/cover no-repeat; }
 
-.bio-fireplace { background: transparent url("img/bio_fireplace.jpg") center/cover no-repeat; margin-top: 50px; }
+.location { position: relative; width: 90%; margin: 100px auto; background: transparent url("img/map.jpg") center top/cover no-repeat; height: 42.5rem; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: end; -webkit-justify-content: flex-end; -ms-flex-pack: end; justify-content: flex-end; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 0 5%; }
 
-.location { -webkit-box-sizing: border-box; box-sizing: border-box; padding: 200px 0 150px 0; }
+.location .about { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; width: 34.56rem; height: 37.5rem; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 50px 60px; border: solid 1px #dddddd; background-color: #fff; }
 
-.location .about { position: relative; left: 20%; width: 34.56rem; height: 29.56rem; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 2% 60px; border: solid 1px #dddddd; background-color: #fff; }
+.location .about h2 { margin-bottom: 10px; }
 
-.location .about::before { content: ''; position: absolute; z-index: -1; left: 70%; bottom: -30px; background: transparent url("img/map.jpg") center/cover no-repeat; width: 45.06rem; height: 36.93rem; }
+.location .about p { margin: 10px 0; }
 
-.location p { margin-top: 10px; }
+.location .about a { margin-top: 10px; padding-bottom: 2px; color: black; font-weight: 900; border-bottom: 2px solid black; }
 
-.location address { max-width: 20.5625rem; margin-top: 50px; text-transform: uppercase; font-weight: 600; font-style: normal; font-size: .75rem; line-height: 1.67; letter-spacing: 1.5px; }
+.callback { width: 90%; margin: 0 auto; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 0 5%; position: relative; height: 35.625rem; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; background: transparent url("img/colab.jpg") center/cover no-repeat; }
 
-@media screen and (max-width: 1440px) { .location .about { left: 10%; } }
+.callback .callback-form { -webkit-box-sizing: border-box; box-sizing: border-box; padding: 100px 0; width: 100%; text-align: center; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; jusitfy-content: center; background-color: #fff; }
 
-.callback { position: relative; margin-top: 200px; background: transparent url("img/coop.jpg") center/cover no-repeat; }
+.callback p { margin: 20px 0 40px 0; max-width: 37.3125rem; }
 
-.callback .callback-form { position: relative; top: -200px; margin: 0 auto; max-width: 39.3125rem; padding: 3%; border: solid 1px #dddddd; background-color: #fff; }
+.callback button { font-size: 1rem; }
 
-.callback p { margin: 10px 0 50px 0; }
-
-.callback button { display: block; margin: 0 auto; }
+@media screen and (min-width: 1680px) { .callback { padding: 0 10%; } }
 
 .reviews { -webkit-box-sizing: border-box; box-sizing: border-box; padding: 100px 0; }
 
 .reviews .swiper-container { width: 50%; }
 
-.reviews .swiper-container .swiper-slide { -webkit-box-sizing: border-box; box-sizing: border-box; padding: 0 15%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; width: 100%; }
+.reviews .swiper-container .swiper-slide { -webkit-box-sizing: border-box; box-sizing: border-box; padding: 0 15%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; width: 100%; }
 
 .reviews .swiper-container .swiper-slide img { width: 7.0625rem; height: 7rem; border-radius: 50%; margin-bottom: 50px; }
 
-.reviews .swiper-container .swiper-slide span { font-size: 1rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; }
+.reviews .swiper-container .swiper-slide span { margin-top: 50px; font-size: 1rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; }
 
-.reviews .swiper-container .swiper-slide p { margin: 20px 0; }
+.reviews .swiper-container .swiper-slide p { margin: 10px 0; }
 
-.reviews .swiper-container .swiper-slide small { font-size: 1rem; }
+.reviews .swiper-container .swiper-slide small { color: #888; font-size: 1rem; }
 
-.reviews .swiper-container .swiper-button { background-image: none; height: 40px; width: 40px; border: solid 2px #c99951; border-right: transparent; border-bottom: transparent; -webkit-transform: rotate(-45deg); -ms-transform: rotate(-45deg); transform: rotate(-45deg); }
+.reviews .swiper-container .swiper-button { background-image: none; height: 11px; width: 11px; border: solid 3px black; border-right: transparent; border-bottom: transparent; -webkit-transform: rotate(-45deg); -ms-transform: rotate(-45deg); transform: rotate(-45deg); }
 
-.reviews .swiper-container .swiper-button-prev { left: 25px; }
+.reviews .swiper-container .swiper-button-prev { left: 35px; }
 
-.reviews .swiper-container .swiper-button-next { -webkit-transform: rotate(135deg); -ms-transform: rotate(135deg); transform: rotate(135deg); right: 25px; }
+.reviews .swiper-container .swiper-button-next { -webkit-transform: rotate(135deg); -ms-transform: rotate(135deg); transform: rotate(135deg); right: 35px; }
 
 .reviews .wrapper { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; margin: 0 auto; width: 69.875rem; height: 34.4375rem; border: solid 1px #dddddd; }
 
-.reviews .about { width: 50%; height: 100%; background: transparent url("img/about.jpg") center/cover no-repeat; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
+.reviews .about { width: 50%; height: 100%; background: transparent url("img/reviews.jpg") center/cover no-repeat; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
 
-.reviews .about h2 { max-width: 16.6875rem; }
+.reviews .about h2 { color: white; text-align: center; max-width: 16.6875rem; }
 
-.footer { -webkit-box-sizing: border-box; box-sizing: border-box; padding: 50px; background-color: #38210f; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
+.footer { -webkit-box-sizing: border-box; box-sizing: border-box; padding: 50px 5%; background-color: #222; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; color: #ccc; font-size: 11px; }
 
-.footer a { display: block; }
+.footer .logo { width: 9.5rem; height: 2.5rem; background: transparent url("img/logo-white.svg") center/100% no-repeat; }
 
-.footer a[href^="tel"] { margin-top: 10px; }
+.footer ul { max-width: 11.3125rem; }
 
-.footer address { font-style: normal; }
+.footer address { display: inline; color: #ccc; font-size: 11px; max-width: 26.0625rem; font-style: normal; }
 
-.footer p { margin-top: 10px; max-width: 14.5rem; color: white; }
+.footer a { border-bottom: 1px solid #ccc; display: inline-block; padding-bottom: 3px; color: #ccc; }
+
+.footer a[href^=tel] { min-width: 18.1875rem; font-size: 2.5rem; color: #fff; font-family: "Alice", serif; border-bottom: none; }

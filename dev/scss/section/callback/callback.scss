@@ -1,27 +1,38 @@
 .callback {
+	width: 90%;
+	margin: 0 auto;
+
+	box-sizing: border-box;
+	padding: 0 $basic-padding;
 	position: relative;
-	margin-top: 200px;
-	background:transparent url('img/coop.jpg') center/cover no-repeat;
+	height: 35.625rem; // 570px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	background:transparent url('img/colab.jpg') center/cover no-repeat;
 	.callback-form {
-		position: relative;
-		top: -200px;
-		margin: 0 auto;
-		max-width: 39.3125rem;
-		padding: 3%;
-		border: solid 1px #dddddd;
+		box-sizing: border-box;
+		padding: 100px 0;
+		width: 100%;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		jusitfy-content: center;
 		background-color: #fff;
 
 	}
 	p {
-		margin: 10px 0 50px 0;
-	}
-
-	h2 {
-		@extend %introduction-text;
+		margin: 20px 0 40px 0;
+		max-width: 37.3125rem; // 597px
 	}
 	button {
-		display: block;
-		margin: 0 auto;
-		@extend %secondary-button;
+		@extend %primary-button;
+		font-size: 1rem;
+	}
+	@include mq("1680", min) {
+		padding: 0 10%;
 	}
 }

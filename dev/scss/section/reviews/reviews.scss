@@ -2,7 +2,6 @@
 	@import "carousel";
 	box-sizing: border-box;
 	padding: 100px 0;
-	
 	.wrapper {
 		display: flex;
 		margin: 0 auto;
@@ -13,15 +12,15 @@
 	.about {
 		width: 50%;
 		height: 100%;
-		background:transparent url('img/about.jpg') center/cover no-repeat;
+		background:transparent url('img/reviews.jpg') center/cover no-repeat;
 
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		h2 {
+			color: white;
+			text-align: center;
 			max-width: 16.6875rem;
-			@extend %introduction-text;
-			@extend %introduction-text-white;
 		}
 	}
 }

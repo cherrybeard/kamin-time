@@ -11,8 +11,11 @@ h1 {
 }
 h2 {
 	font-size: 3.5rem;
+	line-height: 1.07;
 }
-
+p {
+	font-size: 1.125rem;
+}
 h1, h2 {
 	font-family: $font-secondary;
 }
