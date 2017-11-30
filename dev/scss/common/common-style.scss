@@ -1,3 +1,4 @@
+$basic-padding: 5%;
 html {
 	font-family: $font-primary;
 	font-size: 16px;
@@ -6,9 +7,12 @@ html {
 	font-weight: 500;
 }
 h1 {
-	font-size: 4.75rem;
-	color: white;
+	font-size: 0;
 }
+h2 {
+	font-size: 3.5rem;
+}
+
 h1, h2 {
 	font-family: $font-secondary;
 }

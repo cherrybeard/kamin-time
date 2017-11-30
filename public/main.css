@@ -1,28 +1,31 @@
+@import url("https://fonts.googleapis.com/css?family=Alice&subset=cyrillic,cyrillic-ext");
 div, p, body, button, h1, h2, h3, h4, img, hr, li, ul, span, section, a, nav, form, option, select, label, input, button, header, footer, figure { margin: 0; padding: 0; }
 
 p, h1, h2, h3, span { cursor: default; }
 
 input { font-family: inherit; }
 
+h1, h2, h3, h4, h5, h6 { font-weight: inherit; }
+
 a { text-decoration: none; color: white; }
 
 @font-face { font-family: Open Sans; src: url(fonts/OpenSans-Regular.ttf); }
 
-@font-face { font-family: 'Anglecia'; src: url("fonts/Anglecia/400.eot"); src: url("fonts/Anglecia/400.eot?#iefix") format("embedded-opentype"), url("fonts/Anglecia/400.woff") format("woff"), url("fonts/Anglecia/400.ttf") format("truetype"); font-style: normal; font-weight: normal; }
-
 html { font-family: Open Sans, sans-serif; font-size: 16px; line-height: 1.4; color: #222; font-weight: 500; }
 
-h1 { font-size: 4.75rem; color: white; }
+h1 { font-size: 0; }
 
-h1, h2 { font-family: Anglecia, serif; }
+h2 { font-size: 3.5rem; }
 
-.firewood button, .electric-fireplace button, .bio-fireplace button, .header button { padding: 10px 45px; background-color: #d29840; border: none; cursor: pointer; font-size: 1.18em; line-height: 1.89; letter-spacing: 4.1px; text-align: center; color: #fff; text-transform: uppercase; }
+h1, h2 { font-family: "Alice", serif; }
+
+.firewood button, .electric-fireplace button, .bio-fireplace button, .header .present button { padding: 10px 45px; background-color: #222; border: none; cursor: pointer; font-size: 1.18em; line-height: 1.89; letter-spacing: 4.1px; text-align: center; color: #fff; text-transform: uppercase; }
 
 .advantages button, .callback button { padding: 10px 45px; background-color: transparent; border: solid 2px #c99951; cursor: pointer; font-size: 1.18em; line-height: 1.89; letter-spacing: 4.1px; text-align: center; color: black; text-transform: uppercase; }
 
-.firewood h2, .electric-fireplace h2, .bio-fireplace h2, .about-company h2, .advantages h2, .location h2, .callback h2, .reviews .about h2 { color: #d29840; font-size: 3.75rem; text-align: center; padding-bottom: 40px; position: relative; }
+.firewood h2, .electric-fireplace h2, .bio-fireplace h2, .advantages h2, .location h2, .callback h2, .reviews .about h2 { color: #d29840; text-align: center; padding-bottom: 40px; position: relative; }
 
-.firewood h2:before, .electric-fireplace h2:before, .bio-fireplace h2:before, .about-company h2:before, .advantages h2:before, .location h2:before, .callback h2:before, .reviews .about h2:before { content: ""; position: absolute; width: 100px; height: 2px; left: 50%; -webkit-transform: translate(-50%, 0); -ms-transform: translate(-50%, 0); transform: translate(-50%, 0); bottom: 20px; background-color: #d29840; }
+.firewood h2:before, .electric-fireplace h2:before, .bio-fireplace h2:before, .advantages h2:before, .location h2:before, .callback h2:before, .reviews .about h2:before { content: ""; position: absolute; width: 100px; height: 2px; left: 50%; -webkit-transform: translate(-50%, 0); -ms-transform: translate(-50%, 0); transform: translate(-50%, 0); bottom: 20px; background-color: #d29840; }
 
 .reviews .about h2 { color: #fff; }
 
@@ -38,25 +41,41 @@ h1, h2 { font-family: Anglecia, serif; }
 
 .firewood button, .electric-fireplace button, .bio-fireplace button { font-size: 1rem; }
 
-.header { height: 100vh; min-height: 700px; position: relative; background: transparent url("img/header.jpg") center/cover no-repeat; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
+.wrapper { width: 40rem; height: 40.625rem; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; width: 100%; }
 
-.header a { position: absolute; font-size: 1.25rem; color: #fff; }
+.wrapper .header .present, .header .wrapper .present, .wrapper .header .about, .header .wrapper .about { -webkit-box-sizing: border-box; box-sizing: border-box; width: 50%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; padding: 0 5%; }
 
-.header a[data-logo] { left: 3%; top: 3%; }
+.wrapper .header .present p, .header .wrapper .present p, .wrapper .header .about p, .header .wrapper .about p { margin: 25px 0 55px 0; font-size: 1.25rem; }
 
-.header a[href^="tel"] { right: 3%; top: 3%; }
+.navigation { -webkit-box-sizing: border-box; box-sizing: border-box; padding: 50px 5%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; font-family: "Alice", serif; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; font-size: 1.25rem; }
 
-.header .wrapper { width: 70%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; }
+.navigation .logo { width: 5.1875rem; height: 1.375rem; border: 1px solid black; }
 
-.header h3 { color: #fff; font-size: 1.875rem; max-width: 49.375rem; margin-top: 40px; margin-bottom: 40px; }
+.navigation ul { width: 37.25rem; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
 
-.about-company { -webkit-box-sizing: border-box; box-sizing: border-box; padding: 200px 0 150px 0; }
+.navigation a { color: #444; }
 
-.about-company .about { position: relative; left: 50%; width: 34.56rem; height: 29.56rem; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 2% 40px; border: solid 1px #dddddd; background-color: #fff; }
+.header { -webkit-box-sizing: border-box; box-sizing: border-box; padding: 0 5% 100px 5%; }
 
-.about-company .about::before { content: ''; position: absolute; z-index: -1; left: -90%; bottom: -30px; background: transparent url("img/company.jpg") center/cover no-repeat; width: 45.06rem; height: 36.93rem; }
+.header .present-image { width: 50%; background: transparent url("img/header.jpg") center/cover no-repeat; }
 
-.about-company p { margin-top: 10px; }
+.header .about { font-size: 1.125rem; }
+
+.header .about p { margin-bottom: 0; }
+
+.header .about-image { width: 50%; background: transparent url("img/about.jpg") center/cover no-repeat; }
+
+@media screen and (min-width: 1441px) { .header { padding-left: 15%; padding-right: 15%; } }
+
+.about-company { width: 90%; margin: 0 auto; height: 30rem; background: transparent url("img/success.jpg") center/cover no-repeat; color: #fff; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+
+.about-company .about { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
+
+.about-company .about h2 { border: 1px solid red; width: 70%; }
+
+.about-company .about p { max-width: 30rem; }
+
+@media screen and (min-width: 1441px) { .about-company { padding-left: 15%; padding-right: 15%; } }
 
 .advantages { padding-bottom: 100px; }
 
@@ -100,7 +119,7 @@ h1, h2 { font-family: Anglecia, serif; }
 
 .location address { max-width: 20.5625rem; margin-top: 50px; text-transform: uppercase; font-weight: 600; font-style: normal; font-size: .75rem; line-height: 1.67; letter-spacing: 1.5px; }
 
-@media screen and (max-width: 1439px) { .location .about { left: 10%; } }
+@media screen and (max-width: 1440px) { .location .about { left: 10%; } }
 
 .callback { position: relative; margin-top: 200px; background: transparent url("img/coop.jpg") center/cover no-repeat; }
 

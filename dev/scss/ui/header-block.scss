@@ -1,0 +1,19 @@
+.wrapper {
+	width: 40rem;
+	height: 40.625rem;
+	display: flex;
+	width: 100%;
+	%text-block {
+		box-sizing: border-box;
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+		padding: 0 5%;
+		p {
+			margin: 25px 0 55px 0;
+			font-size: 1.25rem;
+		}
+	}
+}

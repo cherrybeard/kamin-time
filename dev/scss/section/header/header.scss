@@ -1,40 +1,33 @@
+@import "navigation.scss";
 .header {
-	height: 100vh;
-	min-height: 700px;
-	position: relative;
-	background:transparent url('img/header.jpg') center/cover no-repeat;
+	box-sizing: border-box;
+	padding: 0 $basic-padding 100px $basic-padding;
+	.present {
+		@extend %text-block;
 
-	display: flex;
-	align-items: center;
-	justify-content: center;
+		button {
+			@extend %primary-button;
+		}
+	}
+	.present-image {
+		width: 50%;
+		background:transparent url('img/header.jpg') center/cover no-repeat;
+	}
+	
+	
+	.about {
+		@extend %text-block;
+		font-size: 1.125rem;
+		p { margin-bottom: 0;}
+	}
+	.about-image {
+		width: 50%;
+		background:transparent url('img/about.jpg') center/cover no-repeat;
+	}
 
-	a {
-		position: absolute;
-		font-size: 1.25rem;
-		color: #fff;
-	}
-	a[data-logo] {
-		left: 3%;
-		top: 3%;
-	}
-	a[href^="tel"] {
-		right: 3%;
-		top: 3%;
-	}
-	.wrapper {
-		width: 70%;
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-	}
-	h3 {
-		color: #fff;
-		font-size: 1.875rem;
-		max-width: 49.375rem;
-		margin-top: 40px;
-		margin-bottom: 40px;
-	}
-	button {
-		@extend %primary-button;
+
+	@include mq("desktop-wide", min) {
+		padding-left: 15%;
+		padding-right: 15%;
 	}
 }
