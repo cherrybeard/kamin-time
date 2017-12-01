@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Alice&subset=cyrillic,cyrillic-ext");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600&subset=cyrillic");
+@import url("https://fonts.googleapis.com/css?family=Alice&subset=cyrillic");
 div, p, body, button, h1, h2, h3, h4, img, hr, li, ul, span, section, a, nav, form, option, select, label, input, button, header, footer, figure {
   margin: 0;
   padding: 0; }
@@ -16,11 +17,8 @@ a {
   text-decoration: none;
   color: white; }
 
-@font-face {
-  font-family: Open Sans;
-  src: url(fonts/OpenSans-Regular.ttf); }
 html {
-  font-family: Open Sans, sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1.4;
   color: #222;
