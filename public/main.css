@@ -25,17 +25,27 @@ h1, h2 { font-family: "Alice", serif; }
 
 @media screen and (min-width: 1680px) { .firewood, .stove-fireplace, .bio-fireplace, .electric-fireplace, .marble, .navigation, .header, .about-company, .advantages, .location { width: 80%; } }
 
-.header .present button, .callback button { padding: 10px 45px; background-color: #222; border: none; cursor: pointer; font-size: 1.18em; line-height: 1.89; letter-spacing: 4.1px; text-align: center; color: #fff; text-transform: uppercase; }
+.modal-lock { overflow: hidden; padding-right: 15px; }
 
-.firewood button, .stove-fireplace button, .bio-fireplace button, .electric-fireplace button, .marble button { padding: 12px 30px; background-color: transparent; border: solid 2px #fff; cursor: pointer; font-size: 1em; line-height: 1.89; letter-spacing: 4.1px; text-align: center; color: #fff; text-transform: uppercase; }
+.model button, .firewood button, .stove-fireplace button, .bio-fireplace button, .electric-fireplace button, .marble button, .modal .modal-content button, .header .present button, .callback button { padding: 10px 45px; background-color: transparent; border: solid 1px #222222; cursor: pointer; font-size: 1rem; line-height: 1.89; letter-spacing: 4.1px; text-align: center; color: #222; text-transform: uppercase; }
 
-.firewood, .stove-fireplace, .bio-fireplace, .electric-fireplace, .marble { height: 28.125rem; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 0 5%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; margin-bottom: 20px; }
+.models-container { width: 1300px; margin: 0 auto; display: none; }
 
-.firewood h2, .stove-fireplace h2, .bio-fireplace h2, .electric-fireplace h2, .marble h2 { color: white; }
+.models-wrapper { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: start; -webkit-justify-content: flex-start; -ms-flex-pack: start; justify-content: flex-start; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 0 40px 50px 40px; }
 
-.firewood p, .stove-fireplace p, .bio-fireplace p, .electric-fireplace p, .marble p { margin: 35px 0; max-width: 39.625rem; color: white; }
+.model { margin: 30px 30px; max-width: 21.375rem; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
 
-.firewood button, .stove-fireplace button, .bio-fireplace button, .electric-fireplace button, .marble button { font-size: 1rem; }
+.model h3 { margin-top: 40px; font-size: 1rem; text-transform: uppercase; letter-spacing: 2px; font-weight: 600; }
+
+.model img { width: 21.375rem; height: 21.8125rem; }
+
+.model p { font-size: 1rem; margin: 35px 0; }
+
+.firewood, .stove-fireplace, .bio-fireplace, .electric-fireplace, .marble { height: 28.125rem; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 0 5%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; margin-bottom: 20px; color: white; }
+
+.firewood p, .stove-fireplace p, .bio-fireplace p, .electric-fireplace p, .marble p { margin: 35px 0; max-width: 39.625rem; }
+
+.firewood button, .stove-fireplace button, .bio-fireplace button, .electric-fireplace button, .marble button { font-size: 1rem; color: #fff; border: 1px solid #fff; }
 
 .wrapper { width: 40rem; height: 40.625rem; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; width: 100%; }
 
@@ -43,13 +53,39 @@ h1, h2 { font-family: "Alice", serif; }
 
 .wrapper .header .present p, .header .wrapper .present p, .wrapper .header .about p, .header .wrapper .about p { margin: 25px 0 55px 0; font-size: 1.25rem; }
 
-.text-input { display: inline-block; border: 1px solid #aaa; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 10px 50px; border-radius: 8px; background: white; }
+.text-input { display: inline-block; border: 1px solid #aaa; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 11px 50px; background: white; vertical-align: top; }
 
-.text-input input { background: transparent; outline: none; border: none; width: 100%; line-height: 28px; font-size: 1rem; }
+.text-input input { background: transparent; outline: none; border: none; width: 100%; line-height: 28px; }
 
 .text-input.error { border-color: #ddd; }
 
 .text-input.disabled { pointer-events: none; opacity: 0.2; }
+
+/** Variables */
+@media only screen and (min-width: 40em) { .modal-overlay { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 5; background-color: rgba(0, 0, 0, 0.6); opacity: 0; visibility: hidden; -webkit-backface-visibility: hidden; backface-visibility: hidden; -webkit-transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1); -o-transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1); transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1); }
+  .modal-overlay.active { opacity: 1; visibility: visible; } }
+
+/** Modal */
+.modal { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; position: relative; margin: 0 auto; background-color: #fff; width: 600px; max-width: 75rem; min-height: 20rem; padding: 1rem; border-radius: 3px; opacity: 0; overflow-y: auto; visibility: hidden; -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); -webkit-backface-visibility: hidden; backface-visibility: hidden; -webkit-transform: scale(1.2); -ms-transform: scale(1.2); transform: scale(1.2); -webkit-transition: all 0.6s cubic-bezier(0.55, 0, 0.1, 1); -o-transition: all 0.6s cubic-bezier(0.55, 0, 0.1, 1); transition: all 0.6s cubic-bezier(0.55, 0, 0.1, 1); }
+
+.modal .close-modal { position: absolute; cursor: pointer; top: 5px; right: 15px; opacity: 0; -webkit-backface-visibility: hidden; backface-visibility: hidden; -webkit-transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1); transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1); -o-transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1); transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1); transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1); -webkit-transition-delay: 0.3s; -o-transition-delay: 0.3s; transition-delay: 0.3s; }
+
+.modal .close-modal svg { width: 1.75em; height: 1.75em; }
+
+.modal .modal-content { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; opacity: 0; -webkit-backface-visibility: hidden; backface-visibility: hidden; -webkit-transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1); -o-transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1); transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1); -webkit-transition-delay: 0.3s; -o-transition-delay: 0.3s; transition-delay: 0.3s; }
+
+.modal .modal-content h2 { margin-bottom: 40px; }
+
+.modal.active { visibility: visible; opacity: 1; -webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1); }
+
+.modal.active .modal-content { opacity: 1; }
+
+.modal.active .close-modal { -webkit-transform: translateY(10px); -ms-transform: translateY(10px); transform: translateY(10px); opacity: 1; }
+
+/** Mobile styling */
+@media only screen and (max-width: 39.9375em) { h1 { font-size: 1.5rem; }
+  .modal { position: fixed; top: 0; left: 0; width: 100%; height: 100%; -webkit-overflow-scrolling: touch; border-radius: 0; -webkit-transform: scale(1.1); -ms-transform: scale(1.1); transform: scale(1.1); padding: 0 !important; }
+  .close-modal { right: 20px !important; } }
 
 .navigation { -webkit-box-sizing: border-box; box-sizing: border-box; padding: 50px 0; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; font-family: "Alice", serif; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; font-size: 1.25rem; }
 
@@ -120,6 +156,10 @@ h1, h2 { font-family: "Alice", serif; }
 .callback { width: 90%; margin: 0 auto; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 0 5%; position: relative; height: 35.625rem; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; background: transparent url("img/colab.jpg") center/cover no-repeat; }
 
 .callback .callback-form { -webkit-box-sizing: border-box; box-sizing: border-box; padding: 100px 0; width: 100%; text-align: center; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; background-color: #fff; }
+
+.callback .callback-form:not([data-callback-state=button]) [data-callback-show] { display: none; }
+
+.callback .callback-form:not([data-callback-state=form]) [data-callback-form] { display: none; }
 
 .callback p { margin: 20px 0 40px 0; max-width: 37.3125rem; }
 

@@ -12,9 +12,6 @@
 	justify-content: center;
 
 	background:transparent url('img/colab.jpg') center/cover no-repeat;
-
-	// &:not([data-callback-state=button]) [data-callback-show] { display: none; }
-	// &:not([data-callback-state=form]) [data-callback-form] { display: none; }
 	
 	.callback-form {
 		box-sizing: border-box;
@@ -25,7 +22,8 @@
 		flex-direction: column;
 		align-items: center;
 		background-color: #fff;
-
+		&:not([data-callback-state=button]) [data-callback-show] { display: none; }
+		&:not([data-callback-state=form]) [data-callback-form] { display: none; }
 	}
 	p {
 		margin: 20px 0 40px 0;

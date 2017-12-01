@@ -3,3 +3,7 @@
 @import "bio-fireplace";
 @import "electric-fireplace";
 @import "marble";
+
+.model {
+	@extend %model-item;
+}
