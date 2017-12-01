@@ -199,8 +199,8 @@
 	"\/dev\/pug\/sections\/index.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/dev\/pug\/sections\/index.jade",
 		"outputAbbreviatedPath": "\/dev\/pug\/sections\/index.html",
 		"outputPathIsOutsideProject": 0,

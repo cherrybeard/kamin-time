@@ -310,7 +310,7 @@
             <div class="text-input">
               <input type="tel" placeholder="Телефон" name="phone">
             </div>
-            <button>Заказать</button>
+            <button type="submit">Заказать</button>
           </form>
         </div>
       </div>

@@ -49,7 +49,7 @@ $("a").on('click', function(event) {
 
         window.location.hash = hash;
       });
-  } 
+  }
 });
 
 // CALLBACK
@@ -101,4 +101,3 @@ $("a").on('click', function(event) {
 
 
 });
-
