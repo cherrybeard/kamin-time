@@ -31,20 +31,17 @@
 		}
 	}
 	.swiper-button {
-		background-image: none;
-		height: 11px;
-		width: 11px;
-		border: solid 3px black;
-		border-right: transparent;
-		border-bottom: transparent;
-		transform: rotate(-45deg);
+		background:transparent url('img/arrow.svg') center/contain no-repeat;
+		height: 30px;
+		width: 13px;
+		transform: rotate(-180deg);
 	}
 	.swiper-button-prev {
-		left: 55px;
+		left: 35px;
 	}
 	.swiper-button-next {
-		transform: rotate(135deg);
-		right: 55px;
+		transform: rotate(0deg);
+		right: 35px;
 	}
 
 }

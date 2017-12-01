@@ -17,7 +17,7 @@ h1 { font-size: 0; }
 
 h2 { font-size: 3.5rem; line-height: 1.07; }
 
-p { font-size: 1.125rem; }
+p, input { font-size: 1.125rem; }
 
 h1, h2 { font-family: "Alice", serif; }
 
@@ -89,7 +89,7 @@ h1, h2 { font-family: "Alice", serif; }
 
 .navigation { -webkit-box-sizing: border-box; box-sizing: border-box; padding: 50px 0; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; font-family: "Alice", serif; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; font-size: 1.25rem; }
 
-.navigation .logo { width: 5.1875rem; height: 1.375rem; background: transparent url("img/logo.svg") center/100% no-repeat; }
+.navigation .logo { width: 5.1875rem; height: 1.375rem; background: transparent url("img/logo.svg") center/contain no-repeat; }
 
 .navigation ul { width: 37.25rem; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
 
@@ -117,7 +117,7 @@ h1, h2 { font-family: "Alice", serif; }
 
 .advantages h2 { text-align: center; }
 
-.advantages .advantages-list { margin: 0 auto; padding-bottom: 100px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: baseline; -webkit-align-items: baseline; -ms-flex-align: baseline; align-items: baseline; }
+.advantages .advantages-list { margin: 0 auto; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: baseline; -webkit-align-items: baseline; -ms-flex-align: baseline; align-items: baseline; }
 
 .advantages .advantages-list .item { -webkit-box-sizing: border-box; box-sizing: border-box; position: relative; max-width: 17.5rem; padding: 80px 0 0 50px; }
 
@@ -181,11 +181,11 @@ h1, h2 { font-family: "Alice", serif; }
 
 .reviews .swiper-container .swiper-slide small { color: #888; font-size: 1rem; }
 
-.reviews .swiper-container .swiper-button { background-image: none; height: 11px; width: 11px; border: solid 3px black; border-right: transparent; border-bottom: transparent; -webkit-transform: rotate(-45deg); -ms-transform: rotate(-45deg); transform: rotate(-45deg); }
+.reviews .swiper-container .swiper-button { background: transparent url("img/arrow.svg") center/contain no-repeat; height: 30px; width: 13px; -webkit-transform: rotate(-180deg); -ms-transform: rotate(-180deg); transform: rotate(-180deg); }
 
-.reviews .swiper-container .swiper-button-prev { left: 55px; }
+.reviews .swiper-container .swiper-button-prev { left: 35px; }
 
-.reviews .swiper-container .swiper-button-next { -webkit-transform: rotate(135deg); -ms-transform: rotate(135deg); transform: rotate(135deg); right: 55px; }
+.reviews .swiper-container .swiper-button-next { -webkit-transform: rotate(0deg); -ms-transform: rotate(0deg); transform: rotate(0deg); right: 35px; }
 
 .reviews .wrapper { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; height: 34.4375rem; border: solid 1px #ddd; }
 
@@ -197,7 +197,7 @@ h1, h2 { font-family: "Alice", serif; }
 
 .footer { -webkit-box-sizing: border-box; box-sizing: border-box; padding: 50px 5%; background-color: #222; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; color: #ccc; font-size: 11px; }
 
-.footer .logo { width: 9.5rem; height: 2.5rem; background: transparent url("img/logo-white.svg") center/100% no-repeat; border: none; }
+.footer .logo { width: 9.5rem; height: 2.5rem; background: transparent url("img/logo-white.svg") center/contain no-repeat; border: none; }
 
 .footer ul { max-width: 11.3125rem; }
 
@@ -208,3 +208,18 @@ h1, h2 { font-family: "Alice", serif; }
 .footer a[href^=tel] { min-width: 18.1875rem; font-size: 2.5rem; color: #fff; font-family: "Alice", serif; border-bottom: none; }
 
 @media screen and (min-width: 1680px) { .footer { padding: 50px 10%; } }
+
+.privacy-policy { overflow: hidden; line-height: 1.4; padding: 3rem 2rem; }
+
+.privacy-policy .privacy-policy-content { max-width: 800px; margin: auto; }
+
+.privacy-policy .privacy-policy-content a { display: block; width: 9.5rem; height: 2.5rem; background: transparent url("img/logo.svg") center/contain no-repeat; color: black; font-size: 0; margin: 0 auto; }
+
+.privacy-policy p:not(:last-child), .privacy-policy ul:not(:last-child) { margin-bottom: 0.6em; }
+
+.privacy-policy h1 { font-size: 4rem; margin-top: 3rem; margin-bottom: 2rem; line-height: 1; }
+
+.privacy-policy ul { padding-left: 2em; }
+
+@media screen and (max-width: 559px) { .privacy-policy { padding: 2rem 1rem; }
+  .privacy-policy h1 { font-size: 1.5rem; margin-top: 2rem; margin-bottom: 1rem; } }

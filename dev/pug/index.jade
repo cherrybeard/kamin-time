@@ -1,27 +1,22 @@
-doctype html
-html(lang='ru')
-	head
-		meta(charset='UTF-8')
-		
-		link(rel="stylesheet" href="swiper/css/swiper.min.css")
-		link(rel='stylesheet', href='main.css')
-		meta(name='viewport', content='width=device-width')
-		title KaminTime
-		
-		include header.jade
-		include about-company.jade
-		include advantages.jade
-		include fireplaces/fireplaces.jade
-		include reviews.jade
-		include callback.jade
-		include location.jade
-		include footer.jade
+extends layouts/app.jade
+
+block variables
+	- title = "KaminTime"
+	
+block content
+
+	include sections/header.jade
+	include sections/about-company.jade
+	include sections/advantages.jade
+	include sections/fireplaces/fireplaces.jade
+	include sections/reviews.jade
+	include sections/callback.jade
+	include sections/location.jade
+	include sections/footer.jade
 
 
-		include modal.jade
-	body
-		script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
-		script(src="swiper/js/swiper.min.js")
-		script(src="main.min.js")
-		
-
+	include sections/modal.jade
+block scripts
+	script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
+	script(src="swiper/js/swiper.min.js")
+	script(src="main.min.js")
