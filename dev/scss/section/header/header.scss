@@ -4,7 +4,6 @@
 	padding: 0 $basic-padding 100px $basic-padding;
 	.present {
 		@extend %text-block;
-
 		button {
 			@extend %primary-button;
 		}
@@ -27,7 +26,7 @@
 
 
 	@include mq("1680", min) {
-		padding-left: 15%;
-		padding-right: 15%;
+		padding-left: 5%;
+		padding-right: 5%;
 	}
 }
