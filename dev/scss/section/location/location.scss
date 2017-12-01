@@ -1,6 +1,6 @@
 .location {
+	@extend %center-container;
 	position: relative;
-	width: 90%;
 	margin: 100px auto;
 	background:transparent url('img/map.jpg') center top/cover no-repeat;
 	height: 42.5rem; // 680px

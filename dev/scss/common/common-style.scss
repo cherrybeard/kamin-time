@@ -19,3 +19,11 @@ p {
 h1, h2 {
 	font-family: $font-secondary;
 }
+
+%center-container {
+	width: 90%;
+	margin: 0 auto;
+	@include mq("1680", min) {
+		width: 80%;
+	}
+}

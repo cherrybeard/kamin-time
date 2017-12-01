@@ -13,7 +13,7 @@ $(function() {
 
 // SMOOTHSCROLL
 
-$(".navigation a").on('click', function(event) {
+$("a").on('click', function(event) {
 
 if (this.hash !== "") {
 

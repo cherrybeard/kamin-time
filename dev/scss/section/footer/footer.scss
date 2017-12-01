@@ -13,11 +13,10 @@
 		width: 9.5rem; // 152px;
 		height: 2.5rem; // 40px;
 		background:transparent url('img/logo-white.svg') center/100% no-repeat;
+		border: none;
 	}
 	ul {
 		max-width: 11.3125rem; // 181px
-		// box-sizing: border-box;
-		// padding-left: 50px;
 	}
 	address {
 		display: inline;
@@ -25,12 +24,11 @@
 		font-size: 11px;
 		max-width: 26.0625rem; // 417px
 		font-style: normal;
-		// margin-left: 50px;
 	}
 	a {
 		border-bottom: 1px solid #ccc;
 		display: inline-block;
-		padding-bottom: 3px;
+		margin-bottom: 5px;
 		color: #ccc;
 	}
 	a[href^=tel] {
@@ -39,5 +37,8 @@
 		color: #fff;
 		font-family: $font-secondary;
 		border-bottom: none;
+	}
+	@include mq("1680", min) {
+		padding: 50px 10%;
 	}
 }

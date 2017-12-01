@@ -20,7 +20,6 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		jusitfy-content: center;
 		background-color: #fff;
 
 	}
@@ -34,5 +33,6 @@
 	}
 	@include mq("1680", min) {
 		padding: 0 10%;
+		width: 80%;
 	}
 }

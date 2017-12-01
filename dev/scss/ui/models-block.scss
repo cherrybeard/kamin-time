@@ -1,6 +1,5 @@
 %models-block {
-	width: 90%;
-	margin: 0 auto;
+	@extend %center-container;
 	height: 28.125rem; // 450px;
 	box-sizing: border-box;
 	padding: 0 $basic-padding;
@@ -22,7 +21,5 @@
 		@extend %secondary-button;
 		font-size: 1rem;
 	}
-	@include mq("1680", min) {
-		padding: 0 15%;
-	}
+
 }

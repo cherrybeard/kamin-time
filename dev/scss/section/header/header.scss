@@ -1,7 +1,8 @@
 @import "navigation.scss";
 .header {
+	@extend %center-container;
 	box-sizing: border-box;
-	padding: 0 $basic-padding 100px $basic-padding;
+	padding: 0 0 100px 0;
 	.present {
 		@extend %text-block;
 		button {
@@ -24,9 +25,4 @@
 		background:transparent url('img/about.jpg') center/cover no-repeat;
 	}
 
-
-	@include mq("1680", min) {
-		padding-left: 5%;
-		padding-right: 5%;
-	}
 }

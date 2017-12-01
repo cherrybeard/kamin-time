@@ -1,7 +1,6 @@
 
 .about-company {
-	width: 90%;
-	margin: 0 auto;
+	@extend %center-container;
 	height: 30rem;
 	box-sizing: border-box;
 	padding: 0 5%;
@@ -26,7 +25,4 @@
 		}
 	}
 	
-	@include mq("1680", min) {
-		padding: 0 10%;
-	}
 }

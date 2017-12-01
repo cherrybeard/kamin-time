@@ -1,11 +1,12 @@
 .advantages {
+	@extend %center-container;
+	box-sizing: border-box;
 	padding: 100px $basic-padding;
 	h2 {
 		text-align: center;
 	}
 	.advantages-list {
 		margin: 0 auto;
-		width: 1000px;
 		padding-bottom: 100px;
 		display: flex;
 		justify-content: space-between;
@@ -37,11 +38,5 @@
 			opacity: 0.3;
 		}
 
-	}
-
-	@include mq("1680", min) {
-		.advantages-list {
-			width: 1200px;
-		}
 	}
 }
