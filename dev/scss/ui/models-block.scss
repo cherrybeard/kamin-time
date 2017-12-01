@@ -11,13 +11,16 @@
 	box-sizing: border-box;
 	padding: 0 40px 50px 40px;
 }
+
+
 %model-item {
+	position: relative;
 	margin: 30px 30px;
-	max-width: 21.375rem;
+	width: 21.375rem;
+	height: 600px;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	justify-content: center;
 	h3 {
 		margin-top: 40px;
 		font-size: 1rem;
@@ -27,7 +30,8 @@
 
 	}
 	img {
-		width: 21.375rem; // 342px
+		display: block;
+		width: 100%;
 		height: 21.8125rem; // 349px;
 	}
 	p {
@@ -35,6 +39,9 @@
 		margin: 35px 0;
 	}
 	button {
+		position: absolute;
+		left: 0;
+		bottom: 0;
 		@extend %primary-button;
 	}
 }
