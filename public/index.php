@@ -1,6 +1,6 @@
 <?
 	if (count($_POST)!=0) {
-		$msg = 'Новая заявка с лендинга KaminTime #1<br>';
+		$msg = 'Новая заявка с лендинга Kamintime #1<br>';
 		if (isset($_POST['phone'])) {
 			$msg .= 'Телефон: '.$_POST['phone'].'<br>';
 		}
@@ -10,12 +10,12 @@
 		if (isset($_POST['message'])) {
 			$msg .= 'Хочу: '.$_POST['message'].'<br>';
 		}
-		$title = 'Заявка с лендинга KaminTime #1';
+		$title = 'Заявка с лендинга Kamintime #1';
 		if (!empty($_POST['msg'])) $msg .= '<br>'.$_POST['msg'];
     $to = 'shantishanti@bk.ru';
 		$header = 'MIME-Version: 1.0' . "\n" .
 			'Content-type: text/html; charset=UTF-8'. "\n" .
-			"From: KaminTime <shantishanti@bk.ru>\n";
+			"From: Kamintime <hi@kamin-time.ru>\n";
     if (@mail($to, $title, $msg, $header))
     	die('1');
 	}
@@ -34,7 +34,7 @@
     <header id="header" class="header">
       <nav class="navigation"><a href="index.html"> 
           <h1 class="logo"></h1></a>
-        <ul><a href="#about-company">О нас</a><a href="#firewood">Камины</a><a href="#footer">Контакты</a><a href="#callback">Для бизнеса</a><a href="#reviews">Отзывы</a></ul><a href="tel:78002000600">+7 800 2000 600</a>
+        <ul><a href="#about-company">О нас</a><a href="#firewood">Камины</a><a href="#footer">Контакты</a><a href="#callback">Для бизнеса</a><a href="#reviews">Отзывы</a></ul><a href="tel:+79852119645">+7 985 211 9645</a>
       </nav>
       <section class="wrapper">
         <div class="present">
@@ -297,7 +297,7 @@
     </section>
     <footer id="footer" class="footer"><a href="#header" class="logo"></a>
       <address>Нахимовский проспект, 24, Центр дизайна и интерьера «EXPOSTROY», павильон 6, офис 6-16</address>
-      <ul><a href="mailto:kamintime@gmail.com">kamintime@gmail.com</a><a href="privacy-policy.html">Политика конфиденциальности  </a></ul><a href="tel:78002000600">+7 800 2000 600</a>
+      <ul><a href="mailto:7791166@mail.ru">7791166@mail.ru</a><a href="privacy-policy.html">Политика конфиденциальности  </a></ul><a href="tel:+79852119645">+7 985 211 9645</a>
     </footer>
     <div class="modal-overlay">
       <div class="modal"><a class="close-modal">
