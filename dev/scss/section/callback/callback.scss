@@ -12,6 +12,10 @@
 	justify-content: center;
 
 	background:transparent url('img/colab.jpg') center/cover no-repeat;
+
+	// &:not([data-callback-state=button]) [data-callback-show] { display: none; }
+	// &:not([data-callback-state=form]) [data-callback-form] { display: none; }
+	
 	.callback-form {
 		box-sizing: border-box;
 		padding: 100px 0;
@@ -28,6 +32,7 @@
 		max-width: 37.3125rem; // 597px
 	}
 	button {
+		vertical-align: top;
 		@extend %primary-button;
 		font-size: 1rem;
 	}

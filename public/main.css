@@ -43,6 +43,14 @@ h1, h2 { font-family: "Alice", serif; }
 
 .wrapper .header .present p, .header .wrapper .present p, .wrapper .header .about p, .header .wrapper .about p { margin: 25px 0 55px 0; font-size: 1.25rem; }
 
+.text-input { display: inline-block; border: 1px solid #aaa; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 10px 50px; border-radius: 8px; background: white; }
+
+.text-input input { background: transparent; outline: none; border: none; width: 100%; line-height: 28px; font-size: 1rem; }
+
+.text-input.error { border-color: #ddd; }
+
+.text-input.disabled { pointer-events: none; opacity: 0.2; }
+
 .navigation { -webkit-box-sizing: border-box; box-sizing: border-box; padding: 50px 0; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; font-family: "Alice", serif; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; font-size: 1.25rem; }
 
 .navigation .logo { width: 5.1875rem; height: 1.375rem; background: transparent url("img/logo.svg") center/100% no-repeat; }
@@ -115,7 +123,7 @@ h1, h2 { font-family: "Alice", serif; }
 
 .callback p { margin: 20px 0 40px 0; max-width: 37.3125rem; }
 
-.callback button { font-size: 1rem; }
+.callback button { vertical-align: top; font-size: 1rem; }
 
 @media screen and (min-width: 1680px) { .callback { padding: 0 10%; width: 80%; } }
 

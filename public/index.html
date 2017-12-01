@@ -116,10 +116,16 @@
       </div>
     </section>
     <section class="callback" id="callback">
-      <div class="callback-form">
+      <div class="callback-form" data-callback-state="button">
         <h2>Сотрудничаем с&nbsp;компаниями</h2>
         <p>Если вы представляете отель, ресторан, торговый комплекс — у нас для вас специальные условия.</p>
-        <button>Обратный звонок</button>
+        <button data-callback-show>Обратный звонок</button>
+        <form action="" method="post" data-callback-form>
+          <div class="text-input">
+            <input type="tel" placeholder="Телефон" name="phone">
+          </div>
+          <button type="submit">Перезвоните мне</button>
+        </form>
       </div>
     </section>
     <section class="location" id="location">
