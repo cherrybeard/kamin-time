@@ -1,6 +1,6 @@
 <?
 	if (count($_POST)!=0) {
-		$msg = 'Новая заявка с лендинга KaminTime #1<br>';
+		$msg = 'Новая заявка с лендинга Kamintime #1<br>';
 		if (isset($_POST['phone'])) {
 			$msg .= 'Телефон: '.$_POST['phone'].'<br>';
 		}
@@ -10,12 +10,12 @@
 		if (isset($_POST['message'])) {
 			$msg .= 'Хочу: '.$_POST['message'].'<br>';
 		}
-		$title = 'Заявка с лендинга KaminTime #1';
+		$title = 'Заявка с лендинга Kamintime #1';
 		if (!empty($_POST['msg'])) $msg .= '<br>'.$_POST['msg'];
     $to = 'shantishanti@bk.ru';
 		$header = 'MIME-Version: 1.0' . "\n" .
 			'Content-type: text/html; charset=UTF-8'. "\n" .
-			"From: KaminTime <shantishanti@bk.ru>\n";
+			"From: Kamintime <hi@kamin-time.ru>\n";
     if (@mail($to, $title, $msg, $header))
     	die('1');
 	}
@@ -24,16 +24,22 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="swiper/css/swiper.min.css">
     <link rel="stylesheet" href="main.css">
     <meta name="viewport" content="width=device-width">
     <title>KaminTime</title>
   </head>
   <body>
+<<<<<<< HEAD:public/index.php.html
     <header class="header" id="header">
       <nav class="navigation"><a href="/index.html"> 
+=======
+    <header id="header" class="header">
+      <nav class="navigation"><a href="index.html"> 
+>>>>>>> origin/master:public/index.php
           <h1 class="logo"></h1></a>
-        <ul><a href="#about-company">О нас</a><a href="#firewood">Камины</a><a href="#footer">Контакты</a><a href="#callback">Для бизнеса</a><a href="#reviews">Отзывы</a></ul><a href="tel:78002000600">+7 800 2000 600</a>
+        <ul><a href="#about-company">О нас</a><a href="#firewood">Камины</a><a href="#footer">Контакты</a><a href="#callback">Для бизнеса</a><a href="#reviews">Отзывы</a></ul><a href="tel:+79852119645">+7 985 211 9645</a>
       </nav>
       <section class="wrapper">
         <div class="present">
@@ -53,14 +59,14 @@
         </div>
       </section>
     </header>
-    <section class="about-company" id="about-company">
+    <section id="about-company" class="about-company">
       <div class="about">
         <h2>Более 20 лет успешной работы</h2>
         <p>Наше неоспоримое преимущество — своя собственная база по камнеобработке, которая обеспечивает индивидуальный подход к каждому клиенту.</p>
         <p>Высокая квалификация наших специалистов позволит воплотить самые смелые идеи.</p>
       </div>
     </section>
-    <section class="advantages" id="advantages">
+    <section id="advantages" class="advantages">
       <h2>Преимущества</h2>
       <div class="advantages-list"> 
         <div class="item">
@@ -81,7 +87,7 @@
       </div>
     </section>
     <div class="fireplaces-container">
-      <section class="firewood" id="firewood">
+      <section id="firewood" class="firewood">
         <h2>Дровяные камины</h2>
         <p>Имеем широкий модельный ряд каминных топок. Нашие долгосрочное и стабильное сотрудничество с ведущими европейскими и российскими производителями гарантирует только лучшее качество.</p>
         <button class="show-models">Смотреть модели</button>
@@ -215,22 +221,22 @@
       </section>
       <div class="models-container">
         <div class="models-wrapper">
-          <div class="model" data-marble><img src="img/fireplaces_items/marble/17.jpg" alt="Мраморный камин">
+          <div data-marble class="model"><img src="img/fireplaces_items/marble/17.jpg" alt="Мраморный камин">
           </div>
-          <div class="model" data-marble><img src="img/fireplaces_items/marble/18.jpg" alt="Мраморный камин">
+          <div data-marble class="model"><img src="img/fireplaces_items/marble/18.jpg" alt="Мраморный камин">
           </div>
-          <div class="model" data-marble><img src="img/fireplaces_items/marble/19.jpg" alt="Мраморный камин">
+          <div data-marble class="model"><img src="img/fireplaces_items/marble/19.jpg" alt="Мраморный камин">
           </div>
-          <div class="model" data-marble><img src="img/fireplaces_items/marble/20.jpg" alt="Мраморный камин">
+          <div data-marble class="model"><img src="img/fireplaces_items/marble/20.jpg" alt="Мраморный камин">
           </div>
-          <div class="model" data-marble><img src="img/fireplaces_items/marble/21.jpg" alt="Мраморный камин">
+          <div data-marble class="model"><img src="img/fireplaces_items/marble/21.jpg" alt="Мраморный камин">
           </div>
-          <div class="model" data-marble><img src="img/fireplaces_items/marble/22.jpg" alt="Мраморный камин">
+          <div data-marble class="model"><img src="img/fireplaces_items/marble/22.jpg" alt="Мраморный камин">
           </div>
         </div>
       </div>
     </div>
-    <section class="reviews" id="reviews">
+    <section id="reviews" class="reviews">
       <div class="wrapper">
         <div class="about">
           <h2>Клиенты о&nbsp;нас</h2>
@@ -280,14 +286,14 @@
         </div>
       </div>
     </section>
-    <section class="callback" id="callback">
-      <div class="callback-form" data-callback-state="button">
+    <section id="callback" class="callback">
+      <div data-callback-state="button" class="callback-form">
         <h2>Сотрудничаем с&nbsp;компаниями</h2>
         <p>Если вы представляете отель, ресторан, торговый комплекс — у нас для вас специальные условия.</p>
         <button class="modal-button">Обратный звонок</button>
       </div>
     </section>
-    <section class="location" id="location">
+    <section id="location" class="location">
       <div class="about">
         <h2>Знаем подход</h2>
         <p>Вы можете позвонить нам и заранее договориться о встрече  в удобное для вас время.</p>
@@ -295,9 +301,9 @@
         <p>Наш офис расположен в удобном месте со своей парковкой.</p><a href="img/plan.jpg">Схема проезда</a>
       </div>
     </section>
-    <footer class="footer" id="footer"><a class="logo" href="#header"></a>
+    <footer id="footer" class="footer"><a href="#header" class="logo"></a>
       <address>Нахимовский проспект, 24, Центр дизайна и интерьера «EXPOSTROY», павильон 6, офис 6-16</address>
-      <ul><a href="mailto:kamintime@gmail.com">kamintime@gmail.com</a><a href="privacy-policy.html">Политика конфиденциальности  </a></ul><a href="tel:78002000600">+7 800 2000 600</a>
+      <ul><a href="mailto:7791166@mail.ru">7791166@mail.ru</a><a href="privacy-policy.html">Политика конфиденциальности  </a></ul><a href="tel:+79852119645">+7 985 211 9645</a>
     </footer>
     <div class="modal-overlay">
       <div class="modal"><a class="close-modal">
@@ -310,7 +316,11 @@
             <div class="text-input">
               <input type="tel" placeholder="Телефон" name="phone">
             </div>
+<<<<<<< HEAD:public/index.php.html
             <button>Отправить</button>
+=======
+            <button type="submit">Заказать</button>
+>>>>>>> origin/master:public/index.php
           </form>
         </div>
       </div>

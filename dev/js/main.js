@@ -51,7 +51,7 @@ $("a").on('click', function(event) {
 
         window.location.hash = hash;
       });
-  } 
+  }
 });
 
 // LAZY
@@ -113,5 +113,3 @@ observer.observe();
 
 
 });
-
-
