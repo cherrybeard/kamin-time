@@ -65,7 +65,7 @@
 		"outputPathIsSetByUser": 0
 		},
 	"\/dev\/pug\/privacy-policy.jade": {
-		"compileDebug": 1,
+		"compileDebug": 0,
 		"fileType": 512,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
@@ -192,17 +192,6 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/dev\/pug\/sections\/header.jade",
 		"outputAbbreviatedPath": "\/dev\/pug\/sections\/header.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
-		},
-	"\/dev\/pug\/sections\/index.jade": {
-		"compileDebug": 1,
-		"fileType": 512,
-		"ignore": 1,
-		"ignoreWasSetByUser": 1,
-		"inputAbbreviatedPath": "\/dev\/pug\/sections\/index.jade",
-		"outputAbbreviatedPath": "\/dev\/pug\/sections\/index.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
@@ -997,105 +986,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/public\/img\/New folder\/about.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 200847,
-		"inputAbbreviatedPath": "\/public\/img\/New folder\/about.jpg",
-		"outputAbbreviatedPath": "\/public\/img\/New folder\/about.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/public\/img\/New folder\/bio_fireplace.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 434099,
-		"inputAbbreviatedPath": "\/public\/img\/New folder\/bio_fireplace.jpg",
-		"outputAbbreviatedPath": "\/public\/img\/New folder\/bio_fireplace.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/public\/img\/New folder\/client.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 19507,
-		"inputAbbreviatedPath": "\/public\/img\/New folder\/client.jpg",
-		"outputAbbreviatedPath": "\/public\/img\/New folder\/client.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/public\/img\/New folder\/company.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 400686,
-		"inputAbbreviatedPath": "\/public\/img\/New folder\/company.jpg",
-		"outputAbbreviatedPath": "\/public\/img\/New folder\/company.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/public\/img\/New folder\/coop.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 515188,
-		"inputAbbreviatedPath": "\/public\/img\/New folder\/coop.jpg",
-		"outputAbbreviatedPath": "\/public\/img\/New folder\/coop.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/public\/img\/New folder\/electro_fireplace.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 380374,
-		"inputAbbreviatedPath": "\/public\/img\/New folder\/electro_fireplace.jpg",
-		"outputAbbreviatedPath": "\/public\/img\/New folder\/electro_fireplace.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/public\/img\/New folder\/header.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 910596,
-		"inputAbbreviatedPath": "\/public\/img\/New folder\/header.jpg",
-		"outputAbbreviatedPath": "\/public\/img\/New folder\/header.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/public\/img\/New folder\/map.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 250398,
-		"inputAbbreviatedPath": "\/public\/img\/New folder\/map.jpg",
-		"outputAbbreviatedPath": "\/public\/img\/New folder\/map.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/public\/img\/New folder\/wood_fireplace.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 505136,
-		"inputAbbreviatedPath": "\/public\/img\/New folder\/wood_fireplace.jpg",
-		"outputAbbreviatedPath": "\/public\/img\/New folder\/wood_fireplace.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/public\/img\/plan.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -1166,15 +1056,6 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
-		},
-	"\/public\/privacy-policy.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/public\/privacy-policy.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
 		},
 	"\/public\/swiper\/css\/swiper.css": {
 		"fileType": 16,

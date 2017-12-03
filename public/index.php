@@ -31,13 +31,8 @@
     <title>KaminTime</title>
   </head>
   <body>
-<<<<<<< HEAD:public/index.php.html
-    <header class="header" id="header">
-      <nav class="navigation"><a href="/index.html"> 
-=======
     <header id="header" class="header">
-      <nav class="navigation"><a href="index.html"> 
->>>>>>> origin/master:public/index.php
+      <nav class="navigation"><a href="/index.html"> 
           <h1 class="logo"></h1></a>
         <ul><a href="#about-company">О нас</a><a href="#firewood">Камины</a><a href="#footer">Контакты</a><a href="#callback">Для бизнеса</a><a href="#reviews">Отзывы</a></ul><a href="tel:+79852119645">+7 985 211 9645</a>
       </nav>
@@ -174,12 +169,12 @@
       </section>
       <div class="models-container">
         <div class="models-wrapper">
-          <div class="model"><img class="lozad" alt="Классические" data-src="img/fireplaces_items/bio/12.jpg">
+          <div class="model"><img alt="Классические" data-src="img/fireplaces_items/bio/12.jpg" class="lozad">
             <h3>Классические</h3>
             <p>Прекрасная имитация пламени с опцией обогрева.</p>
             <button class="modal-button">Заказать</button>
           </div>
-          <div class="model"><img class="lozad" data-src="img/fireplaces_items/bio/13.jpg" alt="Современные">
+          <div class="model"><img data-src="img/fireplaces_items/bio/13.jpg" alt="Современные" class="lozad">
             <h3>Современные</h3>
             <p>Реалистичная имитация живого пламени с помощью пара, подсвеченного особым образом. </p>
             <button class="modal-button">Заказать</button>
@@ -316,11 +311,7 @@
             <div class="text-input">
               <input type="tel" placeholder="Телефон" name="phone">
             </div>
-<<<<<<< HEAD:public/index.php.html
-            <button>Отправить</button>
-=======
-            <button type="submit">Заказать</button>
->>>>>>> origin/master:public/index.php
+            <button type="submit">Отправить</button>
           </form>
         </div>
       </div>
