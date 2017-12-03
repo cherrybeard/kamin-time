@@ -34,7 +34,9 @@ $(function() {
   var itemContainer = ".fireplaces-container";
 
   showModels.click(function(){
+    var text = $(this).text();
     $(this).closest(itemContainer).find(itemList).slideToggle(400);
+    $(this).text(text == "Смотреть модели" ? "Свернуть" : "Смотреть модели");
   });
 
 // SMOOTHSCROLL
@@ -52,48 +54,58 @@ $("a").on('click', function(event) {
   } 
 });
 
+// LAZY
+const observer = lozad('.lozad', {
+    rootMargin: '10px 0px', // syntax similar to that of CSS Margin
+    threshold: 0.1 // ratio of element convergence
+});
+observer.observe();
+
+
+// const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+// observer.observe();
 // CALLBACK
 
-      var $callback = $("[data-callback-show]");
-      var $callbackForm = $("[data-callback-form]");
+      // var $callback = $("[data-callback-show]");
+      // var $callbackForm = $("[data-callback-form]");
 
-      function checkInputs($inputs){
-        $inputs.each(function(){
-          var $input = $(this).closest('.text-input');
-          if (!$(this).val()) {$input.addClass('error'); }
-        });
-      }
+      // function checkInputs($inputs){
+      //   $inputs.each(function(){
+      //     var $input = $(this).closest('.text-input');
+      //     if (!$(this).val()) {$input.addClass('error'); }
+      //   });
+      // }
 
-      $callback.click(function(){
-        $(this).closest('[data-callback-state]').attr('data-callback-state', 'form');
-      });
+      // $callback.click(function(){
+      //   $(this).closest('[data-callback-state]').attr('data-callback-state', 'form');
+      // });
 
-      $callbackForm.on('focus', 'input', function(){
-        $(this).closest('.text-input').removeClass('error');
-      });
+      // $callbackForm.on('focus', 'input', function(){
+      //   $(this).closest('.text-input').removeClass('error');
+      // });
 
-      $callbackForm.on('click', '.text-input', function(){
-        $(this).find('input').focus();
-      });
+      // $callbackForm.on('click', '.text-input', function(){
+      //   $(this).find('input').focus();
+      // });
 
-      $callbackForm.on('submit', function(e){
-        var $this = $(this);
-        e.preventDefault();
+      // $callbackForm.on('submit', function(e){
+      //   var $this = $(this);
+      //   e.preventDefault();
 
-        checkInputs($this.find('input[type=tel]'));
+      //   checkInputs($this.find('input[type=tel]'));
 
-        if (!$this.find('.text-input.error').length){
-          var ajaxData = {
-            type: $this.attr('method'),
-            data: $this.serialize()
-          };
-          $this.find('button[type=submit]').prop('disabled', true);
-          $this.find('.text-input').addClass('disabled');
-          $.ajax(ajaxData).done(function() {
-            $this.find('button[type=submit]').prop('disabled', false).addClass('success').text('Отправлено!');
-          });
-        }
-      });
+      //   if (!$this.find('.text-input.error').length){
+      //     var ajaxData = {
+      //       type: $this.attr('method'),
+      //       data: $this.serialize()
+      //     };
+      //     $this.find('button[type=submit]').prop('disabled', true);
+      //     $this.find('.text-input').addClass('disabled');
+      //     $.ajax(ajaxData).done(function() {
+      //       $this.find('button[type=submit]').prop('disabled', false).addClass('success').text('Отправлено!');
+      //     });
+      //   }
+      // });
 
 
 
@@ -101,4 +113,5 @@ $("a").on('click', function(event) {
 
 
 });
+
 

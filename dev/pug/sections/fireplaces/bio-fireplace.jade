@@ -11,14 +11,14 @@
 			.model
 				- var title = "Классические";
 				- var link = "img/fireplaces_items/bio/12.jpg";
-				img(src= link, alt= title )
+				img.lozad(alt= title, data-src=link)
 				h3 #{title}
 				p Прекрасная имитация пламени с опцией обогрева.
 				button.modal-button Заказать
 			.model
 				- var title = "Современные";
 				- var link = "img/fireplaces_items/bio/13.jpg";
-				img(src= link, alt= title)
+				img.lozad(data-src= link, alt= title)
 				h3 #{title}
 				p Реалистичная имитация живого пламени с помощью пара, подсвеченного особым образом. 
 				button.modal-button Заказать

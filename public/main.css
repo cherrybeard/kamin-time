@@ -9,15 +9,15 @@ h1, h2, h3, h4, h5, h6 { font-weight: inherit; }
 
 a { text-decoration: none; color: white; }
 
-@font-face { font-family: Open Sans; src: url(fonts/OpenSans-Regular.ttf); }
+@font-face { font-family: Open Sans; src: url(fonts/OpenSans-Regular.ttf); font-weight: 400; }
 
-html { font-family: Open Sans, sans-serif; font-size: 16px; line-height: 1.4; color: #222; font-weight: 500; }
+html { font-family: Open Sans, sans-serif; font-size: 16px; line-height: 1.4; color: #222; font-weight: 400; min-width: 1200px; }
 
 h1 { font-size: 0; }
 
 h2 { font-size: 3.5rem; line-height: 1.07; }
 
-p, input { font-size: 1.125rem; }
+p, input { font-size: 1.125rem; color: #444; }
 
 h1, h2 { font-family: "Alice", serif; }
 
@@ -27,25 +27,25 @@ h1, h2 { font-family: "Alice", serif; }
 
 .modal-lock { overflow: hidden; padding-right: 15px; }
 
-.model button, .firewood button, .stove-fireplace button, .bio-fireplace button, .electric-fireplace button, .marble button, .modal .modal-content button, .header .present button, .callback button { padding: 10px 45px; background-color: transparent; border: solid 1px #222222; cursor: pointer; font-size: 1rem; line-height: 1.89; letter-spacing: 4.1px; text-align: center; color: #222; text-transform: uppercase; }
+.model button, .firewood button, .stove-fireplace button, .bio-fireplace button, .electric-fireplace button, .marble button, .modal .modal-content button, .header .present button, .callback button { display: inline-block; padding: 10px 45px; background-color: transparent; border: solid 1px #222222; cursor: pointer; font-size: 1rem; line-height: 1.89; letter-spacing: 4.1px; text-align: center; color: #222; text-transform: uppercase; }
 
-.models-container { width: 1300px; margin: 0 auto; display: none; }
+.models-container { width: 1210px; margin: 0 auto; display: none; }
 
-.models-wrapper { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: start; -webkit-justify-content: flex-start; -ms-flex-pack: start; justify-content: flex-start; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 0 40px 50px 40px; }
+.models-wrapper { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: start; -webkit-justify-content: flex-start; -ms-flex-pack: start; justify-content: flex-start; padding-top: 60px; padding-bottom: 60px; }
 
-.model { position: relative; margin: 30px 30px; width: 21.375rem; height: 600px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; }
+.model { position: relative; margin: 30px 30px 60px 30px; width: 21.375rem; height: 580px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; }
 
-.model h3 { margin-top: 40px; font-size: 1rem; text-transform: uppercase; letter-spacing: 2px; font-weight: 600; }
+.model h3 { margin-top: 30px; font-size: 1rem; text-transform: uppercase; letter-spacing: 2px; font-weight: 600; }
 
 .model img { display: block; width: 100%; height: 21.8125rem; }
 
-.model p { font-size: 1rem; margin: 35px 0; }
+.model p { font-size: 1rem; margin: 14px 0; }
 
 .model button { position: absolute; left: 0; bottom: 0; }
 
 .firewood, .stove-fireplace, .bio-fireplace, .electric-fireplace, .marble { height: 28.125rem; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 0 5%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; margin-bottom: 20px; color: white; }
 
-.firewood p, .stove-fireplace p, .bio-fireplace p, .electric-fireplace p, .marble p { margin: 35px 0; max-width: 39.625rem; }
+.firewood p, .stove-fireplace p, .bio-fireplace p, .electric-fireplace p, .marble p { margin: 30px 0 45px 0; max-width: 39.625rem; color: white; }
 
 .firewood button, .stove-fireplace button, .bio-fireplace button, .electric-fireplace button, .marble button { font-size: 1rem; color: #fff; border: 1px solid #fff; }
 
@@ -53,15 +53,17 @@ h1, h2 { font-family: "Alice", serif; }
 
 .wrapper .header .present, .header .wrapper .present, .wrapper .header .about, .header .wrapper .about { -webkit-box-sizing: border-box; box-sizing: border-box; width: 50%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; padding: 0 5%; }
 
-.wrapper .header .present p, .header .wrapper .present p, .wrapper .header .about p, .header .wrapper .about p { margin: 25px 0 55px 0; font-size: 1.25rem; }
+.wrapper .header .present p, .header .wrapper .present p, .wrapper .header .about p, .header .wrapper .about p { margin: 25px 0 55px 0; }
 
-.text-input { display: inline-block; border: 1px solid #aaa; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 11px 50px; background: white; vertical-align: top; }
+.text-input { display: inline-block; border: 1px solid #aaa; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 11px 0 11px 20px; background: white; vertical-align: top; margin-bottom: 10px; }
 
-.text-input input { background: transparent; outline: none; border: none; width: 100%; line-height: 28px; }
+.text-input input { background: transparent; outline: none; border: none; width: 80%; line-height: 28px; }
 
 .text-input.error { border-color: #ddd; }
 
 .text-input.disabled { pointer-events: none; opacity: 0.2; }
+
+[data-callback-form] { font-size: 0; }
 
 /** Variables */
 @media only screen and (min-width: 40em) { .modal-overlay { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 5; background-color: rgba(0, 0, 0, 0.6); opacity: 0; visibility: hidden; -webkit-backface-visibility: hidden; backface-visibility: hidden; -webkit-transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1); -o-transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1); transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1); }
@@ -74,9 +76,11 @@ h1, h2 { font-family: "Alice", serif; }
 
 .modal .close-modal svg { width: 1.75em; height: 1.75em; }
 
-.modal .modal-content { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; opacity: 0; -webkit-backface-visibility: hidden; backface-visibility: hidden; -webkit-transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1); -o-transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1); transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1); -webkit-transition-delay: 0.3s; -o-transition-delay: 0.3s; transition-delay: 0.3s; }
+.modal .modal-content { -webkit-box-sizing: border-box; box-sizing: border-box; padding: 0 55px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; opacity: 0; -webkit-backface-visibility: hidden; backface-visibility: hidden; -webkit-transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1); -o-transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1); transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1); -webkit-transition-delay: 0.3s; -o-transition-delay: 0.3s; transition-delay: 0.3s; }
 
 .modal .modal-content h2 { margin-bottom: 40px; }
+
+.modal .modal-content button { color: white; background-color: black; position: relative; }
 
 .modal.active { visibility: visible; opacity: 1; -webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1); }
 
@@ -98,6 +102,10 @@ h1, h2 { font-family: "Alice", serif; }
 .navigation a { color: #444; }
 
 .header { -webkit-box-sizing: border-box; box-sizing: border-box; padding: 0 0 100px 0; }
+
+.header .present .button-block { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+
+.header .present small { position: relative; margin-left: 24px; max-width: 14.5rem; display: inline-block; font-size: 16px; color: #666; line-height: 1.25; }
 
 .header .present-image { width: 50%; background: transparent url("img/header.jpg") center/cover no-repeat; }
 
@@ -125,7 +133,7 @@ h1, h2 { font-family: "Alice", serif; }
 
 .advantages .advantages-list .item p { font-size: 16px; }
 
-.advantages .advantages-list h3 { font-weight: bold; text-transform: uppercase; margin-bottom: 10px; letter-spacing: 2px; }
+.advantages .advantages-list h3 { font-weight: 600; text-transform: uppercase; margin-bottom: 10px; letter-spacing: 2px; }
 
 .advantages .advantages-list .count { font-family: "Alice", serif; display: block; position: absolute; top: -20px; left: -10px; font-size: 9.375rem; color: #bbb; opacity: 0.3; }
 
@@ -135,11 +143,11 @@ h1, h2 { font-family: "Alice", serif; }
 
 .bio-fireplace { background: transparent url("img//fireplaces/bio.jpg") center/cover no-repeat; position: relative; }
 
-.bio-fireplace .novelty { -webkit-box-sizing: border-box; box-sizing: border-box; padding: 15px 20px; width: 15.8125rem; font-size: 16px; position: absolute; right: 0; top: 50%; -webkit-transform: translate(0, -50%); -ms-transform: translate(0, -50%); transform: translate(0, -50%); background-color: black; }
+.bio-fireplace .novelty { -webkit-box-sizing: border-box; box-sizing: border-box; padding: 20px 40px 20px 24px; width: 15.8125rem; line-height: 22px; position: absolute; right: 0; top: 50%; -webkit-transform: translate(0, -50%); -ms-transform: translate(0, -50%); transform: translate(0, -50%); background-color: black; }
 
 .bio-fireplace .novelty span { color: white; text-transform: uppercase; letter-spacing: 3.4px; text-align: left; }
 
-.bio-fireplace .novelty p { margin: 0; color: #ccc; }
+.bio-fireplace .novelty p { font-size: 16px; margin: 0; color: #ccc; }
 
 .electric-fireplace { background: transparent url("img/fireplaces/electro.jpg") center/cover no-repeat; }
 
@@ -155,7 +163,7 @@ h1, h2 { font-family: "Alice", serif; }
 
 .location .about p { margin: 10px 0; }
 
-.location .about a { margin-top: 10px; padding-bottom: 2px; color: black; font-weight: 900; border-bottom: 1px solid black; }
+.location .about a { margin-top: 10px; padding-bottom: 2px; color: black; font-weight: 600; border-bottom: 1px solid black; }
 
 .callback { width: 90%; margin: 0 auto; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 0 5%; position: relative; height: 35.625rem; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; background: transparent url("img/colab.jpg") center/cover no-repeat; }
 
