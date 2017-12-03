@@ -54,7 +54,7 @@ h1, h2 { font-family: "Alice", serif; }
 
 .wrapper .header .present p, .header .wrapper .present p, .wrapper .header .about p, .header .wrapper .about p { margin: 25px 0 55px 0; }
 
-.text-input { display: inline-block; border: 1px solid #aaa; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 11px 1.2em; background: white; vertical-align: top; margin-bottom: 10px; }
+.text-input { display: inline-block; border: 1px solid #aaa; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 11px 0 11px 21px; background: white; vertical-align: top; margin-bottom: 10px; }
 
 .text-input input { background: transparent; outline: none; border: none; width: 80%; line-height: 28px; }
 
@@ -120,7 +120,7 @@ h1, h2 { font-family: "Alice", serif; }
 
 .about-company .about h2 { width: 70%; margin-bottom: 20px; }
 
-.about-company .about p { max-width: 30rem; }
+.about-company .about p { color: white; max-width: 30rem; }
 
 .advantages { -webkit-box-sizing: border-box; box-sizing: border-box; padding: 100px 5%; }
 
