@@ -25,5 +25,11 @@
 			max-width: 30rem;
 		}
 	}
-	
+	@include mq("768", max) {
+		padding: 0 20px;
+		margin-top: 40px;
+		.about {
+			p { padding-bottom: 20px;}
+		}
+	}
 }

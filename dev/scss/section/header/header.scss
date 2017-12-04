@@ -1,44 +1,14 @@
 @import "navigation.scss";
+@import "present-block";
+@import "about-block";
 .header {
 	@extend %center-container;
 	box-sizing: border-box;
 	padding: 0 0 100px 0;
-	.present {
-		@extend %text-block;
-
-		.button-block {
-			display: flex;
-			align-items: center;
-		}
-		
-		button {
-			@extend %primary-button;
-		}
-		
-		small {
-			position: relative;
-			margin-left: 24px;
-			max-width: 14.5rem; // 232px
-			display: inline-block;
-			font-size: 16px;
-			color: #666;
-			line-height: 1.25;
-		}
-	}
-	.present-image {
-		width: 50%;
-		background:transparent url('img/header.jpg') center/cover no-repeat;
+	@include mq("768", max) {
+		padding: 0;
 	}
 	
 	
-	.about {
-		@extend %text-block;
-		font-size: 1.125rem;
-		p { margin-bottom: 0;}
-	}
-	.about-image {
-		width: 50%;
-		background:transparent url('img/about.jpg') center/cover no-repeat;
-	}
 
 }

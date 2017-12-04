@@ -10,4 +10,8 @@
 	text-align: center;
 	color: #222;
 	text-transform: uppercase;
+	@include mq("768", max) {
+		padding: 5px 25px;
+		letter-spacing: 3.4px;
+	}
 }

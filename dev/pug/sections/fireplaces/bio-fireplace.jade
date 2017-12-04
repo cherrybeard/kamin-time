@@ -2,24 +2,25 @@
 	section.bio-fireplace
 		h2 Биокамины
 		p Камины, которые работают на биотопливе, не имеют продуктов сгорания, при этом вы любуетесь живым пламенем. Их можно устанавливать в квартирах, ресторанах, отелях, офисах.
-		button.show-models Смотреть модели
 		.novelty
 			span Новинки!
 			p Биотопливо с ароматом ванили и цитруса.
+		button.show-models Смотреть модели
+		
 	.models-container
 		.models-wrapper
 			.model
 				- var title = "Классические";
 				- var link = "img/fireplaces_items/bio/12.jpg";
-				img.lozad(alt= title, data-src=link)
+				img(alt= title, src=link)
 				h3 #{title}
-				p Прекрасная имитация пламени с опцией обогрева.
+				//- p Прекрасная имитация пламени с опцией обогрева.
 				button.modal-button Заказать
 			.model
 				- var title = "Современные";
 				- var link = "img/fireplaces_items/bio/13.jpg";
-				img.lozad(data-src= link, alt= title)
+				img(src= link, alt= title)
 				h3 #{title}
-				p Реалистичная имитация живого пламени с помощью пара, подсвеченного особым образом. 
+				//- p Реалистичная имитация живого пламени с помощью пара, подсвеченного особым образом. 
 				button.modal-button Заказать
 			

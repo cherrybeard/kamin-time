@@ -12,7 +12,19 @@
 		justify-content: center;
 		padding: 0 5%;
 		p {
-			margin: 25px 0 55px 0;
+			padding: 25px 0 55px 0;
 		}
+	}
+	@include mq("768", max) {
+		flex-direction: column;
+		height: auto;
+		%text-block {
+			width: 100%;
+			padding: 0 20px;
+			p {
+			padding: 15px 0 40px 0;
+		}
+		}
+		
 	}
 }
