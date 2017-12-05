@@ -36,5 +36,19 @@
 			border-bottom: 1px solid black;
   		}
 	}
+	@include mq("768", max) {
+		margin: 0;
+		height: auto;
+		padding: 52px 20px 90px 20px;
+		align-items: flex-start;
+		justify-content: flex-start;
+		.about {
+			width: 100%;
+			height: auto;
+			padding: 0;
+			border: none;
+  			background-color: transparent;
+		}
+	}
 
 }

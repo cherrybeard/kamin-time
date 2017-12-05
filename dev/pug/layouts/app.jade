@@ -4,13 +4,25 @@ doctype html
 html(lang='ru')
 	head
 		block head
-			meta(charset='UTF-8')
-			link(rel="stylesheet" href="swiper/css/swiper.min.css")
-			link(rel='stylesheet', href='main.css')
+			meta(charset='UTF-8')/
+			meta(name="description" content="«Kamintime» - пришло время установить камин в вашем доме!")/
+			meta(name="keywords" content="Kamintime, камины, москва")/
+			meta(name='viewport', content='width=device-width')/
+			meta(property="og:title" content="Kamintime")/
+			meta(property="og:description" content="«Kamintime» - пришло время установить камин в вашем доме!")/
+			meta(property="og:image" content="http://kamin-time.ru/img/social/social-banner.jpg")/
+			meta(property="og:url" content="http://kamin-time.ru")/
 
-			meta(name='viewport', content='width=device-width')
-				
 			title= title
+			
+			link(rel="stylesheet", href="swiper/css/swiper.min.css")
+			link(rel="stylesheet", href="main.css")
+			
+
+			link(rel="icon" href="img/social/favicon.png")/
+			link(rel="apple-touch-icon-precomposed" sizes="152x152" href="img/social/apple-icon.png")/
+				
+			
 		
 	body
 		block content

@@ -1,11 +1,10 @@
+@import "carousel";
 .reviews {
-	@import "carousel";
+	@extend %center-container;
 	box-sizing: border-box;
 	padding: 100px 0;
-	width: 90%;
-	margin: 0 auto;
-
 	.wrapper {
+		// z-index: -1;
 		display: flex;
 		height: 34.4375rem;
 		border: solid 1px #ddd;
@@ -24,7 +23,19 @@
 			max-width: 16.6875rem;
 		}
 	}
-	@include mq("1680", min) {
-		width: 80%;
+	@include mq("768", max) {
+		padding: 30px 0;
+		.wrapper {
+			height: auto;
+			border: none;
+		}
+		.about {
+			margin-bottom: 22px;
+			align-items: flex-start;
+			width: 100%;
+			order: 1;
+			background-image: none;
+			h2 { color: black; }
+		}
 	}
 }

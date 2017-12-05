@@ -41,4 +41,24 @@
 	@include mq("1680", min) {
 		padding: 50px 10%;
 	}
-}
+	@include mq("768", max) {
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: space-around;
+		padding: 30px 20px;
+		font-weight: 600;
+		line-height: 1.64;
+		.logo {
+			width: 84px;
+  			height: 22px;
+		}
+		a[href^=tel] {
+			font-size: 38px;
+			font-weight: 400;
+		}
+		address {
+			padding: 16px 0;
+
+		}
+	}
+} 

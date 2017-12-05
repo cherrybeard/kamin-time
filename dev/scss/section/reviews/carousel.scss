@@ -1,4 +1,5 @@
 .swiper-container {
+	z-index: 0;
 	width: 50%;
 	.swiper-slide {
 		box-sizing: border-box;
@@ -9,12 +10,6 @@
 		align-items: flex-start;
 		justify-content: center;
 		width: 100%;
-		img {
-			width: 7.0625rem;
-			height: 7rem;
-			border-radius: 50%;
-			margin-bottom: 50px;
-		}
 		span {
 			margin-top: 50px;
 			font-size: 1rem;
@@ -42,6 +37,29 @@
 	.swiper-button-next {
 		transform: rotate(0deg);
 		right: 35px;
+	}
+	@include mq("768", max) {
+		width: 100%;
+		order: 2;
+
+		.swiper-slide {
+			padding: 0 20px 40px 20px;
+			justify-content: flex-start;
+			span {
+				margin-top: 14px;
+			}
+		}
+		.swiper-button {
+			top: auto;
+			bottom: 0;
+		}
+		.swiper-button-prev {
+			left: 20px;
+		}
+		.swiper-button-next {
+			right: auto;
+			left: 85px;
+		}
 	}
 
 }

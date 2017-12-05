@@ -1,6 +1,5 @@
 .callback {
-	width: 90%;
-	margin: 0 auto;
+	@extend %center-container;
 
 	box-sizing: border-box;
 	padding: 0 $basic-padding;
@@ -22,20 +21,32 @@
 		flex-direction: column;
 		align-items: center;
 		background-color: #fff;
-		&:not([data-callback-state=button]) [data-callback-show] { display: none; }
-		&:not([data-callback-state=form]) [data-callback-form] { display: none; }
 	}
 	p {
 		margin: 20px 0 40px 0;
 		max-width: 37.3125rem; // 597px
 	}
 	button {
-		vertical-align: top;
 		@extend %primary-button;
+		vertical-align: top;
 		font-size: 1rem;
 	}
 	@include mq("1680", min) {
 		padding: 0 10%;
-		width: 80%;
+	}
+	@include mq("768", max) {
+		padding: 55px 30px 63px 20px;
+		display: inline-block;
+		height: auto;
+		.callback-form {
+			padding: 0;
+			align-items: flex-start;
+			text-align: left;
+			background-color: transparent;
+		}
+		p, button, h2 {
+			color: white;
+		}
+		button { border: 1px solid white;}
 	}
 }
