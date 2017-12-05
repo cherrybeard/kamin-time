@@ -8,21 +8,24 @@
 			.model
 				- var title = "С использованием гелографического эффекта";
 				- var link = "img/fireplaces_items/electro/14.jpg";
-				img(src= link, alt= title, width="342",  height ="350")
+				- var preload = "img/giphy.gif";
+				img(alt = title, data-src = link, src = preload)
 				h3 #{title}
 				p Прекрасная имитация пламени с опцией обогрева.
 				button.modal-button Заказать
 			.model
 				- var title = "С эффектом 3D";
 				- var link = "img/fireplaces_items/electro/15.jpg";
-				img(src= link, alt= title)
+				- var preload = "img/giphy.gif";
+				img(alt = title, data-src = link, src = preload)
 				h3 #{title}
 				p Реалистичная имитация живого пламени с помощью пара, подсвеченного особым образом. 
 				button.modal-button Заказать
 			.model
 				- var title = "С эффектом 5D";
 				- var link = "img/fireplaces_items/electro/16.jpg";
-				img(src= link, alt= title)
+				- var preload = "img/giphy.gif";
+				img(alt = title, data-src = link, src = preload)
 				h3 #{title}
 				p Имитация натурального пламени с использованием LED-технологии.
 				button.modal-button Заказать

@@ -7,6 +7,12 @@ $(function() {
 		},
   });
 
+
+
+// lazyload
+$(".model img").addClass('lazyload');
+
+lazyload();
 // MODAL
     var elements = $('.modal-overlay, .modal');
     var body = $('body');
