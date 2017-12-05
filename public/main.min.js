@@ -9,8 +9,6 @@ $(function() {
 		},
   });
 
-
-
 // MODAL
     var elements = $('.modal-overlay, .modal');
     var body = $('body');
