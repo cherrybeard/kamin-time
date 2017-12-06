@@ -13,22 +13,16 @@ lazyload();
     var elements = $('.modal-overlay, .modal');
     var body = $('body');
     var modalLock = $(".modal-lock");
-    var scrollBarWidth = window.innerWidth - document.body.offsetWidth;
 
-    var modalOverflow = function(padding, overflow) {
-      modalLock.css({"padding-right": padding, "overflow": overflow});
-    }
     $('.modal-button').click(function() {
-        elements.addClass('active');
-        body.toggleClass('modal-lock');
-        modalOverflow(scrollBarWidth, hidden);
+      elements.addClass('active');
+      body.toggleClass('modal-lock');
     });
 
     $('.close-modal').click(function(){
       elements.removeClass('active');
       setTimeout(function(){
-          modalOverflow(0, scroll);
-          body.toggleClass('modal-lock');
+           body.toggleClass('modal-lock');
         }, 500);
     });
 //OPEN MODELS LIST
