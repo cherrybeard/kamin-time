@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Alice&subset=cyrillic");
 div, p, body, button, h1, h2, h3, h4, img, hr, li, ul, span, section, a, nav, form, option, select, label, input, button, header, footer, figure { margin: 0; padding: 0; }
 
-p, h1, h2, h3, span { cursor: default; }
+p, h1, h2, h3, span, small, div, a { cursor: default; }
 
 input { font-family: inherit; }
 
@@ -16,11 +16,11 @@ h1 { font-size: 0; }
 
 h2 { font-size: 3.5rem; line-height: 1.07; }
 
-@media screen and (max-width: 768px) { h2 { font-size: 30px; } }
+@media screen and (max-width: 1024px) { h2 { font-size: 30px; } }
 
 p, input { font-size: 1.125rem; color: #444; }
 
-@media screen and (max-width: 768px) { p, input { font-size: 16px; } }
+@media screen and (max-width: 1024px) { p, input { font-size: 16px; } }
 
 h1, h2 { font-family: "Alice", serif; }
 
@@ -34,21 +34,15 @@ h1, h2 { font-family: "Alice", serif; }
 
 .modal-lock { overflow: hidden; padding-right: 15px; }
 
-@media screen and (max-width: 1023px) { .modal-lock { padding-right: 0; } }
+@media screen and (max-width: 1024px) { .modal-lock { padding-right: 0; } }
 
 .scrollbar-measure { position: absolute; top: -9999px; width: 50px; height: 50px; overflow: scroll; }
 
-.firewood button, .stove-fireplace button, .bio-fireplace button, .electric-fireplace button, .marble button, .model button, .modal .modal-content button, .present button, .callback button { display: inline-block; padding: 10px 45px; background-color: transparent; border: solid 1px #222222; cursor: pointer; font-size: 1rem; line-height: 1.89; letter-spacing: 4.1px; text-align: center; color: #222; text-transform: uppercase; }
+.firewood button, .stove-fireplace button, .bio-fireplace button, .electric-fireplace button, .marble button, .model button, .info-block button, .modal .modal-content button, .present button, .callback button { display: inline-block; padding: 10px 45px; background-color: transparent; border: solid 1px #222222; font-size: 1rem; line-height: 1.89; letter-spacing: 4.1px; text-align: center; color: #222; text-transform: uppercase; }
 
-@media screen and (max-width: 768px) { .firewood button, .stove-fireplace button, .bio-fireplace button, .electric-fireplace button, .marble button, .model button, .modal .modal-content button, .present button, .callback button { padding: 5px 25px; letter-spacing: 3.4px; } }
+@media screen and (max-width: 768px) { .firewood button, .stove-fireplace button, .bio-fireplace button, .electric-fireplace button, .marble button, .model button, .info-block button, .modal .modal-content button, .present button, .callback button { padding: 5px 25px; letter-spacing: 3.4px; } }
 
-.models-container { width: 1210px; margin: 0 auto; display: none; }
-
-@media screen and (max-width: 768px) { .models-container { width: auto; } }
-
-.models-wrapper { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: start; -webkit-justify-content: flex-start; -ms-flex-pack: start; justify-content: flex-start; padding-top: 60px; padding-bottom: 60px; }
-
-@media screen and (max-width: 768px) { .models-wrapper { padding-top: 0; } }
+@media screen and (max-width: 399px) { .firewood button, .stove-fireplace button, .bio-fireplace button, .electric-fireplace button, .marble button, .model button, .info-block button, .modal .modal-content button, .present button, .callback button { letter-spacing: 2.6px; } }
 
 .firewood, .stove-fireplace, .bio-fireplace, .electric-fireplace, .marble { position: relative; height: 28.125rem; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 0 5%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; margin-bottom: 20px; color: white; }
 
@@ -60,19 +54,39 @@ h1, h2 { font-family: "Alice", serif; }
   .firewood p, .stove-fireplace p, .bio-fireplace p, .electric-fireplace p, .marble p { margin: 20px 0 0 0; }
   .firewood button, .stove-fireplace button, .bio-fireplace button, .electric-fireplace button, .marble button { position: absolute; left: 20px; bottom: 50px; } }
 
+.models-container { width: 1210px; margin: 0 auto; display: none; }
+
+@media screen and (max-width: 1024px) { .models-container { width: auto; } }
+
+.models-wrapper { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: start; -webkit-justify-content: flex-start; -ms-flex-pack: start; justify-content: flex-start; padding-top: 60px; padding-bottom: 60px; }
+
+@media screen and (max-width: 768px) { .models-wrapper { padding: 10px 18px 60px 8px; } }
+
 .model { position: relative; margin: 30px 30px 60px 30px; width: 21.375rem; height: 580px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; }
 
 .model h3 { margin-top: 30px; font-size: 1rem; text-transform: uppercase; letter-spacing: 2px; font-weight: 600; }
 
-.model img { display: block; width: 100%; height: 21.8125rem; }
+.model img { width: 100%; height: 21.8125rem; }
 
 .model p { font-size: 1rem; margin: 14px 0; }
 
 .model button { position: absolute; left: 0; bottom: 0; }
 
-@media screen and (max-width: 768px) { .model { margin: 30px 0 60px 0; width: 100%; }
-  .model h3, .model p { padding-left: 20px; padding-right: 20px; }
-  .model button { left: 20px; } }
+@media screen and (max-width: 768px) { .model { margin: 0 0 30px 12px; width: 135px; height: 321px; }
+  .model img { height: 132px; }
+  .model h3, .model p { font-size: 10px; }
+  .model h3 { margin-top: 20px; letter-spacing: 1.3px; }
+  .model button { font-size: 12px; } }
+
+.info-block { -webkit-box-sizing: border-box; box-sizing: border-box; padding: 0 2.5%; }
+
+.info-block p { padding-bottom: 20px; }
+
+@media screen and (max-width: 768px) { .info-block { padding-left: 12px; padding-bottom: 30px; }
+  .info-block p { font-size: 10px; }
+  .info-block button { font-size: 12px; } }
+
+@media screen and (min-width: 375px) and (max-width: 1025px) { .models-wrapper { width: 80%; margin: 0 auto; } }
 
 .wrapper { width: 40rem; height: 40.625rem; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; width: 100%; }
 
@@ -138,7 +152,7 @@ h1, h2 { font-family: "Alice", serif; }
 
 .navigation a { color: #444; }
 
-@media screen and (max-width: 768px) { .navigation { display: block; overflow-y: hidden; overflow-x: scroll; -webkit-box-pack: start; -webkit-justify-content: flex-start; -ms-flex-pack: start; justify-content: flex-start; padding: 50px 20px; }
+@media screen and (max-width: 768px) { .navigation { display: block; overflow-y: hidden; overflow-x: scroll; -webkit-box-pack: start; -webkit-justify-content: flex-start; -ms-flex-pack: start; justify-content: flex-start; padding: 15px 20px; }
   .navigation .logo { display: none; }
   .navigation a[href^="tel"] { display: none; } }
 
@@ -201,7 +215,7 @@ h1, h2 { font-family: "Alice", serif; }
   .advantages .advantages-list { -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; }
   .advantages .advantages-list .count { display: none; }
   .advantages .advantages-list .item { padding: 25px 0 0 0; }
-  .advantages .advantages-list h3 { margin-bottom: 5px; } }
+  .advantages .advantages-list h3 { font-size: 17px; letter-spacing: 2.1px; margin-bottom: 5px; } }
 
 .firewood { background: transparent url("img/fireplaces/wood.jpg") center/cover no-repeat; }
 
@@ -223,6 +237,8 @@ h1, h2 { font-family: "Alice", serif; }
 .marble { background: transparent url("img/fireplaces/marble.jpg") center/cover no-repeat; }
 
 [data-marble] { height: 21.875rem; }
+
+@media screen and (max-width: 768px) { [data-marble] { height: 132px; } }
 
 .location { position: relative; margin: 100px auto; background: transparent url("img/map.jpg") center top/cover no-repeat; height: 42.5rem; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: end; -webkit-justify-content: flex-end; -ms-flex-pack: end; justify-content: flex-end; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 0 5%; }
 
@@ -258,7 +274,7 @@ h1, h2 { font-family: "Alice", serif; }
 
 .swiper-container .swiper-slide span { margin-top: 50px; font-size: 1rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; }
 
-.swiper-container .swiper-slide p { margin: 10px 0; }
+.swiper-container .swiper-slide p { margin-bottom: 10px; }
 
 .swiper-container .swiper-slide small { color: #888; font-size: 1rem; }
 
@@ -271,6 +287,8 @@ h1, h2 { font-family: "Alice", serif; }
 @media screen and (max-width: 768px) { .swiper-container { width: 100%; -webkit-box-ordinal-group: 3; -webkit-order: 2; -ms-flex-order: 2; order: 2; }
   .swiper-container .swiper-slide { padding: 0 20px 40px 20px; -webkit-box-pack: start; -webkit-justify-content: flex-start; -ms-flex-pack: start; justify-content: flex-start; }
   .swiper-container .swiper-slide span { margin-top: 14px; }
+  .swiper-container .swiper-slide span, .swiper-container .swiper-slide small { font-size: 12px; }
+  .swiper-container .swiper-slide p { font-size: 14px; }
   .swiper-container .swiper-button { top: auto; bottom: 0; }
   .swiper-container .swiper-button-prev { left: 20px; }
   .swiper-container .swiper-button-next { right: auto; left: 85px; } }
@@ -288,7 +306,7 @@ h1, h2 { font-family: "Alice", serif; }
   .reviews .about { margin-bottom: 22px; -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; width: 100%; -webkit-box-ordinal-group: 2; -webkit-order: 1; -ms-flex-order: 1; order: 1; background-image: none; }
   .reviews .about h2 { color: black; } }
 
-.footer { -webkit-box-sizing: border-box; box-sizing: border-box; padding: 50px 10%; background-color: #222; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; color: #ccc; font-size: 11px; }
+.footer { -webkit-box-sizing: border-box; box-sizing: border-box; padding: 50px 10%; background-color: #222; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; color: #ccc; font-size: 11px; }
 
 .footer .logo { width: 9.5rem; height: 2.5rem; background: transparent url("img/logo-white.svg") center/contain no-repeat; border: none; }
 

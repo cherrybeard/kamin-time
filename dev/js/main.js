@@ -6,12 +6,8 @@ $(function() {
   	prevEl: '.swiper-button-prev'
 		},
   });
-
-
-
 // lazyload
 $(".model img").addClass('lazyload');
-
 lazyload();
 // MODAL
     var elements = $('.modal-overlay, .modal');
@@ -28,8 +24,6 @@ lazyload();
         body.toggleClass('modal-lock');
 
     });
-
-
 //OPEN MODELS LIST
   var showModels = $(".show-models");
   var itemList = ".models-container";
@@ -40,9 +34,7 @@ lazyload();
     $(this).closest(itemContainer).find(itemList).slideToggle(400);
     $(this).text(text == "Смотреть модели" ? "Свернуть" : "Смотреть модели");
   });
-
 // SMOOTHSCROLL
-
 $("a").on('click', function(event) {
   if (this.hash !== "") {
       event.preventDefault();
@@ -56,52 +48,5 @@ $("a").on('click', function(event) {
     }
   });
 });
-
-// CALLBACK
-
-      // var $callback = $("[data-callback-show]");
-      // var $callbackForm = $("[data-callback-form]");
-
-      // function checkInputs($inputs){
-      //   $inputs.each(function(){
-      //     var $input = $(this).closest('.text-input');
-      //     if (!$(this).val()) {$input.addClass('error'); }
-      //   });
-      // }
-
-      // $callback.click(function(){
-      //   $(this).closest('[data-callback-state]').attr('data-callback-state', 'form');
-      // });
-
-      // $callbackForm.on('focus', 'input', function(){
-      //   $(this).closest('.text-input').removeClass('error');
-      // });
-
-      // $callbackForm.on('click', '.text-input', function(){
-      //   $(this).find('input').focus();
-      // });
-
-      // $callbackForm.on('submit', function(e){
-      //   var $this = $(this);
-      //   e.preventDefault();
-
-      //   checkInputs($this.find('input[type=tel]'));
-
-      //   if (!$this.find('.text-input.error').length){
-      //     var ajaxData = {
-      //       type: $this.attr('method'),
-      //       data: $this.serialize()
-      //     };
-      //     $this.find('button[type=submit]').prop('disabled', true);
-      //     $this.find('.text-input').addClass('disabled');
-      //     $.ajax(ajaxData).done(function() {
-      //       $this.find('button[type=submit]').prop('disabled', false).addClass('success').text('Отправлено!');
-      //     });
-      //   }
-      // });
-
-
-
-
 
 

@@ -12,14 +12,14 @@ h1 {
 h2 {
 	font-size: 3.5rem;
 	line-height: 1.07;
-	@include mq("768", max) {
+	@include mq("1024", max) {
 		font-size: 30px;
 	}
 }
 p,input {
 	font-size: 1.125rem;
 	color: #444;
-	@include mq("768", max) {
+	@include mq("1024", max) {
 		font-size: 16px;
 	}
 }

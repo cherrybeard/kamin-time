@@ -9,5 +9,7 @@
 }
 [data-marble] {
 	height: 21.875rem; 
-
+	@include mq("768", max) {
+		height: 132px;
+	}
 }
