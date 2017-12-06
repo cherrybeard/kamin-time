@@ -41,12 +41,12 @@ h1, h2 {
 	}
 }
 .modal-lock {
-	overflow: hidden;
+	// overflow: hidden;
 
-	padding-right: 15px;
-	@include mq("tablet-wide", max) {
-		padding-right: 0;
-	}
+	// padding-right: 15px;
+	// @include mq("tablet-wide", max) {
+	// 	padding-right: 0;
+	// }
 }
 .scrollbar-measure {
 	position: absolute;

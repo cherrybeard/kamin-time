@@ -12,17 +12,24 @@ lazyload();
 // MODAL
     var elements = $('.modal-overlay, .modal');
     var body = $('body');
+    var modalLock = $(".modal-lock");
+    var scrollBarWidth = window.innerWidth - document.body.offsetWidth;
 
-    $('.modal-button').click(function(){
+    var modalOverflow = function(padding, overflow) {
+      modalLock.css({"padding-right": padding, "overflow": overflow});
+    }
+    $('.modal-button').click(function() {
         elements.addClass('active');
         body.toggleClass('modal-lock');
-
+        modalOverflow(scrollBarWidth, hidden);
     });
 
     $('.close-modal').click(function(){
-        elements.removeClass('active');
-        body.toggleClass('modal-lock');
-
+      elements.removeClass('active');
+      setTimeout(function(){
+          modalOverflow(0, scroll);
+          body.toggleClass('modal-lock');
+        }, 500);
     });
 //OPEN MODELS LIST
   var showModels = $(".show-models");
@@ -47,6 +54,8 @@ $("a").on('click', function(event) {
       });
     }
   });
+
 });
+
 
 
