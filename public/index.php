@@ -99,7 +99,7 @@
       <div data-expandable class="firewood">
         <section id="firewood" class="intro">
           <h2>Дровяные камины</h2>
-          <p>Имеем широкий модельный ряд каминных топок. Нашие долгосрочное и&nbsp;стабильное сотрудничество с&nbsp;ведущими европейскими и&nbsp;российскими производителями гарантирует только лучшее качество.</p>
+          <p>Имеем широкий модельный ряд каминных топок. Наше долгосрочное и&nbsp;стабильное сотрудничество с&nbsp;ведущими европейскими и&nbsp;российскими производителями гарантирует только лучшее качество.</p>
           <button data-expandable-toggle class="show-models">Смотреть модели</button>
         </section>
         <div data-expandable-block class="models-container">
@@ -202,8 +202,8 @@
         </section>
         <div data-expandable-block class="models-container">
           <div class="models-wrapper">
-                <div class="model"><img alt="С использованием гелографического эффекта" data-src="img/fireplaces_items/electro/14.jpg" src="img/giphy.gif">
-                  <h3>С использованием гелографического эффекта</h3>
+                <div class="model"><img alt="С использованием голографического эффекта" data-src="img/fireplaces_items/electro/14.jpg" src="img/giphy.gif">
+                  <h3>С использованием голографического эффекта</h3>
                   <p>Прекрасная имитация пламени с&nbsp;опцией обогрева.</p>
                   <button class="modal-button">Заказать</button>
                 </div>
@@ -263,8 +263,8 @@
               <p>Выражаю искреннюю благодарность всем, кто создавал эту красоту. Рекомендую.</p><span>Ирченко Наталья</span><small>Бизнес-леди</small>
             </div>
             <div class="swiper-slide">
-              <p>Моя квартира выполнена в&nbsp;минималистическом стиле. Всё меня устраивало, пока не&nbsp;увидел у друзей биокамин в&nbsp;стиле hi-tec и&nbsp;понял, чего не&nbsp;достает в&nbsp;моем интерьре.</p>
-              <p>Друзья подсказали где&nbsp;я&nbsp;могу приобрести такой камин,  и&nbsp;я&nbsp;воспользовался советом.</p>
+              <p>Моя квартира выполнена в&nbsp;минималистическом стиле. Всё меня устраивало, пока не&nbsp;увидел у друзей биокамин в&nbsp;стиле hi-tec и&nbsp;понял, чего не&nbsp;достает в&nbsp;моем интерьере.</p>
+              <p>Друзья подсказали, где&nbsp;я&nbsp;могу приобрести такой камин,  и&nbsp;я&nbsp;воспользовался советом.</p>
               <p>Так что теперь друзья собираются у моего камина. Спасибо огромное КаминТайм за участие. Охотно рекомендую.</p><span>Эдгар Шабанов</span><small>Генеральный директор Clarins</small>
             </div>
             <div class="swiper-slide">
@@ -314,8 +314,12 @@
       </div>
     </section>
     <footer id="footer" class="footer">
-      <address>Нахимовский проспект,&nbsp;24, Центр дизайна и&nbsp;интерьера «EXPOSTROY», павильон 6,&nbsp;офис 6-16</address>
-      <ul><a href="mailto:7791166@mail.ru">7791166@mail.ru</a><a href="privacy-policy.html">Политика конфиденциальности  </a></ul><a href="tel:+79852119645">+7 985 211 9645</a>
+      <div class="footer-wrapper">
+        <div class="footer-address">
+          <address>Нахимовский проспект,&nbsp;24, Центр дизайна и&nbsp;интерьера «EXPOSTROY», павильон 6,&nbsp;офис 6-16</address><a href="privacy-policy.html">Политика конфиденциальности </a>
+        </div><a href="mailto:7791166@mail.ru">7791166@mail.ru</a><span><a href="https://api.whatsapp.com/send?phone=79851149222">Whatsapp</a> (+7 985 114 9222)</span>
+        <div class="footer-phones"><a href="tel:+79851149222">+7 985 114 9222</a><a href="tel:+79852119645">+7 985 211 9645</a></div>
+      </div>
     </footer>
     <div class="modal-overlay">
       <div class="modal"><a class="close-modal">

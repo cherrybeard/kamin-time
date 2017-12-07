@@ -24,9 +24,15 @@ html {
   color: #222;
   font-weight: 400;
   padding: 0 4rem; }
+  html .footer {
+    margin-left: -4rem;
+    margin-right: -4rem; }
   @media screen and (max-width: 1248px) {
     html {
-      padding: 0; } }
+      padding: 0; }
+      html .footer {
+        margin-left: 0;
+        margin-right: 0; } }
 
 h1 {
   font-size: 0; }
@@ -72,7 +78,7 @@ h1, h2 {
   font-size: 1rem;
   font-family: inherit;
   line-height: 1.89;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.2em;
   text-align: center;
   color: #222;
   text-transform: uppercase; }
@@ -81,15 +87,15 @@ h1, h2 {
       padding: 5px 25px;
       letter-spacing: 3.4px; } }
 
-.navigation, .header, .about-company, .advantages, .intro, .location, .callback, .reviews {
+.navigation, .header, .about-company, .advantages, .intro, .location, .callback, .reviews, .footer .footer-wrapper {
   width: 100%;
   max-width: 1280px;
   margin: 0 auto; }
   @media screen and (max-width: 1248px) {
-    .navigation, .header, .about-company, .advantages, .intro, .location, .callback, .reviews {
+    .navigation, .header, .about-company, .advantages, .intro, .location, .callback, .reviews, .footer .footer-wrapper {
       width: 90%; } }
   @media screen and (max-width: 760px) {
-    .navigation, .header, .about-company, .advantages, .intro, .location, .callback, .reviews {
+    .navigation, .header, .about-company, .advantages, .intro, .location, .callback, .reviews, .footer .footer-wrapper {
       width: 100%; } }
 
 .wrapper {
@@ -1043,42 +1049,42 @@ h1, h2 {
           color: black; } }
 
 .footer {
-  box-sizing: border-box;
-  padding: 50px 10%;
-  background-color: #222;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #ccc;
-  font-size: 11px; }
-  .footer ul {
-    max-width: 11.3125rem; }
-  .footer address {
-    display: inline;
+  background-color: #222; }
+  .footer .footer-wrapper {
+    box-sizing: border-box;
+    padding: 50px 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     color: #ccc;
-    font-size: 11px;
-    max-width: 26.0625rem;
-    font-style: normal; }
+    font-size: 11px; }
+  .footer .footer-address {
+    max-width: 20rem; }
+    .footer .footer-address a {
+      margin-top: 2rem; }
+  .footer address {
+    font-style: inherit; }
+  .footer span {
+    white-space: nowrap; }
+    .footer span a {
+      display: inline-block; }
   .footer a {
-    border-bottom: 1px solid #ccc;
-    display: inline-block;
-    margin-bottom: 5px;
-    color: #ccc; }
+    border-bottom: 1px solid #666;
+    display: table;
+    color: #eee; }
     .footer a[href^=tel] {
-      font-size: 2.5rem;
-      color: #fff;
-      font-family: "Alice", serif;
-      border-bottom: none; }
-  @media screen and (max-width: 760px) {
-    .footer {
+      font-size: 1.875rem;
+      color: white;
+      border-bottom: none;
+      line-height: 1.3; }
+  @media screen and (max-width: 850px) {
+    .footer .footer-wrapper {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
@@ -1092,14 +1098,13 @@ h1, h2 {
       padding: 30px 20px;
       font-weight: 600;
       line-height: 1.64; }
-      .footer .logo {
-        width: 84px;
-        height: 22px; }
-      .footer a[href^=tel] {
-        font-size: 38px;
-        font-weight: 400; }
-      .footer address {
-        padding: 16px 0; } }
+    .footer a {
+      margin-bottom: 0.5rem; }
+    .footer .footer-phones {
+      font-size: 38px;
+      margin-top: 1rem; }
+    .footer address {
+      padding: 16px 0; } }
 
 .privacy-policy {
   overflow: hidden;
