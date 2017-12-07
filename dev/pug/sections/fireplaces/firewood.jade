@@ -1,63 +1,27 @@
-.fireplaces-container
-	section.firewood#firewood
+.firewood(data-expandable)
+	section.intro#firewood
 		h2 Дровяные камины
 		p Имеем широкий модельный ряд каминных топок. Нашие долгосрочное и&nbsp;стабильное сотрудничество с&nbsp;ведущими европейскими и&nbsp;российскими производителями гарантирует только лучшее качество.
-		button.show-models Смотреть модели
-	.models-container
+		button.show-models(data-expandable-toggle) Смотреть модели
+		
+	.models-container(data-expandable-block)
 		.models-wrapper
-			.model
-				- var title = "Топка с прямым стеклом";
-				- var link = "img/fireplaces_items/wood/01.jpg";
-				- var preload = "img/giphy.gif";
-				img(alt = title, data-src = link, src = preload)
-				h3 #{title}
+			+model("Топка с прямым стеклом", "img/fireplaces_items/wood/01.jpg")
 				p Такие топки можно сделать в&nbsp;квадратном виде, горизонтальном и вертикальном.
-				button.modal-button Заказать
-			.model
-				- var title = "Топка пристенно-угловая";
-				- var link = "img/fireplaces_items/wood/02.jpg";
-				- var preload = "img/giphy.gif";
-				img(alt = title, data-src = link, src = preload)
-				h3 #{title}
+				
+			+model("Топка пристенно-угловая", "img/fireplaces_items/wood/02.jpg")
 				p Такая форма стекла увеличивает обзор топочной части, позволяя наслаждаться игрой пламени.
-				button.modal-button Заказать
-			.model
-				- var title = "Топка трёхсторонняя";
-				- var link = "img/fireplaces_items/wood/03.jpg";
-				- var preload = "img/giphy.gif";
-				img(alt = title, data-src = link, src = preload)
-				h3 #{title}
+				
+			+model("Топка трёхсторонняя", "img/fireplaces_items/wood/03.jpg")
 				p Такой вид топки обеспечивает максимальный обзор пламени.
-				button.modal-button Заказать
-			.model
-				- var title = "Топка с панорамным и призматическим стеклом";
-				- var link = "img/fireplaces_items/wood/04.jpg";
-				- var preload = "img/giphy.gif";
-				img(alt = title, data-src = link, src = preload)
-				h3 #{title}
+
+			+model("Топка с панорамным и призматическим стеклом", "img/fireplaces_items/wood/04.jpg")
 				p Конфигурация стекла позволяет наблюдать за&nbsp;пламенем в&nbsp;широком диапазоне.
-				button.modal-button Заказать
-			.model
-				- var title = "Туннельные топки";
-				- var link = "img/fireplaces_items/wood/05.jpg";
-				- var preload = "img/giphy.gif";
-				img(alt = title, data-src = link, src = preload)
-				h3 #{title}
+			
+			+model("Туннельные топки", "img/fireplaces_items/wood/05.jpg")
 				p Данный вид топок позволяет наблюдать за&nbsp;пламенем из&nbsp;двух помещений.
-				button.modal-button Заказать
-			.model
-				- var title = "Островные камины";
-				- var link = "img/fireplaces_items/wood/06.jpg";
-				- var preload = "img/giphy.gif";
-				img(alt = title, data-src = link, src = preload)
-				h3 #{title}
+
+			+model("Островные камины", "img/fireplaces_items/wood/06.jpg")
 				p Островок релакса и неспешной беседы в&nbsp;кругу друзей и&nbsp;близких.
-				button.modal-button Заказать
-			.model
-				- var title = "В стиле Hi-Tech";
-				- var link = "img/fireplaces_items/wood/07.jpg";
-				- var preload = "img/giphy.gif";
-				img(alt = title, data-src = link, src = preload)
-				h3 #{title}
-				//- p Брутальный вид каминов никого не оставляет равнодушным.
-				button.modal-button Заказать
+
+			+model("В стиле Hi-Tech", "img/fireplaces_items/wood/07.jpg")

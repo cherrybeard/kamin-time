@@ -1,28 +1,16 @@
-.fireplaces-container
-	section.bio-fireplace
+.bio-fireplace(data-expandable)
+	section.intro
 		h2 Биокамины
 		p Камины, которые работают на&nbsp;биотопливе, не&nbsp;имеют продуктов сгорания, при&nbsp;этом вы&nbsp;любуетесь живым пламенем. Их можно устанавливать в&nbsp;квартирах, ресторанах, отелях, офисах.
+		
 		.novelty
 			span Новинки!
 			p Биотопливо с&nbsp;ароматом ванили и&nbsp;цитруса.
-		button.show-models Смотреть модели
+			
+		button.show-models(data-expandable-toggle) Смотреть модели
 		
-	.models-container
+	.models-container(data-expandable-block)
 		.models-wrapper
-			.model
-				- var title = "Классические";
-				- var link = "img/fireplaces_items/bio/12.jpg";
-				- var preload = "img/giphy.gif";
-				img(alt = title, data-src = link, src = preload)
-				h3 #{title}
-				//- p Прекрасная имитация пламени с опцией обогрева.
-				button.modal-button Заказать
-			.model
-				- var title = "Современные";
-				- var link = "img/fireplaces_items/bio/13.jpg";
-				- var preload = "img/giphy.gif";
-				img(alt = title, data-src = link, src = preload)
-				h3 #{title}
-				//- p Реалистичная имитация живого пламени с помощью пара, подсвеченного особым образом. 
-				button.modal-button Заказать
+			+model("Классические", "img/fireplaces_items/bio/12.jpg")
+			+model("Современные", "img/fireplaces_items/bio/13.jpg")
 			

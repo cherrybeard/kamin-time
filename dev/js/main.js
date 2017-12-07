@@ -26,15 +26,18 @@ lazyload();
         }, 500);
     });
 //OPEN MODELS LIST
-  var showModels = $(".show-models");
-  var itemList = ".models-container";
-  var itemContainer = ".fireplaces-container";
+	var expandable = '[data-expandable]';
+	var expandableToggle = '[data-expandable-toggle]';
+	var expandableBlock = '[data-expandable-block]';
 
-  showModels.click(function(){
-    var text = $(this).text();
-    $(this).closest(itemContainer).find(itemList).slideToggle(400);
-    $(this).text(text == "Смотреть модели" ? "Свернуть" : "Смотреть модели");
+  $(expandable).on('click', expandableToggle, function(){
+		var $this = $(this);
+    var text = ( $this.text() == "Смотреть модели" ) ? "Свернуть" : "Смотреть модели";
+
+    $this.closest(expandable).find(expandableBlock).slideToggle(400);
+  	$this.text(text);
   });
+
 // SMOOTHSCROLL
 $("a").on('click', function(event) {
   if (this.hash !== "") {
@@ -50,6 +53,3 @@ $("a").on('click', function(event) {
   });
 
 });
-
-
-

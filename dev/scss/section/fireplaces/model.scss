@@ -1,0 +1,50 @@
+.model {
+	position: relative;
+	margin: 30px 30px 60px 30px;
+	width: 21.375rem;
+	height: 580px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+
+	h3 {
+		margin-top: 30px;
+		font-size: 1rem;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		font-weight: 600;
+	}
+
+	img {
+		width: 100%;
+		height: 21.8125rem; // 349px;
+	}
+
+	p {
+		font-size: 1rem;
+		margin: 14px 0;
+	}
+
+	button {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		@extend %primary-button;
+	}
+
+	@include mq("768", max) {
+		margin: 0 0 30px 12px;
+		width: 135px;
+		height: 321px;
+
+		h3, p { font-size: 10px; }
+		img { height: 132px; }
+		button { font-size: 12px; }
+
+		h3 {
+			margin-top: 20px;
+			letter-spacing: 1.3px;
+		}
+	}
+
+}

@@ -1,42 +1,19 @@
-.fireplaces-container
-	.stove-fireplace
+.stove-fireplace(data-expandable)
+	.intro
 		h2 Печи-камины
 		p Основное отличие печей от&nbsp;каминов в&nbsp;том, что печи накапливают тепло. И,&nbsp;даже после того, как угас последний уголек, печь продолжает ласково делиться своим теплом с&nbsp;вами.
-		button.show-models Смотреть модели
-	.models-container
+		button.show-models(data-expandable-toggle) Смотреть модели
+		
+	.models-container(data-expandable-block)
 		.models-wrapper
-			.model
-				- var title = "Кафельные печи";
-				- var link = "img/fireplaces_items/stove/08.jpg";
-				- var preload = "img/giphy.gif";
-				img(alt = title, data-src = link, src = preload)
-				h3 #{title}
+			+model("Кафельные печи", "img/fireplaces_items/stove/08.jpg")
 				p Это не&nbsp;просто отопительная система, это,&nbsp;пожалуй, главное украшение любого интерьера.
-				button.modal-button Заказать
-
-			.model
-				- var title = "Буржуйки";
-				- var link = "img/fireplaces_items/stove/09.jpg";
-				- var preload = "img/giphy.gif";
-				img(alt = title, data-src = link, src = preload)
-				h3 #{title}
+				
+			+model("Буржуйки", "img/fireplaces_items/stove/09.jpg")
 				p Самые востребованные печи на&nbsp;сегодняшний день — от&nbsp;одного взгляда на&nbsp;них&nbsp;становится тепло.
-				button.modal-button Заказать
 
-			.model
-				- var title = "Стальные печи";
-				- var link = "img/fireplaces_items/stove/10.jpg";
-				- var preload = "img/giphy.gif";
-				img(alt = title, data-src = link, src = preload)
-				h3 #{title}
+			+model("Стальные печи", "img/fireplaces_items/stove/10.jpg")
 				p Эти печи великолепно вписываются в&nbsp;современные интерьеры Hi-Tec и Loft, образуя уголок домашнего уюта.
-				button.modal-button Заказать
 
-			.model
-				- var title = "Отопительно-варочные печи";
-				- var link = "img/fireplaces_items/stove/11.jpg";
-				- var preload = "img/giphy.gif";
-				img(alt = title, data-src = link, src = preload)
-				h3 #{title}
+			+model("Отопительно-варочные печи", "img/fireplaces_items/stove/11.jpg")
 				p Эти печи позволят вам любоваться игрой огня и&nbsp;получать тепло, пока на&nbsp;плите готовится вкусный обед или ужин.
-				button.modal-button Заказать

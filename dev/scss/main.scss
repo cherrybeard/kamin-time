@@ -4,16 +4,16 @@
 @import "common/common-style";
 
 @import "ui/button";
-@import "ui/models-block";
+@import "ui/center-container";
+@import "ui/models-wrapper";
 @import "ui/header-block";
 @import "ui/text-input";
 @import "ui/modal";
 
-
 @import "section/header/header";
 @import "section/about-company/about-company";
 @import "section/advantages/advantages";
-@import "section/fireplaces/fireplaces";
+@import "section/fireplaces";
 @import "section/location/location";
 @import "section/callback/callback";
 @import 'section/reviews/reviews';

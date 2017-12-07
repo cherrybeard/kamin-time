@@ -1,0 +1,14 @@
+mixin model(title, link, compact= false)
+	.model
+		img(alt= title, data-src= link, src= "img/giphy.gif")
+		unless compact
+			h3= title
+			block
+			button.modal-button Заказать
+
+.fireplaces
+	include fireplaces/firewood.jade
+	include fireplaces/stove-fireplace.jade
+	include fireplaces/bio-fireplace.jade
+	include fireplaces/electric-fireplace.jade
+	include fireplaces/marble-fireplace.jade

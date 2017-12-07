@@ -1,0 +1,45 @@
+@import "fireplaces/model";
+@import "fireplaces/intro";
+@import "fireplaces/bio-fireplace";
+@import "fireplaces/marble";
+
+.fireplaces {
+	$fireplaces: 'firewood', 'stove-fireplace', 'bio-fireplace', 'electric-fireplace', 'marble';
+	@each $fireplace in $fireplaces {
+		.#{$fireplace} {
+			.intro { background-image: url('img/fireplaces/#{$fireplace}.jpg'); }
+		}
+	}
+
+	.models-container {
+		width: 1210px;
+		margin: 0 auto;
+		display: none;
+	}
+
+	.models-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+
+	@include mq("1024", max) {
+		.models-container {
+			width: auto;
+		}
+	}
+
+	@include mq("768", max) {
+		.models-wrapper { padding: 10px 18px 60px 8px; }
+	}
+
+	@media screen and (min-width: 375px) and (max-width: 1025px) {
+		.models-wrapper {
+			width: 80%;
+			margin: 0 auto;
+		}
+	}
+
+}

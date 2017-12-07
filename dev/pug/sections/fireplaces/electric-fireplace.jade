@@ -1,32 +1,16 @@
-.fireplaces-container
-	section.electric-fireplace
+.electric-fireplace(data-expandable)
+	section.intro
 		h2 Электрокамины
 		p Пользуются большим спросом: не&nbsp;требуют дополнительных хлопот, создают уют и&nbsp;комфорт . Их&nbsp;можно встраивать в&nbsp;любые порталы, ниши, размещать настенно, устанавливать автономно.
-		button.show-models Смотреть модели
-	.models-container
+		button.show-models(data-expandable-toggle) Смотреть модели
+		
+	.models-container(data-expandable-block)
 		.models-wrapper
-			.model
-				- var title = "С использованием гелографического эффекта";
-				- var link = "img/fireplaces_items/electro/14.jpg";
-				- var preload = "img/giphy.gif";
-				img(alt = title, data-src = link, src = preload)
-				//- h3 #{title}
-				h3 С&nbsp;использованием гелографического эффекта
+			+model("С использованием гелографического эффекта", "img/fireplaces_items/electro/14.jpg")
 				p Прекрасная имитация пламени с&nbsp;опцией обогрева.
-				button.modal-button Заказать
-			.model
-				- var title = "С эффектом 3D";
-				- var link = "img/fireplaces_items/electro/15.jpg";
-				- var preload = "img/giphy.gif";
-				img(alt = title, data-src = link, src = preload)
-				h3 #{title}
-				p Реалистичная имитация живого пламени с&nbsp;помощью пара, подсвеченного особым образом. 
-				button.modal-button Заказать
-			.model
-				- var title = "С эффектом 5D";
-				- var link = "img/fireplaces_items/electro/16.jpg";
-				- var preload = "img/giphy.gif";
-				img(alt = title, data-src = link, src = preload)
-				h3 #{title}
+				
+			+model("С эффектом 3D", "img/fireplaces_items/electro/15.jpg")
+				p Реалистичная имитация живого пламени с&nbsp;помощью пара, подсвеченного особым образом.
+				
+			+model("С эффектом 5D", "img/fireplaces_items/electro/16.jpg")
 				p Имитация натурального пламени с&nbsp;использованием LED-технологии.
-				button.modal-button Заказать

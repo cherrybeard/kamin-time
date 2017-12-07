@@ -1,0 +1,44 @@
+.intro {
+	@extend %center-container;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	height: 28.125rem; // 450px;
+	box-sizing: border-box;
+	padding: 0 $basic-padding;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	margin-bottom: 20px;
+	color: white;
+
+	p {
+		margin: 30px 0 45px 0;
+		max-width: 39.625rem;
+		color: white;
+	}
+
+	button {
+		@extend %primary-button;
+		font-size: 1rem;
+		color: #fff;
+		border: 1px solid #fff;
+	}
+
+	@include mq("768", max) {
+		height: 440px;
+		padding: 50px 20px;
+		justify-content: flex-start;
+
+		p {  margin: 20px 0 0 0;  }
+
+		button {
+			position: absolute;
+			left: 20px;
+			bottom: 50px;
+		}
+	}
+
+}

@@ -1,5 +1,25 @@
 .marble {
-	background:transparent url('img/fireplaces/marble.jpg') center/cover no-repeat;
-	@extend %models-block;
-	
+	.model { height: 21.875rem; }
+
+	.info-block {
+		box-sizing: border-box;
+		padding: 0 2.5%;
+
+		button { @extend %primary-button; }
+		p { padding-bottom: 20px; }
+	}
+
+
+	@include mq("768", max) {
+		.info-block {
+			padding-left: 12px;
+			padding-bottom: 30px;
+
+			p { font-size: 10px; }
+			button { font-size: 12px; }
+		}
+
+		.model { height: 132px; }
+	}
+
 }

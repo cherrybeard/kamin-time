@@ -27,19 +27,7 @@ h1, h2 {
 	font-family: $font-secondary;
 }
 
-%center-container {
-	width: 90%;
-	margin: 0 auto;
-	@include mq("1680", min) {
-		width: 80%;
-	}
-	@include mq("1366", max) {
-		width: 95%;
-	}
-	@include mq("768", max) {
-		width: 100%;
-	}
-}
+
 .modal-lock {
 	overflow: hidden;
 

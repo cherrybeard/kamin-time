@@ -1,58 +1,18 @@
-.fireplaces-container
-	section.marble
+.marble(data-expandable)
+	section.intro
 		h2 Мраморные порталы
 		p Природа создает неповторимый и&nbsp;уникальный рисунок в&nbsp;камне, мы&nbsp;придаем камню неповторимые и&nbsp;уникальные формы. Используем элементы бронзового литья и&nbsp;скульптурной резьбы по&nbsp;камню.
-		button.show-models Смотреть модели
-	.models-container
+		button.show-models(data-expandable-toggle) Смотреть модели
+		
+	.models-container(data-expandable-block)
 		.models-wrapper
 			.info-block
 				p Собственная база по камнеобработке позволит воплотить даже самые смелые идеи. Индивидуальный дизайн под ваши требования и препочтения.
 				button.modal-button Заказать
-			.model(data-marble)
-				- var title = "Мраморный камин";
-				- var link = "img/fireplaces_items/marble/17.jpg";
-				- var preload = "img/giphy.gif";
-				img(alt = title, data-src = link, src = preload)
-				//- h3 #{title}
-				//- p Это не просто отопительная система, это, пожалуй, главное украшение любого интерьера.
-				//- button.modal-button Заказать
-			.model(data-marble)
-				- var title = "Мраморный камин";
-				- var link = "img/fireplaces_items/marble/18.jpg";
-				- var preload = "img/giphy.gif";
-				img(alt = title, data-src = link, src = preload)
-				//- h3 #{title}
-				//- p Это не просто отопительная система, это, пожалуй, главное украшение любого интерьера.
-				//- button.modal-button Заказать
-			.model(data-marble)
-				- var title = "Мраморный камин";
-				- var link = "img/fireplaces_items/marble/19.jpg";
-				- var preload = "img/giphy.gif";
-				img(alt = title, data-src = link, src = preload)
-				//- h3 #{title}
-				//- p Это не просто отопительная система, это, пожалуй, главное украшение любого интерьера.
-				//- button.modal-button Заказать
-			.model(data-marble)
-				- var title = "Мраморный камин";
-				- var link = "img/fireplaces_items/marble/20.jpg";
-				- var preload = "img/giphy.gif";
-				img(alt = title, data-src = link, src = preload)
-				//- h3 #{title}
-				//- p Это не просто отопительная система, это, пожалуй, главное украшение любого интерьера.
-				//- button.modal-button Заказать
-			.model(data-marble)
-				- var title = "Мраморный камин";
-				- var link = "img/fireplaces_items/marble/21.jpg";
-				- var preload = "img/giphy.gif";
-				img(alt = title, data-src = link, src = preload)
-				//- h3 #{title}
-				//- p Это не просто отопительная система, это, пожалуй, главное украшение любого интерьера.
-				//- button.modal-button Заказать
-			.model(data-marble)
-				- var title = "Мраморный камин";
-				- var link = "img/fireplaces_items/marble/22.jpg";
-				- var preload = "img/giphy.gif";
-				img(alt = title, data-src = link, src = preload)
-				//- h3 #{title}
-				//- p Это не просто отопительная система, это, пожалуй, главное украшение любого интерьера.
-				//- button.modal-button Заказать
+				
+			+model("Мраморный камин", "img/fireplaces_items/marble/17.jpg", true)
+			+model("Мраморный камин", "img/fireplaces_items/marble/18.jpg", true)
+			+model("Мраморный камин", "img/fireplaces_items/marble/19.jpg", true)
+			+model("Мраморный камин", "img/fireplaces_items/marble/20.jpg", true)
+			+model("Мраморный камин", "img/fireplaces_items/marble/21.jpg", true)
+			+model("Мраморный камин", "img/fireplaces_items/marble/22.jpg", true)

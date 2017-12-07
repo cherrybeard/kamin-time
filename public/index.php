@@ -25,10 +25,18 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
+    <meta name="description" content="«Kamintime» - пришло время установить камин в вашем доме!">
+    <meta name="keywords" content="Kamintime, камины, москва">
+    <meta name="viewport" content="width=device-width">
+    <meta property="og:title" content="Kamintime">
+    <meta property="og:description" content="«Kamintime» - пришло время установить камин в вашем доме!">
+    <meta property="og:image" content="http://kamin-time.ru/img/social/social-banner.jpg">
+    <meta property="og:url" content="http://kamin-time.ru">
+    <title>KaminTime</title>
     <link rel="stylesheet" href="swiper/css/swiper.min.css">
     <link rel="stylesheet" href="main.css">
-    <meta name="viewport" content="width=device-width">
-    <title>KaminTime</title>
+    <link rel="icon" href="img/social/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="img/social/apple-icon.png">
   </head>
   <body>
     <header id="header" class="header">
@@ -39,25 +47,29 @@
       <section class="wrapper">
         <div class="present">
           <h2>Пришло время установить&nbsp;камин в&nbsp;вашем доме?</h2>
-          <p>Вы на правильном пути! Обеспечим полный цикл по монтажу каминов и печей.</p>
+          <p>Вы на правильном пути! Обеспечим полный цикл по&nbsp;монтажу каминов и&nbsp;печей.</p>
           <div class="button-block">
-            <button class="modal-button">Заказать</button><small>При заказе камина аксессуары в подарок</small>
+            <button class="modal-button">Заказать</button><small>При заказе камина аксессуары в&nbsp;подарок</small>
           </div>
         </div>
-        <div class="present-image"></div>
+        <div class="present-image">
+          <div class="information">
+            <div class="logo"></div><a href="tel:79852119645">+7 985 211 9645</a>
+          </div>
+        </div>
       </section>
       <section class="wrapper">
         <div class="about-image"></div>
         <div class="about">
           <h2>Наши камины — украшение вашего дома</h2>
-          <p>Широкий выбор каминных топок и печей от ведущих производителей. Только высококлассные комплектующие материалы.</p>
+          <p>Широкий выбор каминных топок и&nbsp;печей от&nbsp;ведущих производителей. Только высококлассные комплектующие материалы.</p>
         </div>
       </section>
     </header>
     <section id="about-company" class="about-company">
       <div class="about">
         <h2>Более 20 лет успешной работы</h2>
-        <p>Наше неоспоримое преимущество — своя собственная база по камнеобработке, которая обеспечивает индивидуальный подход к каждому клиенту.</p>
+        <p>Наше неоспоримое преимущество — своя&nbsp;собственная база по&nbsp;камнеобработке, которая обеспечивает индивидуальный подход к&nbsp;каждому клиенту.</p>
         <p>Высокая квалификация наших специалистов позволит воплотить самые смелые идеи.</p>
       </div>
     </section>
@@ -66,13 +78,13 @@
       <div class="advantages-list"> 
         <div class="item">
           <div class="count">1</div>
-          <h3>От а до я</h3>
-          <p>Полный спектр работ по монтажу каминов и печей. Выезд на замер — бонус.</p>
+          <h3>От а&nbsp;до&nbsp;я</h3>
+          <p>Полный спектр работ по&nbsp;монтажу каминов и&nbsp;печей. Выезд на&nbsp;замер — бонус.</p>
         </div>
         <div class="item">
           <div class="count">2</div>
           <h3>Индивидуальный подход</h3>
-          <p>Собственное производство по камнеобработке.</p>
+          <p>Собственное производство по&nbsp;камнеобработке.</p>
         </div>
         <div class="item">
           <div class="count">3</div>
@@ -81,152 +93,155 @@
         </div>
       </div>
     </section>
-    <div class="fireplaces-container">
-      <section id="firewood" class="firewood">
-        <h2>Дровяные камины</h2>
-        <p>Имеем широкий модельный ряд каминных топок. Нашие долгосрочное и стабильное сотрудничество с ведущими европейскими и российскими производителями гарантирует только лучшее качество.</p>
-        <button class="show-models">Смотреть модели</button>
-      </section>
-      <div class="models-container">
-        <div class="models-wrapper">
-          <div class="model"><img src="img/fireplaces_items/wood/01.jpg" alt="Топка с прямым стеклом">
-            <h3>Топка с прямым стеклом</h3>
-            <p>Такие топки можно сделать в квадратном виде, горизонтальном и вертикальном.</p>
-            <button class="modal-button">Заказать</button>
-          </div>
-          <div class="model"><img src="img/fireplaces_items/wood/02.jpg" alt="Топка пристенно-угловая">
-            <h3>Топка пристенно-угловая</h3>
-            <p>Такая форма стекла увеличивает обзор топочной части, позволяя наслаждаться игрой пламени.</p>
-            <button class="modal-button">Заказать</button>
-          </div>
-          <div class="model"><img src="img/fireplaces_items/wood/03.jpg" alt="Топка трёхсторонняя">
-            <h3>Топка трёхсторонняя</h3>
-            <p>Такой вид топки обеспечивает максимальный обзор пламени.</p>
-            <button class="modal-button">Заказать</button>
-          </div>
-          <div class="model"><img src="img/fireplaces_items/wood/04.jpg" alt="Топка с панорамным и призматическим стеклом">
-            <h3>Топка с панорамным и призматическим стеклом</h3>
-            <p>Конфигурация стекла позволяет наблюдать за пламенем в широком диапазоне.</p>
-            <button class="modal-button">Заказать</button>
-          </div>
-          <div class="model"><img src="img/fireplaces_items/wood/05.jpg" alt="Туннельные топки">
-            <h3>Туннельные топки</h3>
-            <p>Данный вид топок позволяет наблюдать за пламенем из двух помещений.</p>
-            <button class="modal-button">Заказать</button>
-          </div>
-          <div class="model"><img src="img/fireplaces_items/wood/06.jpg" alt="Островные камины">
-            <h3>Островные камины</h3>
-            <p>Островок релакса и неспешной беседы в кругу друзей и близких.</p>
-            <button class="modal-button">Заказать</button>
-          </div>
-          <div class="model"><img src="img/fireplaces_items/wood/07.jpg" alt="В стиле Hi-Tech">
-            <h3>В стиле Hi-Tech</h3>
-            <p>Брутальный вид каминов никого не оставляет равнодушным.</p>
-            <button class="modal-button">Заказать</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="fireplaces-container">
-      <div class="stove-fireplace">
-        <h2>Печи-камины</h2>
-        <p>Основное отличие печей от каминов в том, что печи накапливают тепло. И, даже после того, как угас последний уголек, печь продолжает ласково делиться своим теплом с вами.</p>
-        <button class="show-models">Смотреть модели</button>
-      </div>
-      <div class="models-container">
-        <div class="models-wrapper">
-          <div class="model"><img src="img/fireplaces_items/stove/08.jpg" alt="Кафельные печи">
-            <h3>Кафельные печи</h3>
-            <p>Это не просто отопительная система, это, пожалуй, главное украшение любого интерьера.</p>
-            <button class="modal-button">Заказать</button>
-          </div>
-          <div class="model"><img src="img/fireplaces_items/stove/09.jpg" alt="Буржуйки">
-            <h3>Буржуйки</h3>
-            <p>Самые востребованные  печи на сегодняшний день — от одного взгляда на них  становится тепло.</p>
-            <button class="modal-button">Заказать</button>
-          </div>
-          <div class="model"><img src="img/fireplaces_items/stove/10.jpg" alt="Стальные печи">
-            <h3>Стальные печи</h3>
-            <p>Эти печи великолепно вписываются в современные интерьеры Hi-Tec и  Loft, образуя уголок домашнего уюта.</p>
-            <button class="modal-button">Заказать</button>
-          </div>
-          <div class="model"><img src="img/fireplaces_items/stove/11.jpg" alt="Отопительно-варочные печи">
-            <h3>Отопительно-варочные печи</h3>
-            <p>Эти печи позволят вам любоваться игрой огня и получать тепло, пока на плите готовится вкусный обед или ужин.</p>
-            <button class="modal-button">Заказать</button>
+    <div class="fireplaces">
+      <div data-expandable class="firewood">
+        <section id="firewood" class="intro">
+          <h2>Дровяные камины</h2>
+          <p>Имеем широкий модельный ряд каминных топок. Нашие долгосрочное и&nbsp;стабильное сотрудничество с&nbsp;ведущими европейскими и&nbsp;российскими производителями гарантирует только лучшее качество.</p>
+          <button data-expandable-toggle class="show-models">Смотреть модели</button>
+        </section>
+        <div data-expandable-block class="models-container">
+          <div class="models-wrapper">
+                <div class="model"><img alt="Топка с прямым стеклом" data-src="img/fireplaces_items/wood/01.jpg" src="img/giphy.gif">
+                  <h3>Топка с прямым стеклом</h3>
+                  <p>Такие топки можно сделать в&nbsp;квадратном виде, горизонтальном и вертикальном.</p>
+                  <button class="modal-button">Заказать</button>
+                </div>
+                <div class="model"><img alt="Топка пристенно-угловая" data-src="img/fireplaces_items/wood/02.jpg" src="img/giphy.gif">
+                  <h3>Топка пристенно-угловая</h3>
+                  <p>Такая форма стекла увеличивает обзор топочной части, позволяя наслаждаться игрой пламени.</p>
+                  <button class="modal-button">Заказать</button>
+                </div>
+                <div class="model"><img alt="Топка трёхсторонняя" data-src="img/fireplaces_items/wood/03.jpg" src="img/giphy.gif">
+                  <h3>Топка трёхсторонняя</h3>
+                  <p>Такой вид топки обеспечивает максимальный обзор пламени.</p>
+                  <button class="modal-button">Заказать</button>
+                </div>
+                <div class="model"><img alt="Топка с панорамным и призматическим стеклом" data-src="img/fireplaces_items/wood/04.jpg" src="img/giphy.gif">
+                  <h3>Топка с панорамным и призматическим стеклом</h3>
+                  <p>Конфигурация стекла позволяет наблюдать за&nbsp;пламенем в&nbsp;широком диапазоне.</p>
+                  <button class="modal-button">Заказать</button>
+                </div>
+                <div class="model"><img alt="Туннельные топки" data-src="img/fireplaces_items/wood/05.jpg" src="img/giphy.gif">
+                  <h3>Туннельные топки</h3>
+                  <p>Данный вид топок позволяет наблюдать за&nbsp;пламенем из&nbsp;двух помещений.</p>
+                  <button class="modal-button">Заказать</button>
+                </div>
+                <div class="model"><img alt="Островные камины" data-src="img/fireplaces_items/wood/06.jpg" src="img/giphy.gif">
+                  <h3>Островные камины</h3>
+                  <p>Островок релакса и неспешной беседы в&nbsp;кругу друзей и&nbsp;близких.</p>
+                  <button class="modal-button">Заказать</button>
+                </div>
+                <div class="model"><img alt="В стиле Hi-Tech" data-src="img/fireplaces_items/wood/07.jpg" src="img/giphy.gif">
+                  <h3>В стиле Hi-Tech</h3>
+                  <button class="modal-button">Заказать</button>
+                </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="fireplaces-container">
-      <section class="bio-fireplace">
-        <h2>Биокамины</h2>
-        <p>Камины, которые работают на биотопливе, не имеют продуктов сгорания, при этом вы любуетесь живым пламенем. Их можно устанавливать в квартирах, ресторанах, отелях, офисах.</p>
-        <button class="show-models">Смотреть модели</button>
-        <div class="novelty"><span>Новинки!</span>
-          <p>Биотопливо с ароматом ванили и цитруса.</p>
+      <div data-expandable class="stove-fireplace">
+        <div class="intro">
+          <h2>Печи-камины</h2>
+          <p>Основное отличие печей от&nbsp;каминов в&nbsp;том, что печи накапливают тепло. И,&nbsp;даже после того, как угас последний уголек, печь продолжает ласково делиться своим теплом с&nbsp;вами.</p>
+          <button data-expandable-toggle class="show-models">Смотреть модели</button>
         </div>
-      </section>
-      <div class="models-container">
-        <div class="models-wrapper">
-          <div class="model"><img alt="Классические" data-src="img/fireplaces_items/bio/12.jpg" class="lozad">
-            <h3>Классические</h3>
-            <p>Прекрасная имитация пламени с опцией обогрева.</p>
-            <button class="modal-button">Заказать</button>
-          </div>
-          <div class="model"><img data-src="img/fireplaces_items/bio/13.jpg" alt="Современные" class="lozad">
-            <h3>Современные</h3>
-            <p>Реалистичная имитация живого пламени с помощью пара, подсвеченного особым образом. </p>
-            <button class="modal-button">Заказать</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="fireplaces-container">
-      <section class="electric-fireplace">
-        <h2>Электрокамины</h2>
-        <p>Пользуются большим спросом: не требуют дополнительных хлопот, создают уют и комфорт . Их можно встраивать в любые порталы, ниши, размещать настенно, устанавливать автономно.</p>
-        <button class="show-models">Смотреть модели</button>
-      </section>
-      <div class="models-container">
-        <div class="models-wrapper">
-          <div class="model"><img src="img/fireplaces_items/electro/14.jpg" alt="С использованием гелографического эффекта" width="342" height="350">
-            <h3>С использованием гелографического эффекта</h3>
-            <p>Прекрасная имитация пламени с опцией обогрева.</p>
-            <button class="modal-button">Заказать</button>
-          </div>
-          <div class="model"><img src="img/fireplaces_items/electro/15.jpg" alt="С эффектом 3D">
-            <h3>С эффектом 3D</h3>
-            <p>Реалистичная имитация живого пламени с помощью пара, подсвеченного особым образом. </p>
-            <button class="modal-button">Заказать</button>
-          </div>
-          <div class="model"><img src="img/fireplaces_items/electro/16.jpg" alt="С эффектом 5D">
-            <h3>С эффектом 5D</h3>
-            <p>Имитация натурального пламени с использованием LED-технологии.</p>
-            <button class="modal-button">Заказать</button>
+        <div data-expandable-block class="models-container">
+          <div class="models-wrapper">
+                <div class="model"><img alt="Кафельные печи" data-src="img/fireplaces_items/stove/08.jpg" src="img/giphy.gif">
+                  <h3>Кафельные печи</h3>
+                  <p>Это не&nbsp;просто отопительная система, это,&nbsp;пожалуй, главное украшение любого интерьера.</p>
+                  <button class="modal-button">Заказать</button>
+                </div>
+                <div class="model"><img alt="Буржуйки" data-src="img/fireplaces_items/stove/09.jpg" src="img/giphy.gif">
+                  <h3>Буржуйки</h3>
+                  <p>Самые востребованные печи на&nbsp;сегодняшний день — от&nbsp;одного взгляда на&nbsp;них&nbsp;становится тепло.</p>
+                  <button class="modal-button">Заказать</button>
+                </div>
+                <div class="model"><img alt="Стальные печи" data-src="img/fireplaces_items/stove/10.jpg" src="img/giphy.gif">
+                  <h3>Стальные печи</h3>
+                  <p>Эти печи великолепно вписываются в&nbsp;современные интерьеры Hi-Tec и Loft, образуя уголок домашнего уюта.</p>
+                  <button class="modal-button">Заказать</button>
+                </div>
+                <div class="model"><img alt="Отопительно-варочные печи" data-src="img/fireplaces_items/stove/11.jpg" src="img/giphy.gif">
+                  <h3>Отопительно-варочные печи</h3>
+                  <p>Эти печи позволят вам любоваться игрой огня и&nbsp;получать тепло, пока на&nbsp;плите готовится вкусный обед или ужин.</p>
+                  <button class="modal-button">Заказать</button>
+                </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="fireplaces-container">
-      <section class="marble">
-        <h2>Мраморные порталы</h2>
-        <p>Природа создает неповторимый и уникальный рисунок в камне, мы придаем камню неповторимые и уникальные формы. Используем элементы бронзового литья и скульптурной резьбы по камню.</p>
-        <button class="show-models">Смотреть модели</button>
-      </section>
-      <div class="models-container">
-        <div class="models-wrapper">
-          <div data-marble class="model"><img src="img/fireplaces_items/marble/17.jpg" alt="Мраморный камин">
+      <div data-expandable class="bio-fireplace">
+        <section class="intro">
+          <h2>Биокамины</h2>
+          <p>Камины, которые работают на&nbsp;биотопливе, не&nbsp;имеют продуктов сгорания, при&nbsp;этом вы&nbsp;любуетесь живым пламенем. Их можно устанавливать в&nbsp;квартирах, ресторанах, отелях, офисах.</p>
+          <div class="novelty"><span>Новинки!</span>
+            <p>Биотопливо с&nbsp;ароматом ванили и&nbsp;цитруса.</p>
           </div>
-          <div data-marble class="model"><img src="img/fireplaces_items/marble/18.jpg" alt="Мраморный камин">
+          <button data-expandable-toggle class="show-models">Смотреть модели</button>
+        </section>
+        <div data-expandable-block class="models-container">
+          <div class="models-wrapper">
+                <div class="model"><img alt="Классические" data-src="img/fireplaces_items/bio/12.jpg" src="img/giphy.gif">
+                  <h3>Классические</h3>
+                  <button class="modal-button">Заказать</button>
+                </div>
+                <div class="model"><img alt="Современные" data-src="img/fireplaces_items/bio/13.jpg" src="img/giphy.gif">
+                  <h3>Современные</h3>
+                  <button class="modal-button">Заказать</button>
+                </div>
           </div>
-          <div data-marble class="model"><img src="img/fireplaces_items/marble/19.jpg" alt="Мраморный камин">
+        </div>
+      </div>
+      <div data-expandable class="electric-fireplace">
+        <section class="intro">
+          <h2>Электрокамины</h2>
+          <p>Пользуются большим спросом: не&nbsp;требуют дополнительных хлопот, создают уют и&nbsp;комфорт . Их&nbsp;можно встраивать в&nbsp;любые порталы, ниши, размещать настенно, устанавливать автономно.</p>
+          <button data-expandable-toggle class="show-models">Смотреть модели</button>
+        </section>
+        <div data-expandable-block class="models-container">
+          <div class="models-wrapper">
+                <div class="model"><img alt="С использованием гелографического эффекта" data-src="img/fireplaces_items/electro/14.jpg" src="img/giphy.gif">
+                  <h3>С использованием гелографического эффекта</h3>
+                  <p>Прекрасная имитация пламени с&nbsp;опцией обогрева.</p>
+                  <button class="modal-button">Заказать</button>
+                </div>
+                <div class="model"><img alt="С эффектом 3D" data-src="img/fireplaces_items/electro/15.jpg" src="img/giphy.gif">
+                  <h3>С эффектом 3D</h3>
+                  <p>Реалистичная имитация живого пламени с&nbsp;помощью пара, подсвеченного особым образом.</p>
+                  <button class="modal-button">Заказать</button>
+                </div>
+                <div class="model"><img alt="С эффектом 5D" data-src="img/fireplaces_items/electro/16.jpg" src="img/giphy.gif">
+                  <h3>С эффектом 5D</h3>
+                  <p>Имитация натурального пламени с&nbsp;использованием LED-технологии.</p>
+                  <button class="modal-button">Заказать</button>
+                </div>
           </div>
-          <div data-marble class="model"><img src="img/fireplaces_items/marble/20.jpg" alt="Мраморный камин">
-          </div>
-          <div data-marble class="model"><img src="img/fireplaces_items/marble/21.jpg" alt="Мраморный камин">
-          </div>
-          <div data-marble class="model"><img src="img/fireplaces_items/marble/22.jpg" alt="Мраморный камин">
+        </div>
+      </div>
+      <div data-expandable class="marble">
+        <section class="intro">
+          <h2>Мраморные порталы</h2>
+          <p>Природа создает неповторимый и&nbsp;уникальный рисунок в&nbsp;камне, мы&nbsp;придаем камню неповторимые и&nbsp;уникальные формы. Используем элементы бронзового литья и&nbsp;скульптурной резьбы по&nbsp;камню.</p>
+          <button data-expandable-toggle class="show-models">Смотреть модели</button>
+        </section>
+        <div data-expandable-block class="models-container">
+          <div class="models-wrapper">
+            <div class="info-block">
+              <p>Собственная база по камнеобработке позволит воплотить даже самые смелые идеи. Индивидуальный дизайн под ваши требования и препочтения.</p>
+              <button class="modal-button">Заказать</button>
+            </div>
+                <div class="model"><img alt="Мраморный камин" data-src="img/fireplaces_items/marble/17.jpg" src="img/giphy.gif">
+                </div>
+                <div class="model"><img alt="Мраморный камин" data-src="img/fireplaces_items/marble/18.jpg" src="img/giphy.gif">
+                </div>
+                <div class="model"><img alt="Мраморный камин" data-src="img/fireplaces_items/marble/19.jpg" src="img/giphy.gif">
+                </div>
+                <div class="model"><img alt="Мраморный камин" data-src="img/fireplaces_items/marble/20.jpg" src="img/giphy.gif">
+                </div>
+                <div class="model"><img alt="Мраморный камин" data-src="img/fireplaces_items/marble/21.jpg" src="img/giphy.gif">
+                </div>
+                <div class="model"><img alt="Мраморный камин" data-src="img/fireplaces_items/marble/22.jpg" src="img/giphy.gif">
+                </div>
           </div>
         </div>
       </div>
@@ -241,41 +256,41 @@
           <div class="swiper-button-next swiper-button"></div>
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <p>Моя квартира выполнена в минималистическом стиле. Всё меня устраивало, пока не увидел у друзей биокамин в стиле hi-tec и понял, чего не достает в моем интерьре.</p>
-              <p>Друзья подсказали где я могу приобрести такой камин,  и я воспользовался советом .</p>
+              <p>Приобретала у&nbsp;фирмы топку, дымоход и&nbsp;комплект всех материалов. Монтаж производила бригада мастеров «КаминТайм». Порадовала высокая квалификация.</p>
+              <p>Невероятной красоты мраморный портал с&nbsp;надстройкой и&nbsp;элементами из&nbsp;бронзы стал основным украшением в&nbsp;нашем доме. Я&nbsp;долго была в&nbsp;поисках и&nbsp;нашла, наконец, то, что хотелось, именно в&nbsp;«КаминТайм».</p>
+              <p>Выражаю искреннюю благодарность всем, кто создавал эту красоту. Рекомендую.</p><span>Ирченко Наталья</span><small>Бизнес-леди</small>
+            </div>
+            <div class="swiper-slide">
+              <p>Моя квартира выполнена в&nbsp;минималистическом стиле. Всё меня устраивало, пока не&nbsp;увидел у друзей биокамин в&nbsp;стиле hi-tec и&nbsp;понял, чего не&nbsp;достает в&nbsp;моем интерьре.</p>
+              <p>Друзья подсказали где&nbsp;я&nbsp;могу приобрести такой камин,  и&nbsp;я&nbsp;воспользовался советом.</p>
               <p>Так что теперь друзья собираются у моего камина. Спасибо огромное КаминТайм за участие. Охотно рекомендую.</p><span>Эдгар Шабанов</span><small>Генеральный директор Clarins</small>
             </div>
             <div class="swiper-slide">
-              <p>Очень хотелось иметь камин в квартире, но нет дымохода. Поэтому три года назад приобрел у КаминТайм биокамин.</p>
-              <p>Получил грамотную консультацию по эксплуатации и уходу. До сих пор не возникло никаких проблем. Радует созерцание живого огня, а биотопливо с различными ароматическими добавками помогает расслабиться после трудового дня.</p>
+              <p>Очень хотелось иметь камин в&nbsp;квартире, но&nbsp;нет дымохода. Поэтому три года назад приобрел у&nbsp;КаминТайм биокамин.</p>
+              <p>Получил грамотную консультацию по&nbsp;эксплуатации и&nbsp;уходу. До сих пор не&nbsp;возникло никаких проблем. Радует созерцание живого огня, а&nbsp;биотопливо с&nbsp;различными ароматическими добавками помогает расслабиться после трудового дня.</p>
               <p>Отдельное спасибо директору Фроловой Жанне за высокий профессионализм.</p><span>Дмитрий Оленин</span><small>Теле-радио ведущий, «Русское радио»</small>
             </div>
             <div class="swiper-slide">
-              <p>Заказал полный комплекс услуг по установке камина, дымохода и мраморного портала. На месте получил грамотную консультацию, понял, что могу доверять этой фирме. Многолетний опыт и лицензия МЧС для меня имеют значение. Ребята сработали отлично. Без проволочек. Все мои пожелания учли. Портал сделали очень красивый.</p>
+              <p>Заказал полный комплекс услуг по&nbsp;установке камина, дымохода и&nbsp;мраморного портала. На месте получил грамотную консультацию, понял, что могу доверять этой фирме. Многолетний опыт и&nbsp;лицензия МЧС для меня имеют значение. Ребята сработали отлично. Без проволочек. Все мои пожелания учли. Портал сделали очень красивый.</p>
               <p>Спасибо большое.</p><span>Стахеев Игорь</span><small>Предприниматель</small>
             </div>
             <div class="swiper-slide">
-              <p>Приобрели здесь электрический камин с эффектом Opti-Myst (с паром) и заказали деревянный портал по индивидуальному проекту. Портал по цвету подобрали идеально под мебель, сроки все были соблюдены.</p>
-              <p>Спасибо огромное, с вами приятно иметь дело. В будущем откроем заказ на настоящий камин  и, конечно, только у вас. Будет вдохновлять меня на творчество.</p><span>Ольга Кормухина</span><small>Автор и исполнитель песен</small>
+              <p>Приобрели здесь электрический камин с&nbsp;эффектом Opti-Myst (с паром) и&nbsp;заказали деревянный портал по&nbsp;индивидуальному проекту. Портал по&nbsp;цвету подобрали идеально под мебель, сроки все были соблюдены.</p>
+              <p>Спасибо огромное, с&nbsp;вами приятно иметь дело. В&nbsp;будущем откроем заказ на настоящий камин  и,&nbsp;конечно,&nbsp;только у вас. Будет вдохновлять меня на&nbsp;творчество.</p><span>Ольга Кормухина</span><small>Автор и исполнитель песен</small>
             </div>
             <div class="swiper-slide">
-              <p>Никто не сумел сделать мне столь выгодное предложение по камину, как «КаминТайм». Не раздумывая стал с ними сотрудничать и не пожалел.</p>
-              <p>Камин подвесной, нестандартный, от французского производителя «»Борделет» под заказ. Все пришло даже раньше, чем ожидал, и все соответствовало моим пожеланиям. Могу смело всем рекомендовать эту фирму.</p>
+              <p>Никто не&nbsp;сумел сделать мне столь выгодное предложение по&nbsp;камину, как «КаминТайм». Не&nbsp;раздумывая стал с&nbsp;ними сотрудничать&nbsp;и&nbsp;не пожалел.</p>
+              <p>Камин подвесной, нестандартный,&nbsp;от французского производителя «Борделет» под заказ. Все пришло даже раньше, чем ожидал,&nbsp;и&nbsp;все соответствовало моим пожеланиям. Могу смело всем рекомендовать эту фирму.</p>
               <p>Желаю процветания «КаминТайм».</p><span>Валерий Чудновец</span><small>Бизнесмен</small>
             </div>
             <div class="swiper-slide">
-              <p>Приобрел у «КаминТайм» комплект: портал «Кардинал» из травертина и биовставку. Такой портал я больше не видел ни у одного производителей. Подобрали все аксессуары и комплект для биокамина.</p>
+              <p>Приобрел у «КаминТайм» комплект: портал «Кардинал» из травертина и биовставку. Такой портал я больше не видел ни у одного из производителей. Подобрали все аксессуары и комплект для биокамина.</p>
               <p>Позже заказал биовставку по индивидуальному размеру — все изготовили быстро и качественно.</p>
               <p>Особенно признателен за рекомендации по стилю и дизайнерскому решению. Спасибо большое.</p><span>Григорий Кареев</span><small>Предприниматель</small>
             </div>
             <div class="swiper-slide">
-              <p>Я сначала и подходить не хотела — думала всё очень дорого. Но девушка мне любезно рассказала о печках и помогла выбрать небольшую буржуйку для дачи.</p>
-              <p>Мы очень довольны ценой и качеством. Спасибо за то, что внимательно относитесь к посетителям.</p><span>Никитина Вера Павловна</span><small>Пенсионерка</small>
-            </div>
-            <div class="swiper-slide">
-              <p>Приобретала у фирмы топку, дымоход и комплект всех материалов. Монтаж производила бригада мастеров «КаминТайм». Порадовала высокая квалификация.</p>
-              <p>Невероятной красоты мраморный портал с надстройкой и элементами из бронзы стал основным украшением в нашем доме. Я долго была в поисках и нашла, наконец, то, что хотелось, именно в «КаминТайм».</p>
-              <p>Выражаю искреннюю благодарность всем, кто создавал эту красоту. Рекомендую.</p><span>Ирченко Наталья</span><small>Бизнес-леди</small>
+              <p>Я&nbsp;сначала и&nbsp;подходить не хотела — думала всё очень дорого. Но&nbsp;девушка мне любезно рассказала о&nbsp;печках и&nbsp;помогла выбрать небольшую буржуйку для дачи.</p>
+              <p>Мы очень довольны ценой и&nbsp;качеством. Спасибо за то,&nbsp;что&nbsp;внимательно относитесь к посетителям.</p><span>Никитина Вера Павловна</span><small>Пенсионерка</small>
             </div>
           </div>
         </div>
@@ -284,20 +299,20 @@
     <section id="callback" class="callback">
       <div data-callback-state="button" class="callback-form">
         <h2>Сотрудничаем с&nbsp;компаниями</h2>
-        <p>Если вы представляете отель, ресторан, торговый комплекс — у нас для вас специальные условия.</p>
+        <p>Предлагаем особые условия для&nbsp;дизайнеров и&nbsp;архитекторов.</p>
         <button class="modal-button">Обратный звонок</button>
       </div>
     </section>
     <section id="location" class="location">
       <div class="about">
         <h2>Знаем подход</h2>
-        <p>Вы можете позвонить нам и заранее договориться о встрече  в удобное для вас время.</p>
-        <p>Если вы еще не решили как должен выглядеть ваш камин, за чашечкой кофе  мы поможем подобрать модель с учетом общего интерьера.</p>
-        <p>Наш офис расположен в удобном месте со своей парковкой.</p><a href="img/plan.jpg">Схема проезда</a>
+        <p>Вы можете позвонить нам и&nbsp;заранее договориться о встрече в&nbsp;удобное для вас время.</p>
+        <p>Если вы&nbsp;еще не&nbsp;решили как должен выглядеть ваш камин, за чашечкой кофе  мы поможем подобрать модель c&nbsp; учетом общего интерьера.</p>
+        <p>Наш офис расположен в&nbsp;удобном месте со&nbsp;своей парковкой.</p><a href="img/plan.jpg">Схема проезда</a>
       </div>
     </section>
     <footer id="footer" class="footer"><a href="#header" class="logo"></a>
-      <address>Нахимовский проспект, 24, Центр дизайна и интерьера «EXPOSTROY», павильон 6, офис 6-16</address>
+      <address>Нахимовский проспект,&nbsp;24, Центр дизайна и&nbsp;интерьера «EXPOSTROY», павильон 6,&nbsp;офис 6-16</address>
       <ul><a href="mailto:7791166@mail.ru">7791166@mail.ru</a><a href="privacy-policy.html">Политика конфиденциальности  </a></ul><a href="tel:+79852119645">+7 985 211 9645</a>
     </footer>
     <div class="modal-overlay">
@@ -316,9 +331,9 @@
         </div>
       </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="swiper/js/swiper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
-    <script src="main.min.js"></script>
+    <script src="script/libs/jquery-1.12.4.min.js"></script>
+    <script src="script/libs/swiper.min.js"></script>
+    <script src="script/libs/lazyload.js"></script>
+    <script src="script/main.min.js"></script>
   </body>
 </html>
