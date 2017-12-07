@@ -1,24 +1,16 @@
-.footer { 
+.footer {
 	box-sizing: border-box;
 	padding: 50px 10%;
 	background-color: #222;
-
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
-
 	color: #ccc;
 	font-size: 11px;
-	.logo {
-		width: 9.5rem; // 152px;
-		height: 2.5rem; // 40px;
-		background:transparent url('img/logo-white.svg') center/contain no-repeat;
-		border: none;
-	}
-	ul {
-		max-width: 11.3125rem; // 181px
-	}
+
+	ul { max-width: 11.3125rem; }
+
 	address {
 		display: inline;
 		color: #ccc;
@@ -26,39 +18,44 @@
 		max-width: 26.0625rem; // 417px
 		font-style: normal;
 	}
+
 	a {
 		border-bottom: 1px solid #ccc;
 		display: inline-block;
 		margin-bottom: 5px;
 		color: #ccc;
+
+		&[href^=tel] {
+			font-size: 2.5rem; // 40px
+			color: #fff;
+			font-family: $font-secondary;
+			border-bottom: none;
+		}
 	}
-	a[href^=tel] {
-		font-size: 2.5rem; // 40px
-		color: #fff;
-		font-family: $font-secondary;
-		border-bottom: none;
-	}
-	@include mq("1680", min) {
+
+	@include mq("desktop") {
 		padding: 50px 15%;
 	}
-	@include mq("768", max) {
+
+	@include mq("iphone") {
 		flex-direction: column;
 		align-items: flex-start;
 		justify-content: space-around;
 		padding: 30px 20px;
 		font-weight: 600;
 		line-height: 1.64;
+
 		.logo {
 			width: 84px;
-  			height: 22px;
+  		height: 22px;
 		}
+
 		a[href^=tel] {
 			font-size: 38px;
 			font-weight: 400;
 		}
-		address {
-			padding: 16px 0;
 
-		}
+		address { padding: 16px 0; }
 	}
-} 
+
+}

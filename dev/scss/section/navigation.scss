@@ -1,0 +1,76 @@
+.navigation {
+	@extend %center-container;
+	box-sizing: border-box;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	font-size: 0.8rem;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	line-height: 2rem;
+
+	a {
+		color: #444;
+		&:not(:last-child) { margin-right: 1rem; }
+	}
+
+	.logo {
+		width: 6rem;
+		height: 1rem;
+		background: url('img/logo.svg') center/contain no-repeat;
+		flex-shrink: 0;
+	}
+
+	.navigation-items {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 65%;
+		max-width: 45rem;
+		min-width: 35rem;
+		margin-right: 1rem;
+		white-space: nowrap;
+
+		h1 { margin-right: 2rem; }
+	}
+
+	.navigation-phones {
+		display: flex;
+		width: 30%;
+		max-width: 18rem;
+		white-space: nowrap;
+		justify-content: space-between;
+
+		a:not(:last-child) { margin-right: 1rem; }
+	}
+
+	@include mq("ipad-vrt") {
+		font-size: 0.7rem;
+		padding: 0;
+		justify-content: center;
+
+		.logo, .navigation-phones { display: none; }
+
+		.navigation-items {
+			min-width: auto;
+			width: auto;
+			padding-top: 1rem;
+			padding-bottom: 1rem;
+
+			a:not(:last-child) { margin-right: 2rem; }
+		}
+	}
+
+	@include mq("iphone") {
+		overflow-y: hidden;
+		overflow-x: scroll;
+		justify-content: flex-start;
+
+		.navigation-items {
+			padding: 0.6rem 2rem;
+		}
+	}
+
+}

@@ -5,13 +5,11 @@
 	padding: 0 $basic-padding;
 	position: relative;
 	height: 35.625rem; // 570px;
-
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	background: url('img/colab.jpg') center/cover no-repeat;
 
-	background:transparent url('img/colab.jpg') center/cover no-repeat;
-	
 	.callback-form {
 		box-sizing: border-box;
 		padding: 100px 0;
@@ -22,31 +20,45 @@
 		align-items: center;
 		background-color: #fff;
 	}
+
 	p {
 		margin: 20px 0 40px 0;
 		max-width: 37.3125rem; // 597px
 	}
+
 	button {
 		@extend %primary-button;
 		vertical-align: top;
 		font-size: 1rem;
 	}
-	@include mq("1680", min) {
+
+	@include mq("desktop") {
 		padding: 0 10%;
 	}
-	@include mq("768", max) {
+
+	@include mq("iphone") {
 		padding: 55px 30px 63px 20px;
 		display: inline-block;
 		height: auto;
+		position: relative;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0; left: 0; right: 0; bottom: 0;
+			background: rgba(black, 0.4);
+		}
+
 		.callback-form {
 			padding: 0;
 			align-items: flex-start;
 			text-align: left;
 			background-color: transparent;
+			position: relative;
 		}
-		p, button, h2 {
-			color: white;
-		}
+
+		p, button, h2 { color: white; }
 		button { border: 1px solid white;}
 	}
+
 }

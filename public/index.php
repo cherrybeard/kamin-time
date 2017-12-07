@@ -39,32 +39,34 @@
     <link rel="apple-touch-icon-precomposed" sizes="152x152" href="img/social/apple-icon.png">
   </head>
   <body>
+    <nav class="navigation">
+      <div class="navigation-items">
+        <h1 class="logo"></h1><a href="#about-company">О нас</a><a href="#firewood">Камины</a><a href="#footer">Контакты</a><a href="#callback">Для бизнеса</a><a href="#reviews">Отзывы</a>
+      </div>
+      <div class="navigation-phones"><a href="tel:+79851149222">+7 985 114 9222</a><a href="tel:+79852119645">+7 985 211 9645</a></div>
+    </nav>
     <header id="header" class="header">
-      <nav class="navigation"><a href="/index.html"> 
-          <h1 class="logo"></h1></a>
-        <ul><a href="#about-company">О нас</a><a href="#firewood">Камины</a><a href="#footer">Контакты</a><a href="#callback">Для бизнеса</a><a href="#reviews">Отзывы</a></ul><a href="tel:+79852119645">+7 985 211 9645</a>
-      </nav>
-      <section class="wrapper">
-        <div class="present">
+      <div class="time-has-come">
+        <div class="text">
           <h2>Пришло время установить&nbsp;камин в&nbsp;вашем доме?</h2>
           <p>Вы на правильном пути! Обеспечим полный цикл по&nbsp;монтажу каминов и&nbsp;печей.</p>
           <div class="button-block">
             <button class="modal-button">Заказать</button><small>При заказе камина аксессуары в&nbsp;подарок</small>
           </div>
         </div>
-        <div class="present-image">
+        <div class="image">
           <div class="information">
-            <div class="logo"></div><a href="tel:79852119645">+7 985 211 9645</a>
+            <div class="logo">KaminTime</div><a href="tel:+79851149222">+7 985 114 9222</a><a href="tel:+79852119645">+7 985 211 9645</a>
           </div>
         </div>
-      </section>
-      <section class="wrapper">
-        <div class="about-image"></div>
-        <div class="about">
+      </div>
+      <div class="our-fireplaces">
+        <div class="image"></div>
+        <div class="text">
           <h2>Наши камины — украшение вашего дома</h2>
           <p>Широкий выбор каминных топок и&nbsp;печей от&nbsp;ведущих производителей. Только высококлассные комплектующие материалы.</p>
         </div>
-      </section>
+      </div>
     </header>
     <section id="about-company" class="about-company">
       <div class="about">
@@ -311,7 +313,7 @@
         <p>Наш офис расположен в&nbsp;удобном месте со&nbsp;своей парковкой.</p><a href="img/plan.jpg">Схема проезда</a>
       </div>
     </section>
-    <footer id="footer" class="footer"><a href="#header" class="logo"></a>
+    <footer id="footer" class="footer">
       <address>Нахимовский проспект,&nbsp;24, Центр дизайна и&nbsp;интерьера «EXPOSTROY», павильон 6,&nbsp;офис 6-16</address>
       <ul><a href="mailto:7791166@mail.ru">7791166@mail.ru</a><a href="privacy-policy.html">Политика конфиденциальности  </a></ul><a href="tel:+79852119645">+7 985 211 9645</a>
     </footer>

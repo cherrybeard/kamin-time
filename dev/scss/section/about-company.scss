@@ -1,35 +1,45 @@
-
 .about-company {
 	@extend %center-container;
 	height: 30rem;
 	box-sizing: border-box;
 	padding: 0 5%;
-
-	background:transparent url('img/success.jpg') center/cover no-repeat;
+	background: url('img/success.jpg') center/cover no-repeat;
 	color: #fff;
-
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
+
 	.about {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
+
 		h2 {
 			width: 70%;
 			margin-bottom: 20px;
-	}
+		}
+
 		p {
+			width: 45%;
 			color: white;
 			max-width: 30rem;
 		}
 	}
-	@include mq("768", max) {
+
+	@include mq("ipad-vrt") {
 		padding: 0 20px;
 		margin-top: 40px;
+
 		.about {
-			p { padding-bottom: 20px;}
+			p { padding-bottom: 20px; }
 		}
 	}
+
+	@include mq("iphone") {
+		.about {
+			p { width: auto; }
+		}
+	}
+
 }

@@ -218,6 +218,17 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
 		},
+	"\/dev\/pug\/sections\/navigation.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dev\/pug\/sections\/navigation.jade",
+		"outputAbbreviatedPath": "\/dev\/pug\/sections\/navigation.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
 	"\/dev\/pug\/sections\/reviews.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
@@ -325,15 +336,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/dev\/scss\/section\/about-company\/about-company.scss": {
+	"\/dev\/scss\/section\/about-company.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dev\/scss\/section\/about-company\/about-company.scss",
-		"outputAbbreviatedPath": "\/dev\/scss\/section\/css\/about-company.css",
+		"inputAbbreviatedPath": "\/dev\/scss\/section\/about-company.scss",
+		"outputAbbreviatedPath": "\/dev\/scss\/css\/about-company.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -341,15 +352,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/dev\/scss\/section\/advantages\/advantages.scss": {
+	"\/dev\/scss\/section\/advantages.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dev\/scss\/section\/advantages\/advantages.scss",
-		"outputAbbreviatedPath": "\/dev\/scss\/section\/css\/advantages.css",
+		"inputAbbreviatedPath": "\/dev\/scss\/section\/advantages.scss",
+		"outputAbbreviatedPath": "\/dev\/scss\/css\/advantages.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -357,15 +368,31 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/dev\/scss\/section\/callback\/callback.scss": {
+	"\/dev\/scss\/section\/advantages\/list.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dev\/scss\/section\/callback\/callback.scss",
-		"outputAbbreviatedPath": "\/dev\/scss\/section\/css\/callback.css",
+		"inputAbbreviatedPath": "\/dev\/scss\/section\/advantages\/list.scss",
+		"outputAbbreviatedPath": "\/dev\/scss\/section\/css\/list.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/dev\/scss\/section\/callback.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dev\/scss\/section\/callback.scss",
+		"outputAbbreviatedPath": "\/dev\/scss\/css\/callback.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -453,15 +480,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/dev\/scss\/section\/footer\/footer.scss": {
+	"\/dev\/scss\/section\/footer.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dev\/scss\/section\/footer\/footer.scss",
-		"outputAbbreviatedPath": "\/dev\/scss\/section\/css\/footer.css",
+		"inputAbbreviatedPath": "\/dev\/scss\/section\/footer.scss",
+		"outputAbbreviatedPath": "\/dev\/scss\/css\/footer.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -469,15 +496,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/dev\/scss\/section\/header\/about-block.scss": {
+	"\/dev\/scss\/section\/header.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dev\/scss\/section\/header\/about-block.scss",
-		"outputAbbreviatedPath": "\/dev\/scss\/section\/css\/about-block.css",
+		"inputAbbreviatedPath": "\/dev\/scss\/section\/header.scss",
+		"outputAbbreviatedPath": "\/dev\/scss\/css\/header.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -485,15 +512,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/dev\/scss\/section\/header\/header.scss": {
+	"\/dev\/scss\/section\/header\/our-fireplaces.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dev\/scss\/section\/header\/header.scss",
-		"outputAbbreviatedPath": "\/dev\/scss\/section\/css\/header.css",
+		"inputAbbreviatedPath": "\/dev\/scss\/section\/header\/our-fireplaces.scss",
+		"outputAbbreviatedPath": "\/dev\/scss\/section\/css\/our-fireplaces.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -501,15 +528,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/dev\/scss\/section\/header\/navigation.scss": {
+	"\/dev\/scss\/section\/header\/time-has-come.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dev\/scss\/section\/header\/navigation.scss",
-		"outputAbbreviatedPath": "\/dev\/scss\/section\/css\/navigation.css",
+		"inputAbbreviatedPath": "\/dev\/scss\/section\/header\/time-has-come.scss",
+		"outputAbbreviatedPath": "\/dev\/scss\/section\/css\/time-has-come.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -517,15 +544,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/dev\/scss\/section\/header\/present-block.scss": {
+	"\/dev\/scss\/section\/location.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dev\/scss\/section\/header\/present-block.scss",
-		"outputAbbreviatedPath": "\/dev\/scss\/section\/css\/present-block.css",
+		"inputAbbreviatedPath": "\/dev\/scss\/section\/location.scss",
+		"outputAbbreviatedPath": "\/dev\/scss\/css\/location.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -533,15 +560,31 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/dev\/scss\/section\/location\/location.scss": {
+	"\/dev\/scss\/section\/navigation.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dev\/scss\/section\/location\/location.scss",
-		"outputAbbreviatedPath": "\/dev\/scss\/section\/css\/location.css",
+		"inputAbbreviatedPath": "\/dev\/scss\/section\/navigation.scss",
+		"outputAbbreviatedPath": "\/dev\/scss\/css\/navigation.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/dev\/scss\/section\/reviews.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dev\/scss\/section\/reviews.scss",
+		"outputAbbreviatedPath": "\/dev\/scss\/css\/reviews.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -558,22 +601,6 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/dev\/scss\/section\/reviews\/carousel.scss",
 		"outputAbbreviatedPath": "\/dev\/scss\/section\/css\/carousel.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"useLibsass": 0
-		},
-	"\/dev\/scss\/section\/reviews\/reviews.scss": {
-		"createSourceMap": 0,
-		"debugStyle": 0,
-		"decimalPrecision": 10,
-		"fileType": 4,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dev\/scss\/section\/reviews\/reviews.scss",
-		"outputAbbreviatedPath": "\/dev\/scss\/section\/css\/reviews.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -645,22 +672,6 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/dev\/scss\/ui\/models-wrapper.scss": {
-		"createSourceMap": 0,
-		"debugStyle": 0,
-		"decimalPrecision": 10,
-		"fileType": 4,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dev\/scss\/ui\/models-wrapper.scss",
-		"outputAbbreviatedPath": "\/dev\/scss\/css\/models-wrapper.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"useLibsass": 0
-		},
 	"\/dev\/scss\/ui\/text-input.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -676,17 +687,6 @@
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
-		},
-	"\/public\/img\/about.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 200847,
-		"inputAbbreviatedPath": "\/public\/img\/about.jpg",
-		"outputAbbreviatedPath": "\/public\/img\/about.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
 		},
 	"\/public\/img\/colab.jpg": {
 		"fileType": 16384,
@@ -996,13 +996,24 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/public\/img\/header.jpg": {
+	"\/public\/img\/header\/our-fireplaces.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 910596,
-		"inputAbbreviatedPath": "\/public\/img\/header.jpg",
-		"outputAbbreviatedPath": "\/public\/img\/header.jpg",
+		"initialSize": 86383,
+		"inputAbbreviatedPath": "\/public\/img\/header\/our-fireplaces.jpg",
+		"outputAbbreviatedPath": "\/public\/img\/header\/our-fireplaces.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/img\/header\/time-has-come.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 129871,
+		"inputAbbreviatedPath": "\/public\/img\/header\/time-has-come.jpg",
+		"outputAbbreviatedPath": "\/public\/img\/header\/time-has-come.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

@@ -6,16 +6,16 @@
 	border-radius: 0;
 	outline: none;
 	font-size: 1rem;
+	font-family: inherit;
 	line-height: 1.89;
-	letter-spacing: 4.1px;
+	letter-spacing: 0.1em;
 	text-align: center;
 	color: #222;
 	text-transform: uppercase;
-	@include mq("768", max) {
+
+	@include mq("ipad-vrt") {
 		padding: 5px 25px;
 		letter-spacing: 3.4px;
 	}
-	@include mq("phone", max) {
-		letter-spacing: 2.6px;
-	}
+
 }

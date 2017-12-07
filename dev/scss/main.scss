@@ -5,18 +5,18 @@
 
 @import "ui/button";
 @import "ui/center-container";
-@import "ui/models-wrapper";
 @import "ui/header-block";
 @import "ui/text-input";
 @import "ui/modal";
 
-@import "section/header/header";
-@import "section/about-company/about-company";
-@import "section/advantages/advantages";
+@import "section/navigation";
+@import "section/header";
+@import "section/about-company";
+@import "section/advantages";
 @import "section/fireplaces";
-@import "section/location/location";
-@import "section/callback/callback";
-@import 'section/reviews/reviews';
-@import 'section/footer/footer';
+@import "section/location";
+@import "section/callback";
+@import 'section/reviews';
+@import 'section/footer';
 
 @import 'privacy-policy/privacy-policy';

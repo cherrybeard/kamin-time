@@ -22,7 +22,7 @@
 		pointer-events: none;
 		opacity: 0.2;
 	}
-	@include mq("768", max) {
+	@include mq("phone") {
 		padding: 6px 0 6px 15px;
 		input {
 			max-width: 160px;
@@ -31,7 +31,7 @@
 }
 [data-callback-form] {
 	font-size: 0;
-	@include mq("768", max) {
+	@include mq("phone") {
 		display: flex;
 		flex-direction: column;
 		align-items: center;

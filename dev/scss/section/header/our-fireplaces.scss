@@ -1,0 +1,23 @@
+.our-fireplaces {
+	.text {
+		padding-left: $padding-text;
+		font-size: 1.125rem;
+
+		p { margin-bottom: 0;}
+	}
+
+	.image { background-image: url('img/header/our-fireplaces.jpg'); }
+
+	@include mq("ipad-vrt") {
+		.text { order: 2; }
+
+		.image {
+			order: 1;
+			width: 100%;
+			height: 261px;
+			margin-top: 75px;
+			margin-bottom: 50px;
+		}
+	}
+
+}

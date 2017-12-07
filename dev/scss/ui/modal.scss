@@ -91,7 +91,7 @@ $easing: cubic-bezier(.55,0,.1,1);
       background-color: black;
       position: relative;
     }
-    @include mq("768", max) {
+    @include mq("phone") {
       padding: 0 20px;
       align-items: center;
       h2 {

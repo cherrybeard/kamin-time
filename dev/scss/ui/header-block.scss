@@ -3,28 +3,9 @@
 	height: 40.625rem;
 	display: flex;
 	width: 100%;
-	%text-block {
-		box-sizing: border-box;
-		width: 50%;
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-		justify-content: center;
-		padding: 0 5%;
-		p {
-			padding: 25px 0 55px 0;
-		}
-	}
-	@include mq("768", max) {
+
+	@include mq("phone") {
 		flex-direction: column;
 		height: auto;
-		%text-block {
-			width: 100%;
-			padding: 0 20px;
-			p {
-			padding: 15px 0 40px 0;
-		}
-		}
-		
 	}
 }

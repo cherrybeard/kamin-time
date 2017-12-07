@@ -6,11 +6,12 @@
 	.privacy-policy-content {
 		max-width: 800px;
 		margin: auto;
+
 		a {
 			display: block;
 			width: 9.5rem; // 152px;
 			height: 2.5rem; // 40px;
-			background:transparent url('img/logo.svg') center/contain no-repeat;
+			background: url('img/logo.svg') center/contain no-repeat;
 			color: black;
 			font-size: 0;
 			margin: 0 auto;
@@ -34,7 +35,7 @@
 		padding-left: 2em;
 	}
 
-	@include mq("phablet", max) {
+	@include mq("iphone") {
 		padding: 2rem 1rem;
 
 		h1 {

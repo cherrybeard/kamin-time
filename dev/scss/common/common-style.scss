@@ -1,41 +1,57 @@
 $basic-padding: 5%;
+$padding-text: 40px;
+
 html {
 	font-family: $font-primary;
 	font-size: 16px;
 	line-height: 1.4;
 	color: #222;
 	font-weight: 400;
+	padding: 0 4rem;
+
+
+	@include mq("ipad") {
+		padding: 0;
+	}
 }
+
 h1 {
 	font-size: 0;
 }
+
 h2 {
 	font-size: 3.5rem;
 	line-height: 1.07;
-	@include mq("1024", max) {
+
+	@include mq("ipad") {
 		font-size: 30px;
 	}
+
 }
+
 p,input {
 	font-size: 1.125rem;
 	color: #444;
-	@include mq("1024", max) {
+
+	@include mq("ipad") {
 		font-size: 16px;
 	}
+
 }
+
 h1, h2 {
 	font-family: $font-secondary;
 }
 
-
 .modal-lock {
 	overflow: hidden;
-
 	padding-right: 15px;
-	@include mq("tablet-wide", max) {
+
+	@include mq("ipad") {
 		padding-right: 0;
 	}
 }
+
 .scrollbar-measure {
 	position: absolute;
 	top: -9999px;

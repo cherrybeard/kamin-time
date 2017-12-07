@@ -27,7 +27,7 @@
 		border: 1px solid #fff;
 	}
 
-	@include mq("768", max) {
+	@include mq("iphone") {
 		height: 440px;
 		padding: 50px 20px;
 		justify-content: flex-start;

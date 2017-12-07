@@ -1,0 +1,81 @@
+.time-has-come {
+	.button-block {
+		display: flex;
+		align-items: center;
+
+		button { @extend %primary-button; }
+
+		small {
+			position: relative;
+			margin-left: 24px;
+			max-width: 14.5rem; // 232px
+			display: inline-block;
+			font-size: 16px;
+			color: #666;
+			line-height: 1.25;
+		}
+	}
+
+	.information { display: none; }
+	.text { padding-right: $padding-text; }
+	.image { background-image: url('img/header/time-has-come.jpg'); }
+
+	@include mq("ipad-vrt") {
+		.text {
+			order: 2;
+		}
+
+		.information {
+			display: block;
+			margin: auto;
+			text-align: center;
+			position: relative;
+
+			.logo {
+				display: block;
+				width: 12rem;
+				height: 4rem;
+				background: url('img/header/logo.svg') center/contain no-repeat;
+				border: none;
+				margin: auto;
+				margin-bottom: 5px;
+				font-size: 0;
+			}
+
+			a:not(:last-child) { margin-right: 1em; }
+		}
+
+		.image {
+			height: 243px;
+			order: 1;
+			margin-bottom: 50px;
+			display: flex;
+			align-items: center;
+			position: relative;
+
+			&::before {
+				content: '';
+				position: absolute;
+				top: 0; left: 0; right: 0; bottom: 0;
+				background: rgba(black, 0.2);
+			}
+		}
+	}
+
+	@include mq("iphone") {
+		.button-block {
+			flex-direction: column;
+			align-items: flex-start;
+
+			small {
+				margin: 20px 0 0 0px;
+				font-size: 14px;
+			}
+		}
+
+		.information {
+			padding-left: 20px;
+		}
+	}
+
+}
