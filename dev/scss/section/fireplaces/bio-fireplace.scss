@@ -1,7 +1,6 @@
 .bio-fireplace {
 	.intro {
 		position: relative;
-
 		.novelty {
 			box-sizing: border-box;
 			padding: 20px 40px 20px 24px;
@@ -43,5 +42,6 @@
 			}
 		}
 	}
-
+	@include mq("ipad") { .intro p { max-width: 37rem;} }
+	@include mq("ipad-vrt") { .intro p { max-width: 25rem;} }
 }

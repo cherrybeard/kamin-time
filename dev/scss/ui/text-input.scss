@@ -22,7 +22,7 @@
 		pointer-events: none;
 		opacity: 0.2;
 	}
-	@include mq("phone") {
+	@include mq("ipad-vrt") {
 		padding: 6px 0 6px 15px;
 		input {
 			max-width: 160px;

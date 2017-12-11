@@ -6,13 +6,23 @@
 		
 	.models-container(data-expandable-block)
 		.models-wrapper
-			.info-block
-				p Собственная база по камнеобработке позволит воплотить даже самые смелые идеи. Индивидуальный дизайн под ваши требования и препочтения.
+			.model 
+				.swiper-container(marble-carousel)
+					.swiper-button-prev.swiper-button
+					.swiper-button-next.swiper-button
+					.swiper-wrapper
+						- var marbleCount = 17;
+						while marbleCount <= 28
+							.swiper-slide
+								- var link = "img/fireplaces_items/marble/"+ marbleCount +".jpg";
+								- var title = "Классические мраморные камины";
+								img.swiper-lazy(alt= title, data-src= link, src= "img/giphy.gif")
+								- marbleCount++
+				h3 Мраморные порталы
+				p Собственная база по&nbsp;камнеобработке позволит воплотить даже самые смелые идеи. Индивидуальный дизайн под&nbsp;ваши требования и&nbsp;предпочтения.
 				button.modal-button Заказать
-				
-			+model("Мраморный камин", "img/fireplaces_items/marble/17.jpg", true)
-			+model("Мраморный камин", "img/fireplaces_items/marble/18.jpg", true)
-			+model("Мраморный камин", "img/fireplaces_items/marble/19.jpg", true)
-			+model("Мраморный камин", "img/fireplaces_items/marble/20.jpg", true)
-			+model("Мраморный камин", "img/fireplaces_items/marble/21.jpg", true)
-			+model("Мраморный камин", "img/fireplaces_items/marble/22.jpg", true)
+			+model("Рустикальный стиль", "img/fireplaces_items/rustic/29.jpg")
+				p Дополнит интерьер, выполненный в&nbsp;стиле «прованс» или&nbsp;«шале». Используем природный камень: мрамор, песчаник, доломит, известняк, ракушечник
+
+
+

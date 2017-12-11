@@ -3,11 +3,13 @@
 @import "common/fonts";
 @import "common/common-style";
 
+@import "ui/swiper.min";
 @import "ui/button";
 @import "ui/center-container";
 @import "ui/header-block";
 @import "ui/text-input";
 @import "ui/modal";
+
 
 @import "section/navigation";
 @import "section/header";
@@ -16,7 +18,7 @@
 @import "section/fireplaces";
 @import "section/location";
 @import "section/callback";
-@import 'section/reviews';
+@import 'section/reviews/reviews';
 @import 'section/footer';
 
 @import 'privacy-policy/privacy-policy';

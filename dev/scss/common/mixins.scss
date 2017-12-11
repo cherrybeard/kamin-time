@@ -2,10 +2,10 @@
 $breakpoints: (
     "iphone-se":		340px,
     "iphone-7":			360px,
-    "iphone-7plus":	410px,
-    "iphone":				760px,
+    "iphone-7plus": 	410px,
+    "iphone":			760px,
     "ipad-vrt":			850px,
-    "ipad":					1248px
+    "ipad":				1248px
 );
 
 @mixin mq($width) {

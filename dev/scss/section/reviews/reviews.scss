@@ -1,4 +1,4 @@
-@import "reviews/carousel";
+@import "carousel";
 
 .reviews {
 	@extend %center-container;
@@ -27,7 +27,7 @@
 	}
 
 	@include mq("ipad-vrt") {
-		padding: 40px 0;
+		padding: 0 0 40px 0;
 
 		.wrapper {
 			height: auto;

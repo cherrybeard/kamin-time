@@ -1,28 +1,40 @@
 .marble {
-	.model { height: 21.875rem; }
-
-	.info-block {
-		box-sizing: border-box;
-		padding: 0 2.5%;
-		display: flex;
-		align-items: flex-start;
-
-		button { @extend %primary-button; }
-		p { padding-bottom: 20px; }
-	}
-
-
-	@include mq("iphone") {
-		.info-block {
-			padding-left: 12px;
-			padding-bottom: 30px;
-			flex-wrap: wrap;
-
-			p { font-size: 10px; }
-			button { font-size: 12px; }
+	[marble-carousel] {
+		width: 100%;
+		.swiper-slide {
+			width: 100%;
+			height: 100%;
+			padding: 0;
+		}
+		.swiper-button {
+			background: url('img/arrow-white.svg') center/contain no-repeat;
+		}
+		.swiper-button-prev {
+			left: 15px;
 		}
 
-		.model { height: 132px; }
+		.swiper-button-next {
+			right: 15px;
+		}
 	}
 
+	@include mq("ipad-vrt") {
+		[marble-carousel] {
+			order: 0;
+			.swiper-slide {
+				padding: 0;
+				}
+			.swiper-button {
+				top: 50%;
+				left: 5px;
+			}
+			.swiper-button-next {
+				left: auto;
+				right: 5px;
+			}
+			}
+			.model { height: 351px; }
+
+	}
 }
+
