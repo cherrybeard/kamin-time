@@ -35,12 +35,17 @@
 	}
 
 	@include mq("iphone") {
+		position: relative;
 		margin: 0;
 		height: auto;
-		padding: 52px 20px 90px 20px;
+		padding: 52px 20px 420px 20px;
 		align-items: flex-start;
 		justify-content: flex-start;
-		background: none;
+		// background: none;
+			// &:after {
+
+			// }
+		background:transparent url('img/map_small.jpg') center bottom/100% 50% no-repeat;
 
 		.about {
 			width: 100%;
