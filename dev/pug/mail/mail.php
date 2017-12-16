@@ -12,7 +12,7 @@
 		}
 		$title = 'Заявка с лендинга Kamintime #1';
 		if (!empty($_POST['msg'])) $msg .= '<br>'.$_POST['msg'];
-    $to = 'shantishanti@bk.ru';
+    $to = 'shantishanti@bk.ru,7791166@mail.ru,purecoffee@yandex.ru';
 		$header = 'MIME-Version: 1.0' . "\n" .
 			'Content-type: text/html; charset=UTF-8'. "\n" .
 			"From: Kamintime <hi@kamin-time.ru>\n";

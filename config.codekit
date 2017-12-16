@@ -10,12 +10,12 @@
 		"outputAbbreviatedPath": "\/public\/script\/main.min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
-		"outputStyle": 1,
+		"outputStyle": 0,
 		"syntaxCheckerStyle": 0
 		},
 	"\/dev\/js\/script\/libs\/jquery-1.12.4.min.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/dev\/js\/script\/libs\/jquery-1.12.4.min.js",
 		"outputAbbreviatedPath": "\/dev\/js\/script\/libs\/min\/jquery-1.12.4.min-min.js",
@@ -26,7 +26,7 @@
 		},
 	"\/dev\/js\/script\/libs\/lazyload.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/dev\/js\/script\/libs\/lazyload.js",
 		"outputAbbreviatedPath": "\/dev\/js\/script\/libs\/min\/lazyload-min.js",
@@ -37,7 +37,7 @@
 		},
 	"\/dev\/js\/script\/libs\/swiper.min.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/dev\/js\/script\/libs\/swiper.min.js",
 		"outputAbbreviatedPath": "\/dev\/js\/script\/libs\/min\/swiper.min-min.js",
@@ -1606,6 +1606,15 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/public\/index.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/public\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/public\/index.php.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -1693,6 +1702,26 @@
 	],
 "lastSavedByUser": "Steven Gusev",
 "manualImportLinks": {
+	"\/dev\/js\/main.js": [
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/dev\/js\/script\/libs\/jquery-1.12.4.min.js",
+			"position": 0,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/dev\/js\/script\/libs\/swiper.min.js",
+			"position": 1,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/dev\/js\/script\/libs\/lazyload.js",
+			"position": 2,
+			"type": 0
+			}
+		]
 	},
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",
